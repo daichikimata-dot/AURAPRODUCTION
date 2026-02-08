@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, FileText, Settings, Users, LogOut, Link as LinkIcon } from "lucide-react";
+import { LayoutDashboard, FileText, Settings, Users, LogOut, Link as LinkIcon, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function AdminLayout({
@@ -15,9 +15,10 @@ export default function AdminLayout({
     const navItems = [
         { name: "ダッシュボード", href: "/admin/dashboard", icon: LayoutDashboard },
         { name: "記事管理", href: "/admin/dashboard/articles", icon: FileText },
-        { name: "設定", href: "/admin/dashboard/settings", icon: Settings },
-        { name: "ユーザー", href: "/admin/dashboard/users", icon: Users },
         { name: "リンク管理", href: "/admin/dashboard/links", icon: LinkIcon },
+        { name: "AI人格設定", href: "/admin/dashboard/ai-settings", icon: Users }, // Reuse Users icon for Persona
+        { name: "一般設定", href: "/admin/dashboard/settings", icon: Settings },
+        { name: "メディア管理", href: "/admin/dashboard/media", icon: Globe },
     ];
 
     return (

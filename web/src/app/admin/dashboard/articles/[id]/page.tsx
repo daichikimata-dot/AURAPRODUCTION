@@ -10,6 +10,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { format } from 'date-fns';
 import Link from 'next/link';
 import { ArrowLeft, ExternalLink, Save, Send } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import ArticleImage from "@/components/ArticleImage";
 
 export default function ArticleDetailPage() {
     const router = useRouter();
@@ -120,11 +122,46 @@ export default function ArticleDetailPage() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 {/* Main Content Preview */}
                 <div className="lg:col-span-2 space-y-6">
+
+
+
                     <Card>
-                        <CardContent className="p-8 prose prose-rose max-w-none">
-                            {/* Safe to render markdown in real app using react-markdown, here plain text for now or valid HTML */}
-                            <div className="whitespace-pre-wrap font-sans text-gray-800 leading-relaxed">
-                                {article.content}
+                        <CardContent className="p-8 max-w-none">
+                            <div className="prose prose-stone prose-lg max-w-none 
+                                prose-headings:font-serif prose-headings:text-primary prose-headings:font-bold
+                                prose-h1:text-4xl prose-h1:mb-8
+                                prose-h2:text-3xl prose-h2:border-b-2 prose-h2:border-primary/10 prose-h2:pb-3 prose-h2:mt-16 prose-h2:mb-8 prose-h2:leading-snug
+                                prose-h3:text-2xl prose-h3:mt-10 prose-h3:mb-6 prose-h3:text-stone-800
+                                prose-p:leading-loose prose-p:text-stone-700
+                                prose-strong:text-primary/90 prose-strong:font-bold
+                                prose-li:text-stone-700 prose-li:marker:text-primary
+                                prose-a:text-primary hover:prose-a:text-[#9f1239] prose-a:font-bold prose-a:no-underline hover:prose-a:underline
+                                prose-img:rounded-2xl prose-img:shadow-lg prose-img:border prose-img:border-stone-100
+                                prose-blockquote:border-l-4 prose-blockquote:border-primary/30 prose-blockquote:bg-rose-50/30 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:font-medium prose-blockquote:text-stone-700 prose-blockquote:italic">
+                                <ReactMarkdown
+                                    components={{
+                                        h1: ({ node, ...props }) => <h1 className="text-3xl md:text-4xl font-serif font-bold text-stone-800 mt-12 mb-6 leading-snug" {...props} />,
+                                        h2: ({ node, ...props }) => <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mt-16 mb-8 pb-3 border-b-2 border-primary/10 leading-snug" {...props} />,
+                                        h3: ({ node, ...props }) => <h3 className="text-xl md:text-2xl font-serif font-bold text-stone-800 mt-10 mb-5" {...props} />,
+                                        p: ({ node, ...props }) => <p className="text-stone-700 leading-loose mb-6 text-lg" {...props} />,
+                                        ul: ({ node, ...props }) => <ul className="list-disc pl-6 mb-6 space-y-2 text-stone-700" {...props} />,
+                                        ol: ({ node, ...props }) => <ol className="list-decimal pl-6 mb-6 space-y-2 text-stone-700" {...props} />,
+                                        li: ({ node, ...props }) => <li className="pl-1" {...props} />,
+                                        strong: ({ node, ...props }) => <strong className="text-primary font-bold" {...props} />,
+                                        blockquote: ({ node, ...props }) => (
+                                            <blockquote className="border-l-4 border-primary/30 bg-rose-50/30 py-4 px-6 rounded-r-lg font-medium text-stone-700 italic my-8" {...props} />
+                                        ),
+                                        img: ({ node, ...props }) => (
+                                            <ArticleImage
+                                                src={props.src}
+                                                alt={props.alt || ""}
+                                                className="w-full h-auto rounded-xl shadow-md my-8 border border-stone-100"
+                                            />
+                                        )
+                                    }}
+                                >
+                                    {article.content}
+                                </ReactMarkdown>
                             </div>
                         </CardContent>
                     </Card>

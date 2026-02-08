@@ -59,3 +59,30 @@ create policy "Authenticated users can do everything" on articles for all using 
 -- Public read access for published articles
 create policy "Public can view published articles" on articles for select using (status = 'published');
 create policy "Public can view categories" on categories for select using (true);
+
+-- Links table (for Affiliate/Internal links)
+create table links (
+  id uuid default gen_random_uuid() primary key,
+  name text not null,
+  url text not null,
+  key text unique, -- Shortcode key e.g. 'sbc-lp'
+  clicks integer default 0,
+  created_at timestamp with time zone default timezone('utc'::text, now()) not null,
+  updated_at timestamp with time zone default timezone('utc'::text, now()) not null
+);
+
+-- Settings table (Key-Value store)
+create table settings (
+  key text primary key,
+  value text, -- JSON or plain text
+  description text,
+  updated_at timestamp with time zone default timezone('utc'::text, now()) not null
+);
+
+-- RLS for new tables
+alter table links enable row level security;
+alter table settings enable row level security;
+
+create policy "Authenticated users can do everything" on links for all using (auth.role() = 'authenticated');
+create policy "Authenticated users can do everything" on settings for all using (auth.role() = 'authenticated');
+

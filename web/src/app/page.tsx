@@ -1,42 +1,80 @@
 import Link from "next/link";
+import ConversionBanner from "@/components/ConversionBanner";
+import AuraLogo from "@/components/AuraLogo";
+import ArticleListContainer from "@/components/ArticleListContainer";
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-rose-50/30">
-            <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-                <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-                    美活クラブAURA &nbsp;
-                    <code className="font-mono font-bold">公式ブログ</code>
+        <main className="min-h-screen flex flex-col items-center relative overflow-hidden">
+            {/* Background Decor */}
+            <div className="absolute top-0 left-0 w-full h-[60vh] bg-gradient-to-b from-secondary/30 to-transparent -z-10" />
+            <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl -z-10" />
+            <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-secondary/40 rounded-full blur-3xl -z-10" />
+
+            {/* Header / Nav */}
+            <nav className="w-full max-w-6xl px-6 py-6 flex justify-between items-center relative z-20">
+                <div className="flex-1" /> {/* Spacer */}
+
+                {/* Logo - Center Cutout Effect */}
+                <div className="flex-none -mb-16 z-20 relative group cursor-pointer">
+                    <div className="w-28 h-28 rounded-full bg-[#fffafb] flex items-center justify-center p-2 shadow-xl border border-stone-100">
+                        {/* Fallback to text if image fails loading, or use Image component */}
+                        <div className="w-full h-full rounded-full bg-primary text-white flex items-center justify-center border-2 border-[#fffafb] shadow-inner overflow-hidden">
+                            <AuraLogo />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="flex-1 flex justify-end gap-6 text-sm font-medium text-stone-600">
+                    <Link href="/about" className="hover:text-primary transition-colors">Concept</Link>
+                    <Link href="/blog" className="hover:text-primary transition-colors">Column</Link>
+                    <Link href="/admin/login" className="hover:text-primary transition-colors">Admin</Link>
+                </div>
+            </nav>
+
+            {/* Hero Section */}
+            <section className="flex flex-col items-center justify-center text-center mt-24 mb-32 px-4 relative z-10">
+                <p className="text-primary font-serif tracking-[0.2em] mb-6 animate-fade-in-up">
+                    BIKATSU CLUB
                 </p>
-                <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-                    <Link href="/admin/login" className="flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0 text-rose-500 hover:underline">
-                        管理者ログイン
+                <h1 className="text-4xl md:text-5xl font-serif font-bold text-stone-800 mb-8 tracking-wide leading-relaxed animate-fade-in-up delay-100">
+                    美しさは、<br />
+                    日々の積み重ねから
+                </h1>
+                <p className="text-stone-500 max-w-lg leading-loose mb-10 animate-fade-in-up delay-200">
+                    美に投資する人のための美活コラム。<br />
+                    AIが最新トレンドを分析し、専門家が監修してお届けします。
+                </p>
+
+                <div className="flex gap-4 animate-fade-in-up delay-300">
+                    <Link href="/blog" className="px-10 py-3 bg-primary text-white rounded-full hover:bg-[#9f1239] transition-all shadow-lg shadow-primary/20 tracking-wider">
+                        Read Column
                     </Link>
                 </div>
-            </div>
+            </section>
 
-            <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-rose-200 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-rose-200 after:via-rose-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-rose-700 before:dark:opacity-10 after:dark:from-rose-900 after:dark:via-[#ff006e] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-                <h1 className="text-5xl font-bold text-slate-800 tracking-tighter">
-                    Bikatsu Club <span className="text-rose-500">AURA</span>
-                </h1>
-            </div>
+            {/* In-feed Conversion Banner (Clinic) */}
+            <section className="w-full max-w-4xl px-4 animate-fade-in-up delay-500 my-16">
+                <ConversionBanner
+                    type="clinic"
+                    title="厳選！おすすめクリニック"
+                    description="AURA編集部が自信を持って推薦する、技術と信頼のパートナー・クリニックをご紹介します。"
+                    linkUrl="/clinics"
+                />
+            </section>
 
-            <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-                {/* Categories Placeholder */}
-                {['韓国美容', '医療美容', 'スキンケア', 'アンチエイジング'].map((cat) => (
-                    <div key={cat} className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-                        <h2 className={`mb-3 text-2xl font-semibold`}>
-                            {cat}{' '}
-                            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                                -&gt;
-                            </span>
-                        </h2>
-                        <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-                            {cat}の最新トレンドをチェック
-                        </p>
-                    </div>
-                ))}
-            </div>
+            {/* Interactive Article List */}
+            <section className="w-full max-w-6xl px-6 pb-24">
+                <ArticleListContainer />
+            </section>
+
+            <footer className="w-full border-t border-stone-200 bg-white/50 backdrop-blur-sm py-12 text-center text-stone-400 text-sm">
+                <p className="font-serif">&copy; 2026 Bikatsu Club AURA. All rights reserved.</p>
+                <div className="mt-4 flex justify-center gap-4 text-xs font-medium text-stone-500">
+                    <Link href="/privacy">Privacy Policy</Link>
+                    <Link href="/contact">Contact</Link>
+                </div>
+            </footer>
         </main>
     );
 }

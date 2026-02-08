@@ -6,3 +6,7 @@ python-dotenv
 requests
 lxml
 schedule
+fastapi
+uvicorn
+googlesearch-python
+

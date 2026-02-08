@@ -104,8 +104,8 @@ async def run_pipeline(source_url=None, mock=False):
                     # Notify Owner
                     if res and res.data and len(res.data) > 0:
                         saved_article = res.data[0]
-                        logger.info("Sending LINE notification to owner...")
-                        notifier.notify_owner_review(saved_article)
+                        logger.info("Sending LINE notification to owner... (DISABLED TEMPORARILY)")
+                        # notifier.notify_owner_review(saved_article)
                     else:
                         logger.info("Draft saved (ID unknown). notification skipped.")
 
