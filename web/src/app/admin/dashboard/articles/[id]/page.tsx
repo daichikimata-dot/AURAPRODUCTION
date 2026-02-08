@@ -153,7 +153,7 @@ export default function ArticleDetailPage() {
                                         ),
                                         img: ({ node, ...props }) => (
                                             <ArticleImage
-                                                src={props.src}
+                                                src={props.src as string}
                                                 alt={props.alt || ""}
                                                 className="w-full h-auto rounded-xl shadow-md my-8 border border-stone-100"
                                             />
