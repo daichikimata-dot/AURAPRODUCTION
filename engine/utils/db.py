@@ -66,6 +66,21 @@ class SupabaseManager:
         
         return None
 
+    def upload_image(self, file_bytes, filename, bucket='images'):
+        """Uploads an image to Supabase Storage and returns the public URL."""
+        try:
+            # Upload
+            self.client.storage.from_(bucket).upload(
+                path=filename,
+                file=file_bytes,
+                file_options={"content-type": "image/png"}
+            )
+            # Get Public URL
+            return self.client.storage.from_(bucket).get_public_url(filename)
+        except Exception as e:
+            print(f"Error uploading image to Supabase: {e}")
+            return None
+
 if __name__ == "__main__":
     # Test connection
     try:
