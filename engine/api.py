@@ -1,4 +1,5 @@
-from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi import FastAPI, HTTPException, BackgroundTasks, Security, Depends
+from fastapi.security.api_key import APIKeyHeader
 from pydantic import BaseModel
 from typing import List, Optional
 import os
@@ -18,7 +19,23 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="AURA Engine API", description="API for AURA Beauty Content Engine")
+# API Key Security
+API_KEY_NAME = "x-api-key"
+api_key_header = APIKeyHeader(name=API_KEY_NAME, auto_error=False)
+
+async def get_api_key(api_key: str = Security(api_key_header)):
+    env_api_key = os.getenv("AURA_API_KEY")
+    if not env_api_key:
+        # For safety, if no key is set on server, we block everything
+        logger.critical("AURA_API_KEY is not set in environment variables! API is locking down.")
+        raise HTTPException(status_code=500, detail="Server Configuration Error: API Key not set")
+    
+    if api_key == env_api_key:
+        return api_key
+    
+    raise HTTPException(status_code=403, detail="Could not validate credentials")
+
+app = FastAPI(title="AURA Engine API", description="API for AURA Beauty Content Engine", dependencies=[Depends(get_api_key)])
 
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles

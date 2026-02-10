@@ -9,6 +9,7 @@ export async function POST(request: Request) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'x-api-key': process.env.ENGINE_API_KEY || '',
             },
             // Add a longer timeout via signal if fetch supports it, or just rely on default
             // Node fetch defaults are generous.

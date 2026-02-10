@@ -4,6 +4,9 @@ export async function GET() {
     try {
         const engineUrl = process.env.ENGINE_API_URL || 'http://127.0.0.1:8000';
         const res = await fetch(`${engineUrl}/trends`, {
+            headers: {
+                'x-api-key': process.env.ENGINE_API_KEY || '',
+            },
             cache: 'no-store' // Always fetch fresh data
         });
 
