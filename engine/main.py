@@ -78,9 +78,8 @@ async def run_pipeline(source_url=None, mock=False):
             # Generate
             logger.info(f"Generating article for: {crawled_data['title']}")
             article_content = await generator.generate_article(
-                source_content=crawled_data['content'],
-                source_title=crawled_data['title'],
-                mock=mock
+                keyword=crawled_data['title'],
+                source_content=crawled_data['content']
             )
 
             if not article_content:
