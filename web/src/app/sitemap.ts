@@ -4,7 +4,7 @@ import { createClient } from '@supabase/supabase-js';
 export const revalidate = 3600; // Revalidate every hour
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://aura-beauty.jp";
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.kireiaura.com";
 
     // Initialize Supabase Client (Admin access needed? No, public RLS should allow fetching content, but sitemap generator mimics server side)
     // safe to use service role key if available, or just public/anon if RLS is correct.
