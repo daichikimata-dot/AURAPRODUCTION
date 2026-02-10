@@ -74,7 +74,12 @@ export default function DashboardPage() {
                 setTimeout(fetchArticles, 1000);
                 setTimeout(() => setGenerationMessage(""), 5000);
             } else {
-                setGenerationMessage("エラーが発生しました。");
+                try {
+                    const err = await res.json();
+                    setGenerationMessage(`エラー: ${err.error} ${err.details ? '(' + err.details.substring(0, 50) + '...)' : ''}`);
+                } catch {
+                    setGenerationMessage("エラーが発生しました（詳細不明）");
+                }
             }
         } catch (e) {
             setGenerationMessage("通信エラーが発生しました。");

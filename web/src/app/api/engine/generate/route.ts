@@ -15,13 +15,18 @@ export async function POST(request: Request) {
         });
 
         if (!res.ok) {
-            throw new Error('Failed to start generation');
+            const errorText = await res.text();
+            console.error(`Engine API Error: ${res.status} ${errorText}`);
+            return NextResponse.json(
+                { error: `Engine API Error: ${res.status}`, details: errorText },
+                { status: res.status }
+            );
         }
 
         const data = await res.json();
         return NextResponse.json(data);
     } catch (error) {
         console.error("API Proxy Error [Generate]:", error);
-        return NextResponse.json({ error: "Failed to connect to engine" }, { status: 500 });
+        return NextResponse.json({ error: "Failed to connect to engine", details: String(error) }, { status: 500 });
     }
 }
