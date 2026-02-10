@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-// import { createClient } from "@/lib/supabase";
-import Link from "next/link";
+import { Metadata, ResolvingMetadata } from "next";
+import { createClient } from "@supabase/supabase-js";
 import ReactMarkdown from 'react-markdown';
 import ConversionBanner from "@/components/ConversionBanner";
 import ArticleCard from "@/components/ArticleCard"; // For related articles in future
@@ -14,8 +14,6 @@ interface ArticlePageProps {
         id: string;
     }>;
 }
-
-import { createClient } from "@supabase/supabase-js";
 
 // Real fetch function from Supabase
 export const revalidate = 0; // Disable cache for dev/preview purposes (or use ISR with revalidatePath)
@@ -57,6 +55,33 @@ async function getArticle(id: string) {
 }
 
 
+export async function generateMetadata(
+    { params }: ArticlePageProps,
+    parent: ResolvingMetadata
+): Promise<Metadata> {
+    const { id } = await params;
+    const article = await getArticle(id);
+
+    if (!article) {
+        return {
+            title: "Article Not Found",
+        };
+    }
+
+    return {
+        title: article.title,
+        description: article.excerpt || article.summary,
+        openGraph: {
+            title: article.title,
+            description: article.excerpt || article.summary,
+            images: [article.thumbnail_url || "/article_header_water_glow.png"],
+            type: "article",
+            publishedTime: article.created_at,
+            authors: ["AURA編集部"],
+        },
+    };
+}
+
 export default async function ArticlePage({ params }: ArticlePageProps) {
     const { id } = await params;
     const article = await getArticle(id);
@@ -65,8 +90,69 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         notFound();
     }
 
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": article.title,
+        "image": [article.thumbnail_url],
+        "datePublished": article.created_at,
+        "dateModified": article.updated_at || article.created_at,
+        "author": [{
+            "@type": "Organization",
+            "name": "AURA編集部",
+            "url": process.env.NEXT_PUBLIC_BASE_URL || "https://aura-beauty.jp"
+        }],
+        "publisher": {
+            "@type": "Organization",
+            "name": "美活クラブAURA",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://aura-beauty.jp/aura_logo_circle.png"
+            }
+        },
+        "description": article.excerpt || article.summary
+    };
+    // Fetch dynamic links for CTA
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+    const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+    const supabase = createClient(supabaseUrl, supabaseKey);
+
+    const { data: clinicLink } = await supabase
+        .from('links')
+        .select('url')
+        .eq('type', 'clinic')
+        .order('created_at', { ascending: false })
+        .limit(1)
+        .maybeSingle();
+
+    const { data: lineLink } = await supabase
+        .from('links')
+        .select('url')
+        .eq('type', 'line')
+        .order('created_at', { ascending: false })
+        .limit(1)
+        .maybeSingle();
+
+    console.log(`[ArticlePage] Fetched Links for ${id}:`, { clinic: clinicLink, line: lineLink });
+
+    const clinicUrl = clinicLink?.url || "#";
+    const lineUrl = lineLink?.url || "#";
+
+    // Fetch Latest Posts (Next 3)
+    const { data: latestArticles } = await supabase
+        .from('articles')
+        .select('*, category:categories(name)')
+        .eq('status', 'published')
+        .neq('id', id)
+        .order('created_at', { ascending: false })
+        .limit(3);
+
     return (
         <main className="min-h-screen bg-[#fffafb] pb-24">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             {/* Global Header */}
             <SiteHeader />
 
@@ -89,7 +175,6 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             {/* Article Thumbnail */}
             <div className="w-full max-w-5xl mx-auto px-4 mb-12">
                 <div className="aspect-[21/9] w-full rounded-3xl overflow-hidden shadow-xl border border-stone-100">
-                    {/* Fallback to generated image or placeholder if file logic fails (handled by browser) */}
                     <ArticleImage
                         src={article.thumbnail_url}
                         alt={article.title}
@@ -153,13 +238,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                         </ReactMarkdown>
                     </div>
 
-                    {/* CTA in Article (Affiliate/Campaign) */}
+                    {/* CTA in Article (Affiliate/Campaign - Linked to LINE) */}
                     <div className="my-16">
                         <ConversionBanner
                             type="campaign"
                             title="初回限定キャンペーン"
                             description="今ならLINE登録で、提携クリニックの施術が最大20%OFFになるクーポンをプレゼント中。"
-                            linkUrl="#"
+                            linkUrl={lineUrl}
                             buttonText="クーポンを受け取る"
                         />
                     </div>
@@ -170,30 +255,32 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                     <div className="sticky top-32 space-y-6">
 
                         {/* Clinic Referral Banner (Sticky Top) - Green & Compact */}
-                        <div className="bg-white p-5 rounded-2xl shadow-sm border border-emerald-100 text-center group cursor-pointer hover:shadow-md transition-all duration-300">
-                            <span className="inline-block bg-emerald-600/10 text-emerald-700 text-[10px] font-bold px-3 py-1 rounded-full mb-3 tracking-wider">
-                                RECOMMENDED CLINIC
-                            </span>
-                            <h3 className="text-sm font-bold text-emerald-950 mb-2 font-serif">
-                                失敗しないクリニック選び
-                            </h3>
-                            {/* Compact Image/Icon Area */}
-                            <div className="flex items-center justify-center gap-2 mb-4">
-                                <div className="w-10 h-10 rounded-full bg-stone-50 overflow-hidden border border-emerald-50">
-                                    <img src="https://placehold.co/100x100/ecfdf5/047857?text=Dr" className="w-full h-full rounded-full object-cover" />
+                        <a href={clinicUrl} target="_blank" rel="noopener noreferrer" className="block group">
+                            <div className="bg-white p-5 rounded-2xl shadow-sm border border-emerald-100 text-center hover:shadow-md transition-all duration-300">
+                                <span className="inline-block bg-emerald-600/10 text-emerald-700 text-[10px] font-bold px-3 py-1 rounded-full mb-3 tracking-wider">
+                                    RECOMMENDED CLINIC
+                                </span>
+                                <h3 className="text-sm font-bold text-emerald-950 mb-2 font-serif">
+                                    失敗しないクリニック選び
+                                </h3>
+                                {/* Compact Image/Icon Area */}
+                                <div className="flex items-center justify-center gap-2 mb-4">
+                                    <div className="w-10 h-10 rounded-full bg-stone-50 overflow-hidden border border-emerald-50">
+                                        <img src="https://placehold.co/100x100/ecfdf5/047857?text=Dr" className="w-full h-full rounded-full object-cover" />
+                                    </div>
+                                    <div className="w-10 h-10 rounded-full bg-stone-50 overflow-hidden border border-emerald-50">
+                                        <img src="https://placehold.co/100x100/ecfdf5/047857?text=Clinic" className="w-full h-full rounded-full object-cover" />
+                                    </div>
                                 </div>
-                                <div className="w-10 h-10 rounded-full bg-stone-50 overflow-hidden border border-emerald-50">
-                                    <img src="https://placehold.co/100x100/ecfdf5/047857?text=Clinic" className="w-full h-full rounded-full object-cover" />
+                                <p className="text-[11px] text-stone-500 mb-4 leading-relaxed">
+                                    AURA編集部厳選の<br />信頼できる提携クリニック。
+                                </p>
+
+                                <div className="w-full py-2 bg-emerald-600 text-white font-bold rounded-lg group-hover:bg-emerald-700 transition-colors flex items-center justify-center gap-2 text-xs">
+                                    <span>提携クリニックを見る</span>
                                 </div>
                             </div>
-                            <p className="text-[11px] text-stone-500 mb-4 leading-relaxed">
-                                AURA編集部厳選の<br />信頼できる提携クリニック。
-                            </p>
-
-                            <button className="w-full py-2 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-700 transition-colors flex items-center justify-center gap-2 text-xs">
-                                <span>提携クリニックを見る</span>
-                            </button>
-                        </div>
+                        </a>
 
                     </div>
                 </aside>
@@ -206,26 +293,10 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                         Latest Posts
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {[1, 2, 3].map((i) => (
-                            <Link key={i} href="#" className="group block">
-                                <div className="aspect-[4/3] rounded-2xl bg-stone-100 overflow-hidden mb-4 relative">
-                                    <img
-                                        src={`https://placehold.co/600x400/f3f4f6/9ca3af?text=Post+${i}`}
-                                        alt=""
-                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                    />
-                                    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-primary">
-                                        Category
-                                    </div>
-                                </div>
-                                <h3 className="text-lg font-bold text-stone-800 group-hover:text-primary transition-colors leading-snug mb-2">
-                                    おすすめの美容治療特集：第{i}弾
-                                </h3>
-                                <p className="text-sm text-stone-500 line-clamp-2 mb-3">
-                                    最新のトレンドを取り入れたおすすめの施術をご紹介。効果やダウンタイムについても解説します。
-                                </p>
-                                <time className="text-xs text-stone-400 font-serif">2026.02.0{i}</time>
-                            </Link>
+                        {(latestArticles || []).map((post: any) => (
+                            <div key={post.id} className="animate-fade-in-up">
+                                <ArticleCard article={post} />
+                            </div>
                         ))}
                     </div>
                 </div>

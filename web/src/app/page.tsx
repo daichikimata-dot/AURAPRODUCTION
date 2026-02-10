@@ -2,8 +2,22 @@ import Link from "next/link";
 import ConversionBanner from "@/components/ConversionBanner";
 import AuraLogo from "@/components/AuraLogo";
 import ArticleListContainer from "@/components/ArticleListContainer";
+import { supabase } from "@/lib/supabase";
+import ScrollToLatestButton from "@/components/ScrollToLatestButton";
 
-export default function Home() {
+export const revalidate = 60;
+
+export default async function Home() {
+    const { data: clinicLink } = await supabase
+        .from('links')
+        .select('url')
+        .eq('type', 'clinic')
+        .order('created_at', { ascending: false })
+        .limit(1)
+        .maybeSingle(); // Use maybeSingle to avoid error if empty
+
+    const clinicUrl = clinicLink?.url || "/clinics";
+
     return (
         <main className="min-h-screen flex flex-col items-center relative overflow-hidden">
             {/* Background Decor */}
@@ -26,9 +40,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex-1 flex justify-end gap-6 text-sm font-medium text-stone-600">
-                    <Link href="/about" className="hover:text-primary transition-colors">Concept</Link>
-                    <Link href="/blog" className="hover:text-primary transition-colors">Column</Link>
-                    <Link href="/admin/login" className="hover:text-primary transition-colors">Admin</Link>
+                    {/* Menu items removed as per request */}
                 </div>
             </nav>
 
@@ -47,9 +59,7 @@ export default function Home() {
                 </p>
 
                 <div className="flex gap-4 animate-fade-in-up delay-300">
-                    <Link href="/blog" className="px-10 py-3 bg-primary text-white rounded-full hover:bg-[#9f1239] transition-all shadow-lg shadow-primary/20 tracking-wider">
-                        Read Column
-                    </Link>
+                    <ScrollToLatestButton />
                 </div>
             </section>
 
@@ -59,13 +69,13 @@ export default function Home() {
                     type="clinic"
                     title="厳選！おすすめクリニック"
                     description="AURA編集部が自信を持って推薦する、技術と信頼のパートナー・クリニックをご紹介します。"
-                    linkUrl="/clinics"
+                    linkUrl={clinicUrl}
                 />
             </section>
 
             {/* Interactive Article List */}
-            <section className="w-full max-w-6xl px-6 pb-24">
-                <ArticleListContainer />
+            <section id="latest-topics-section" className="w-full max-w-6xl px-6 pb-24">
+                <ArticleListContainer limit={8} />
             </section>
 
             <footer className="w-full border-t border-stone-200 bg-white/50 backdrop-blur-sm py-12 text-center text-stone-400 text-sm">
@@ -73,6 +83,7 @@ export default function Home() {
                 <div className="mt-4 flex justify-center gap-4 text-xs font-medium text-stone-500">
                     <Link href="/privacy">Privacy Policy</Link>
                     <Link href="/contact">Contact</Link>
+                    <Link href="/auraadmin/login" className="opacity-50 hover:opacity-100">Admin</Link>
                 </div>
             </footer>
         </main>

@@ -15,13 +15,325 @@ See README for more details:
 https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
 
   import google.generativeai as genai
-INFO:     Started server process [84537]
+INFO:     Started server process [22908]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-2026-02-09 00:39:11,131 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
-2026-02-09 00:39:11,140 - INFO - Trends: Using 10 articles for context.
-2026-02-09 00:39:12,720 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
-2026-02-09 00:39:12,722 - INFO - Trends: Using 10 articles for context.
-INFO:     127.0.0.1:60494 - "GET /trends HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60502 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 08:29:24,967 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 08:29:24,974 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:64442 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 08:29:27,180 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 08:29:27,183 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:64442 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 08:30:32,460 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 08:30:32,464 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:64499 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 08:30:35,797 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 08:30:35,801 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:64499 - "GET /trends HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64510 - "POST /generate HTTP/1.1" 200 OK
+INFO:     Processing keyword: ダウンタイム最小水光注射
+INFO:     Searching for learning data for keyword: ダウンタイム最小水光注射...
+INFO:     RAG: Translated 'ダウンタイム最小水光注射' to '다운타임 최소화 물광주사' for search.
+2026-02-10 08:30:52,163 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent%2Curl%2Csource%3Asources%28name%29&or=%28title.ilike.%25%E3%83%80%E3%82%A6%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%A0%E6%9C%80%E5%B0%8F%E6%B0%B4%E5%85%89%E6%B3%A8%E5%B0%84%25%2Ccontent.ilike.%25%E3%83%80%E3%82%A6%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%A0%E6%9C%80%E5%B0%8F%E6%B0%B4%E5%85%89%E6%B3%A8%E5%B0%84%25%2Ctitle.ilike.%25%EB%8B%A4%EC%9A%B4%ED%83%80%EC%9E%84+%EC%B5%9C%EC%86%8C%ED%99%94+%EB%AC%BC%EA%B4%91%EC%A3%BC%EC%82%AC%25%2Ccontent.ilike.%25%EB%8B%A4%EC%9A%B4%ED%83%80%EC%9E%84+%EC%B5%9C%EC%86%8C%ED%99%94+%EB%AC%BC%EA%B4%91%EC%A3%BC%EC%82%AC%25%29&limit=3 "HTTP/2 200 OK"
+INFO:     RAG: No relevant learning data found (count=0).
+INFO:     Generating article using Gemini Grounding...
+2026-02-10 08:30:52,256 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/categories?select=id%2Cname%2Cslug "HTTP/2 200 OK"
+2026-02-10 08:31:00,374 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/categories?select=id&name=eq.%E7%BE%8E%E5%AE%B9 "HTTP/2 200 OK"
+2026-02-10 08:31:00,470 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/categories?select=id&slug=eq.%E7%BE%8E%E5%AE%B9 "HTTP/2 200 OK"
+2026-02-10 08:31:00,601 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/categories "HTTP/2 201 Created"
+INFO:     Assigned category: 美容 (ID: da68f2e2-f821-4c15-aae7-875e86f0be1d)
+2026-02-10 08:31:00,701 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/categories?select=id&name=eq.%E7%BE%8E%E5%AE%B9 "HTTP/2 200 OK"
+INFO:     Assigned category: 美容 (ID: da68f2e2-f821-4c15-aae7-875e86f0be1d)
+INFO:     Generating thumbnail with AI...
+INFO:     Generated Image Prompt: A macro shot of porcelain skin illuminated by soft, cinematic lighting, evoking a 'Water Glow' (Mizukagami) effect. The skin appears flawless and dewy, reflecting light like a still pond. Subtle reflections of light blue and soft pink medical colors hint at a scientific, yet gentle aesthetic. The focus is razor sharp, highlighting the skin's texture and natural radiance. 8k resolution, photorealistic. No text, no charts, no gore. Expensive, trusted, gentle. Clean wide shot also acceptable if unable to achieve macro quality.
+
+INFO:     Image generated successfully: /generated/generated_a9506832.png
+2026-02-10 08:31:12,751 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/articles "HTTP/2 201 Created"
+INFO:     Saved grounded draft for ダウンタイム最小水光注射 in category 美容
+INFO:     127.0.0.1:64991 - "OPTIONS /media/crawl HTTP/1.1" 200 OK
+2026-02-10 08:40:33,386 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?select=%2A&is_active=eq.True "HTTP/2 200 OK"
+INFO:     127.0.0.1:64991 - "POST /media/crawl HTTP/1.1" 200 OK
+2026-02-10 08:40:33,389 - INFO - Starting media crawl...
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1770680433.390432 7197046 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+2026-02-10 08:40:34,083 - INFO - Crawling source: 약업신문(Yakup) (https://m.yakup.com/)
+2026-02-10 08:40:34,124 - INFO - Navigating to: https://m.yakup.com/
+2026-02-10 08:40:34,425 - ERROR - Error fetching https://m.yakup.com/: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://m.yakup.com/
+Call log:
+  - navigating to "https://m.yakup.com/", waiting until "domcontentloaded"
+
+2026-02-10 08:40:34,429 - WARNING - No content found for https://m.yakup.com/
+2026-02-10 08:40:34,429 - INFO - Crawling source: 대한화장품산업연구원(KCII) (https://www.kcii.re.kr/)
+2026-02-10 08:40:34,465 - INFO - Navigating to: https://www.kcii.re.kr/
+2026-02-10 08:40:35,257 - ERROR - Error fetching https://www.kcii.re.kr/: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+2026-02-10 08:40:35,261 - WARNING - No content found for https://www.kcii.re.kr/
+2026-02-10 08:40:35,261 - INFO - Crawling source: カンナムオンニ（日本版） (https://www.gangnamunni.com/jp)
+2026-02-10 08:40:35,301 - INFO - Navigating to: https://www.gangnamunni.com/jp
+2026-02-10 08:40:36,672 - WARNING - No content found for https://www.gangnamunni.com/jp
+2026-02-10 08:40:36,672 - INFO - Crawling source: 강남언니 (https://www.gangnamunni.com/)
+2026-02-10 08:40:36,706 - INFO - Navigating to: https://www.gangnamunni.com/
+2026-02-10 08:40:37,618 - WARNING - No content found for https://www.gangnamunni.com/
+2026-02-10 08:40:37,619 - INFO - Crawling source: 국가법령정보센터(화장품법) (https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=180782)
+2026-02-10 08:40:37,658 - INFO - Navigating to: https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=180782
+2026-02-10 08:40:40,968 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:40:41,030 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.ae435b8e-0f28-4517-b65f-687ac501c440 "HTTP/2 200 OK"
+2026-02-10 08:40:41,032 - INFO - Successfully crawled and saved: https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=180782
+2026-02-10 08:40:41,032 - INFO - Crawling source: 대한화장품협회(KCIA/KCA) (https://www.kcia.or.kr/)
+2026-02-10 08:40:41,069 - INFO - Navigating to: https://www.kcia.or.kr/
+2026-02-10 08:40:43,561 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:40:43,620 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.a9866c07-db2b-42cb-9c60-50b33bdc973d "HTTP/2 200 OK"
+2026-02-10 08:40:43,620 - INFO - Successfully crawled and saved: https://www.kcia.or.kr/
+2026-02-10 08:40:43,620 - INFO - Crawling source: 대한피부과학회 (https://www.derma.or.kr/)
+2026-02-10 08:40:43,657 - INFO - Navigating to: https://www.derma.or.kr/
+2026-02-10 08:40:45,975 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:40:46,028 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.abcdba34-8f0e-4eb7-b448-587f048ec16a "HTTP/2 200 OK"
+2026-02-10 08:40:46,029 - INFO - Successfully crawled and saved: https://www.derma.or.kr/
+2026-02-10 08:40:46,029 - INFO - Crawling source: 대한피부과의사회 (https://www.akd.or.kr/)
+2026-02-10 08:40:46,068 - INFO - Navigating to: https://www.akd.or.kr/
+2026-02-10 08:40:47,488 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:40:47,542 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.606f30c8-b59f-4e73-9105-e5149642f2f5 "HTTP/2 200 OK"
+2026-02-10 08:40:47,542 - INFO - Successfully crawled and saved: https://www.akd.or.kr/
+2026-02-10 08:40:47,542 - INFO - Crawling source: 대한성형외과학회 (https://www.plasticsurgery.or.kr/)
+2026-02-10 08:40:47,583 - INFO - Navigating to: https://www.plasticsurgery.or.kr/
+2026-02-10 08:40:50,144 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:40:50,197 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.a8502f9d-8825-47c9-ad99-26f12cee2932 "HTTP/2 200 OK"
+2026-02-10 08:40:50,197 - INFO - Successfully crawled and saved: https://www.plasticsurgery.or.kr/
+2026-02-10 08:40:50,197 - INFO - Crawling source: ホットペッパービューティー 美容クリニック (https://clinic.beauty.hotpepper.jp/)
+2026-02-10 08:40:50,245 - INFO - Navigating to: https://clinic.beauty.hotpepper.jp/
+2026-02-10 08:40:51,253 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:40:51,306 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.5e6f9058-7e14-48a4-8b49-18d5d1ebf995 "HTTP/2 200 OK"
+2026-02-10 08:40:51,307 - INFO - Successfully crawled and saved: https://clinic.beauty.hotpepper.jp/
+2026-02-10 08:40:51,307 - INFO - Crawling source: 메디파나뉴스 (https://www.medipana.com/)
+2026-02-10 08:40:51,345 - INFO - Navigating to: https://www.medipana.com/
+2026-02-10 08:40:57,515 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:40:57,573 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.0406c68d-0b6e-46b1-a092-4fd1d46a0f7e "HTTP/2 200 OK"
+2026-02-10 08:40:57,574 - INFO - Successfully crawled and saved: https://www.medipana.com/
+2026-02-10 08:40:57,574 - INFO - Crawling source: Medimee（メディミー） (https://medimee.com/)
+2026-02-10 08:40:57,616 - INFO - Navigating to: https://medimee.com/
+2026-02-10 08:40:58,903 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:40:58,958 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.75e535ff-b9a9-479b-aef1-c8dc18c6cc06 "HTTP/2 200 OK"
+2026-02-10 08:40:58,958 - INFO - Successfully crawled and saved: https://medimee.com/
+2026-02-10 08:40:58,958 - INFO - Crawling source: 클래시스(CLASSYS) (https://classys.co.kr/)
+2026-02-10 08:40:58,994 - INFO - Navigating to: https://classys.co.kr/
+2026-02-10 08:41:01,667 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:01,721 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.c197616f-68e0-487e-8982-106a20f2c572 "HTTP/2 200 OK"
+2026-02-10 08:41:01,722 - INFO - Successfully crawled and saved: https://classys.co.kr/
+2026-02-10 08:41:01,722 - INFO - Crawling source: FASHIONSNAP（BEAUTY） (https://www.fashionsnap.com/beauty/)
+2026-02-10 08:41:01,759 - INFO - Navigating to: https://www.fashionsnap.com/beauty/
+2026-02-10 08:41:02,397 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:02,458 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.9c936881-29cf-4196-bbcd-95629720dfea "HTTP/2 200 OK"
+2026-02-10 08:41:02,459 - INFO - Successfully crawled and saved: https://www.fashionsnap.com/beauty/
+2026-02-10 08:41:02,459 - INFO - Crawling source: BeautyTech.jp (https://beautytech.jp/)
+2026-02-10 08:41:02,498 - INFO - Navigating to: https://beautytech.jp/
+2026-02-10 08:41:03,543 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:03,599 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.f3213734-b67e-49bd-a562-34cd15a08344 "HTTP/2 200 OK"
+2026-02-10 08:41:03,599 - INFO - Successfully crawled and saved: https://beautytech.jp/
+2026-02-10 08:41:03,599 - INFO - Crawling source: 週刊粧業オンライン (https://www.syogyo.jp/)
+2026-02-10 08:41:03,640 - INFO - Navigating to: https://www.syogyo.jp/
+2026-02-10 08:41:04,951 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:05,007 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.4f92fae8-869d-4611-87ef-0b6702af95ce "HTTP/2 200 OK"
+2026-02-10 08:41:05,008 - INFO - Successfully crawled and saved: https://www.syogyo.jp/
+2026-02-10 08:41:05,008 - INFO - Crawling source: @cosme (https://www.cosme.net/)
+2026-02-10 08:41:05,048 - INFO - Navigating to: https://www.cosme.net/
+2026-02-10 08:41:05,816 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:05,872 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.b70ddff2-47e6-4753-941c-242fd146aa5f "HTTP/2 200 OK"
+2026-02-10 08:41:05,873 - INFO - Successfully crawled and saved: https://www.cosme.net/
+2026-02-10 08:41:05,873 - INFO - Crawling source: トリビュー (https://tribeau.jp/)
+2026-02-10 08:41:05,909 - INFO - Navigating to: https://tribeau.jp/
+2026-02-10 08:41:07,876 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:07,933 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.29b27617-4471-4035-89ce-cc378837e14a "HTTP/2 200 OK"
+2026-02-10 08:41:07,933 - INFO - Successfully crawled and saved: https://tribeau.jp/
+2026-02-10 08:41:07,933 - INFO - Crawling source: 美容医療の口コミ広場 (https://report.clinic/)
+2026-02-10 08:41:07,969 - INFO - Navigating to: https://report.clinic/
+2026-02-10 08:41:08,869 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:08,925 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.1fc0d8b6-c234-4e79-84e8-1e0c3c383b0a "HTTP/2 200 OK"
+2026-02-10 08:41:08,925 - INFO - Successfully crawled and saved: https://report.clinic/
+2026-02-10 08:41:08,925 - INFO - Crawling source: LuLINE Magazine (https://lulinecast.jp/magazine/)
+2026-02-10 08:41:08,964 - INFO - Navigating to: https://lulinecast.jp/magazine/
+2026-02-10 08:41:10,581 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:10,638 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.9becb852-82b5-42b6-a6f4-c2d3013c18fd "HTTP/2 200 OK"
+2026-02-10 08:41:10,638 - INFO - Successfully crawled and saved: https://lulinecast.jp/magazine/
+2026-02-10 08:41:10,638 - INFO - Crawling source: メゾンドボーテ (https://beauty.beaute.tokyo.jp/)
+2026-02-10 08:41:10,677 - INFO - Navigating to: https://beauty.beaute.tokyo.jp/
+2026-02-10 08:41:12,553 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:12,608 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.8394600c-3242-4c90-8dbd-3bf51eeff75a "HTTP/2 200 OK"
+2026-02-10 08:41:12,609 - INFO - Successfully crawled and saved: https://beauty.beaute.tokyo.jp/
+2026-02-10 08:41:12,609 - INFO - Crawling source: Melty（メルティ） (https://melty-app.com/)
+2026-02-10 08:41:12,646 - INFO - Navigating to: https://melty-app.com/
+2026-02-10 08:41:13,417 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:13,479 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.b0233a58-5b8e-47ab-94c6-550cad640a89 "HTTP/2 200 OK"
+2026-02-10 08:41:13,480 - INFO - Successfully crawled and saved: https://melty-app.com/
+2026-02-10 08:41:13,480 - INFO - Crawling source: 体入ドットコムPLUS (https://www.tainew.com/plus/)
+2026-02-10 08:41:13,515 - INFO - Navigating to: https://www.tainew.com/plus/
+2026-02-10 08:41:14,707 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:14,761 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.e3d8a115-c1d2-4a0f-b539-d3cf83512857 "HTTP/2 200 OK"
+2026-02-10 08:41:14,761 - INFO - Successfully crawled and saved: https://www.tainew.com/plus/
+2026-02-10 08:41:14,761 - INFO - Crawling source: 高須クリニック (https://www.takasu.co.jp/)
+2026-02-10 08:41:14,800 - INFO - Navigating to: https://www.takasu.co.jp/
+2026-02-10 08:41:15,548 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 201 Created"
+2026-02-10 08:41:15,603 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.afccf776-d5c6-463a-b84c-310074e22a6d "HTTP/2 200 OK"
+2026-02-10 08:41:15,604 - INFO - Successfully crawled and saved: https://www.takasu.co.jp/
+2026-02-10 08:41:15,604 - INFO - Crawling source: WWDJAPAN（BEAUTY） (https://www.wwdjapan.com/category/beauty)
+2026-02-10 08:41:15,643 - INFO - Navigating to: https://www.wwdjapan.com/category/beauty
+2026-02-10 08:41:16,345 - WARNING - No content found for https://www.wwdjapan.com/category/beauty
+2026-02-10 08:41:16,346 - INFO - Crawling source: キレイパス (https://kireipass.jp/)
+2026-02-10 08:41:16,389 - INFO - Navigating to: https://kireipass.jp/
+2026-02-10 08:41:17,019 - WARNING - No content found for https://kireipass.jp/
+2026-02-10 08:41:17,019 - INFO - Crawling source: Yahoo News (Life) (https://news.yahoo.co.jp/categories/life)
+2026-02-10 08:41:17,059 - INFO - Navigating to: https://news.yahoo.co.jp/categories/life
+2026-02-10 08:41:17,437 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:17,493 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.9933c1f9-98f3-4a8f-9780-02f17739040c "HTTP/2 200 OK"
+2026-02-10 08:41:17,494 - INFO - Successfully crawled and saved: https://news.yahoo.co.jp/categories/life
+2026-02-10 08:41:17,494 - INFO - Crawling source: 뷰티누리(Beautynury) (https://www.beautynury.com/?utm_source=chatgpt.com)
+2026-02-10 08:41:17,559 - INFO - Navigating to: https://www.beautynury.com/?utm_source=chatgpt.com
+2026-02-10 08:41:20,613 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:20,672 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.df8fd8f5-6170-40e9-bcab-50305ee0f953 "HTTP/2 200 OK"
+2026-02-10 08:41:20,672 - INFO - Successfully crawled and saved: https://www.beautynury.com/?utm_source=chatgpt.com
+2026-02-10 08:41:20,673 - INFO - Crawling source: 코스인코리아닷컴(COSIN Korea) (https://www.cosinkorea.com/)
+2026-02-10 08:41:20,711 - INFO - Navigating to: https://www.cosinkorea.com/
+2026-02-10 08:41:22,551 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:22,610 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.c45eb77b-8440-4a1f-8697-d9ca5743f0c0 "HTTP/2 200 OK"
+2026-02-10 08:41:22,610 - INFO - Successfully crawled and saved: https://www.cosinkorea.com/
+2026-02-10 08:41:22,610 - INFO - Crawling source: 코스모닝(Cosmorning) (https://cosmorning.com/)
+2026-02-10 08:41:22,646 - INFO - Navigating to: https://cosmorning.com/
+2026-02-10 08:41:25,178 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:25,232 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.10b259a0-5abf-4191-ba49-9d98afa4be02 "HTTP/2 200 OK"
+2026-02-10 08:41:25,233 - INFO - Successfully crawled and saved: https://cosmorning.com/
+2026-02-10 08:41:25,233 - INFO - Crawling source: THE K BEAUTY SCIENCE (https://www.thekbs.co.kr/)
+2026-02-10 08:41:25,271 - INFO - Navigating to: https://www.thekbs.co.kr/
+2026-02-10 08:41:30,211 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:30,275 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.0468ab5c-cf90-4960-856d-c3eff8d328f6 "HTTP/2 200 OK"
+2026-02-10 08:41:30,276 - INFO - Successfully crawled and saved: https://www.thekbs.co.kr/
+2026-02-10 08:41:30,276 - INFO - Crawling source: 코스메틱 매니아 뉴스(CMN) (https://www.cmn.co.kr/main/)
+2026-02-10 08:41:30,314 - INFO - Navigating to: https://www.cmn.co.kr/main/
+2026-02-10 08:41:31,986 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:32,049 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.78612209-ced7-426f-8e6d-62ac6868e8bf "HTTP/2 200 OK"
+2026-02-10 08:41:32,050 - INFO - Successfully crawled and saved: https://www.cmn.co.kr/main/
+2026-02-10 08:41:32,050 - INFO - Crawling source: 화해(화해 비즈니스/트렌드리포트) (https://business.hwahae.co.kr/)
+2026-02-10 08:41:32,089 - INFO - Navigating to: https://business.hwahae.co.kr/
+2026-02-10 08:41:32,620 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:32,679 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.435394f4-584c-457a-a8cb-7263b7635a45 "HTTP/2 200 OK"
+2026-02-10 08:41:32,679 - INFO - Successfully crawled and saved: https://business.hwahae.co.kr/
+2026-02-10 08:41:32,679 - INFO - Crawling source: 올리브영 매거진(OLIVE YOUNG Magazine) (https://m.oliveyoung.co.kr/m/mtn/magazine)
+2026-02-10 08:41:32,721 - INFO - Navigating to: https://m.oliveyoung.co.kr/m/mtn/magazine
+2026-02-10 08:41:33,580 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:33,635 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.dcb82ec4-5472-4dae-a448-b4c3bb7c34e0 "HTTP/2 200 OK"
+2026-02-10 08:41:33,635 - INFO - Successfully crawled and saved: https://m.oliveyoung.co.kr/m/mtn/magazine
+2026-02-10 08:41:33,635 - INFO - Crawling source: 얼루어 코리아(Allure Korea) (https://www.allurekorea.com/)
+2026-02-10 08:41:33,675 - INFO - Navigating to: https://www.allurekorea.com/
+2026-02-10 08:41:34,889 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:34,950 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.eb093c7b-b3eb-4d26-af23-2d41a16c5768 "HTTP/2 200 OK"
+2026-02-10 08:41:34,950 - INFO - Successfully crawled and saved: https://www.allurekorea.com/
+2026-02-10 08:41:34,950 - INFO - Crawling source: W Korea (BEAUTY) (https://www.wkorea.com/beauty/)
+2026-02-10 08:41:34,989 - INFO - Navigating to: https://www.wkorea.com/beauty/
+2026-02-10 08:41:36,252 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:36,304 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.22accdbd-ed1b-4205-b328-690c84561058 "HTTP/2 200 OK"
+2026-02-10 08:41:36,304 - INFO - Successfully crawled and saved: https://www.wkorea.com/beauty/
+2026-02-10 08:41:36,304 - INFO - Crawling source: 마리끌레르 코리아(BEAUTY) (https://www.marieclairekorea.com/category/beauty/)
+2026-02-10 08:41:36,343 - INFO - Navigating to: https://www.marieclairekorea.com/category/beauty/
+2026-02-10 08:41:38,092 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:38,168 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.d8010902-3e8f-45d5-8980-a465f6759331 "HTTP/2 200 OK"
+2026-02-10 08:41:38,168 - INFO - Successfully crawled and saved: https://www.marieclairekorea.com/category/beauty/
+2026-02-10 08:41:38,168 - INFO - Crawling source: 식품의약품안전처(MFDS) 화장품정책자료 (https://www.mfds.go.kr/wpge/m_639/de050601l001.do)
+2026-02-10 08:41:38,205 - INFO - Navigating to: https://www.mfds.go.kr/wpge/m_639/de050601l001.do
+2026-02-10 08:41:40,018 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:40,087 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.346fe2f5-b327-401d-9df3-2846ea94d71a "HTTP/2 200 OK"
+2026-02-10 08:41:40,088 - INFO - Successfully crawled and saved: https://www.mfds.go.kr/wpge/m_639/de050601l001.do
+2026-02-10 08:41:40,088 - INFO - Crawling source: 국가법령정보센터(화장품 안전기준 등에 관한 규정) (https://www.law.go.kr/admRulLsInfoP.do?admRulSeq=2100000236290)
+2026-02-10 08:41:40,126 - INFO - Navigating to: https://www.law.go.kr/admRulLsInfoP.do?admRulSeq=2100000236290
+2026-02-10 08:41:41,730 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:41,786 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.168b7f2c-a232-43ae-85bb-d574da542e92 "HTTP/2 200 OK"
+2026-02-10 08:41:41,787 - INFO - Successfully crawled and saved: https://www.law.go.kr/admRulLsInfoP.do?admRulSeq=2100000236290
+2026-02-10 08:41:41,787 - INFO - Crawling source: LIPS (https://lipscosme.com/)
+2026-02-10 08:41:41,823 - INFO - Navigating to: https://lipscosme.com/
+2026-02-10 08:41:42,928 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:42,988 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.ff889361-fa86-4f3f-9263-ae8346b9d4d4 "HTTP/2 200 OK"
+2026-02-10 08:41:42,988 - INFO - Successfully crawled and saved: https://lipscosme.com/
+2026-02-10 08:41:42,988 - INFO - Crawling source: ヒフコNEWS (https://biyouhifuko.com/news/)
+2026-02-10 08:41:43,023 - INFO - Navigating to: https://biyouhifuko.com/news/
+2026-02-10 08:41:43,879 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 200 OK"
+2026-02-10 08:41:43,938 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.c067b489-089c-41a1-8a74-3f3c717c9445 "HTTP/2 200 OK"
+2026-02-10 08:41:43,939 - INFO - Successfully crawled and saved: https://biyouhifuko.com/news/
+2026-02-10 08:41:43,939 - INFO - Crawling source: VOCE (https://i-voce.jp/)
+2026-02-10 08:41:43,976 - INFO - Navigating to: https://i-voce.jp/
+2026-02-10 08:41:44,668 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 201 Created"
+2026-02-10 08:41:44,735 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.f337272c-96ad-45c1-8e2e-6e898577c135 "HTTP/2 200 OK"
+2026-02-10 08:41:44,735 - INFO - Successfully crawled and saved: https://i-voce.jp/
+2026-02-10 08:41:44,735 - INFO - Crawling source: 美的.com (https://www.biteki.com/)
+2026-02-10 08:41:44,770 - INFO - Navigating to: https://www.biteki.com/
+2026-02-10 08:41:45,653 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 201 Created"
+2026-02-10 08:41:45,708 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.f7579515-5bae-4c0c-93ac-dab683c0bf6a "HTTP/2 200 OK"
+2026-02-10 08:41:45,709 - INFO - Successfully crawled and saved: https://www.biteki.com/
+2026-02-10 08:41:45,709 - INFO - Crawling source: ともこレディースクリニック (Tomoko Ladies Clinic) (https://www.tomo-cl.jp/blog/pill.html)
+2026-02-10 08:41:45,747 - INFO - Navigating to: https://www.tomo-cl.jp/blog/pill.html
+2026-02-10 08:41:45,785 - ERROR - Error fetching https://www.tomo-cl.jp/blog/pill.html: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.tomo-cl.jp/blog/pill.html
+Call log:
+  - navigating to "https://www.tomo-cl.jp/blog/pill.html", waiting until "domcontentloaded"
+
+2026-02-10 08:41:45,787 - WARNING - No content found for https://www.tomo-cl.jp/blog/pill.html
+2026-02-10 08:41:45,788 - INFO - Crawling source: ひまわりレディースクリニック (Himawari Ladies Clinic) (https://himawari-lc.com/blog/2021/06/08/1726)
+2026-02-10 08:41:45,825 - INFO - Navigating to: https://himawari-lc.com/blog/2021/06/08/1726
+2026-02-10 08:41:46,783 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?on_conflict=url "HTTP/2 201 Created"
+2026-02-10 08:41:46,845 - INFO - HTTP Request: PATCH https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/sources?id=eq.8fe0f5cc-f6db-4d10-99ca-130865ce2169 "HTTP/2 200 OK"
+2026-02-10 08:41:46,845 - INFO - Successfully crawled and saved: https://himawari-lc.com/blog/2021/06/08/1726
+2026-02-10 08:58:56,175 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 08:58:56,177 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:49711 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 08:58:58,311 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 08:58:58,314 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:49711 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 08:59:04,638 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 08:59:04,644 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:49719 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 08:59:06,839 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 08:59:06,842 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:49719 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 10:39:34,493 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 10:39:34,496 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:53243 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 10:39:36,479 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 10:39:36,483 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:53243 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 10:50:45,271 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 10:50:45,273 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:53590 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 10:50:47,624 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 10:50:47,628 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:53590 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 10:57:24,986 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 10:57:24,989 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:53913 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 10:57:27,010 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 10:57:27,013 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:53913 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 11:03:29,521 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 11:03:29,524 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:54162 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 11:03:31,409 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 11:03:31,411 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:54162 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 11:06:12,477 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 11:06:12,479 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:54252 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 11:06:14,269 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 11:06:14,270 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:54252 - "GET /trends HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54252 - "POST /generate HTTP/1.1" 200 OK
+INFO:     Processing keyword: レチノール
+INFO:     Searching for learning data for keyword: レチノール...
+INFO:     RAG: Translated 'レチノール' to '레티놀' for search.
+2026-02-10 11:06:17,838 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent%2Curl%2Csource%3Asources%28name%29&or=%28title.ilike.%25%E3%83%AC%E3%83%81%E3%83%8E%E3%83%BC%E3%83%AB%25%2Ccontent.ilike.%25%E3%83%AC%E3%83%81%E3%83%8E%E3%83%BC%E3%83%AB%25%2Ctitle.ilike.%25%EB%A0%88%ED%8B%B0%EB%86%80%25%2Ccontent.ilike.%25%EB%A0%88%ED%8B%B0%EB%86%80%25%29&limit=3 "HTTP/2 200 OK"
+INFO:     RAG: Retrieved 1 articles for learning context.
+INFO:     Generating article using Gemini Grounding...
+2026-02-10 11:06:17,891 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/categories?select=id%2Cname%2Cslug "HTTP/2 200 OK"
+2026-02-10 11:06:25,931 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/categories?select=id&name=eq.%E7%BE%8E%E5%AE%B9 "HTTP/2 200 OK"
+INFO:     Assigned category: 美容 (ID: da68f2e2-f821-4c15-aae7-875e86f0be1d)
+2026-02-10 11:06:25,978 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/categories?select=id&name=eq.%E7%BE%8E%E5%AE%B9 "HTTP/2 200 OK"
+INFO:     Assigned category: 美容 (ID: da68f2e2-f821-4c15-aae7-875e86f0be1d)
+INFO:     Generating thumbnail with AI...
+INFO:     Generated Image Prompt: A close-up, photorealistic 8k image capturing the essence of "water glow" (Mizukagami) on porcelain skin. The subject is a young Japanese woman, her skin exhibiting an ethereal, glass-like translucence. Soft pastel medical colors predominate the scene – white, light blue, and soft pink subtly highlight the natural beauty. Cinematic lighting emphasizes the delicate texture and subtle hydration of the skin. The focus is on capturing the revolutionary impact of retinol through the visual representation of perfect skin. A clean wide shot showcasing the delicate features and flawless complexion. Avoid harsh lines or dramatic shadows. The overall atmosphere is expensive, trusted, scientific yet gentle, evoking a sense of calm and assurance. No text, charts, or any depiction of skin irritation or adverse effects are permitted.
+
+INFO:     Image generated successfully: /generated/generated_4f4f1b93.png
+2026-02-10 11:06:39,351 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/articles "HTTP/2 201 Created"
+INFO:     Saved grounded draft for レチノール in category 美容

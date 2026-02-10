@@ -115,71 +115,7 @@ export default function DashboardPage() {
                 </div>
             </header>
 
-            {/* KPI Cards */}
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-                <Card className="shadow-sm border-stone-100">
-                    <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium text-stone-600">Total Articles</CardTitle>
-                        <FileText className="h-4 w-4 text-emerald-600" />
-                    </CardHeader>
-                    <CardContent>
-                        <div className="text-2xl font-bold text-stone-800">{articles.length}</div>
-                        <p className="text-xs text-stone-400">Total generated</p>
-                    </CardContent>
-                </Card>
-                <Card className="shadow-sm border-stone-100">
-                    <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium text-stone-600">Pending Review</CardTitle>
-                        <Activity className="h-4 w-4 text-amber-500" />
-                    </CardHeader>
-                    <CardContent>
-                        <div className="text-2xl font-bold text-stone-800">
-                            {articles.filter(a => a.status === 'draft').length}
-                        </div>
-                        <p className="text-xs text-stone-400">Drafts</p>
-                    </CardContent>
-                </Card>
-                <Card className="shadow-sm border-stone-100">
-                    <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium text-stone-600">Active Users</CardTitle>
-                        <Users className="h-4 w-4 text-blue-500" />
-                    </CardHeader>
-                    <CardContent>
-                        <div className="text-2xl font-bold text-stone-800">573</div>
-                        <p className="text-xs text-stone-400">+201 this month</p>
-                    </CardContent>
-                </Card>
-                <Card className="shadow-sm border-stone-100 bg-gradient-to-br from-white to-rose-50/50">
-                    <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium text-rose-700">Trend Keywords</CardTitle>
-                        <div className="flex items-center gap-2">
-                            <button
-                                onClick={fetchTrends}
-                                disabled={loadingTrends}
-                                className="text-rose-300 hover:text-rose-600 transition-colors p-1"
-                                title="Refresh Trends"
-                            >
-                                <RefreshCw className={`h-3 w-3 ${loadingTrends ? 'animate-spin' : ''}`} />
-                            </button>
-                            <TrendingUp className="h-4 w-4 text-rose-500" />
-                        </div>
-                    </CardHeader>
-                    <CardContent>
-                        {loadingTrends ? (
-                            <div className="flex items-center gap-2 text-xs text-stone-400 animate-pulse">
-                                <Loader2 className="h-3 w-3 animate-spin" /> Analysis in progress...
-                            </div>
-                        ) : trends.length > 0 ? (
-                            <div className="text-sm font-medium text-rose-600 flex flex-wrap gap-1">
-                                {trends.slice(0, 10).map(t => <span key={t}>#{t}</span>)}
-                            </div>
-                        ) : (
-                            <div className="text-xs text-stone-400">No data</div>
-                        )}
-                        <p className="text-xs text-rose-400/80 mt-1">AI Analysis 2026</p>
-                    </CardContent>
-                </Card>
-            </div>
+
 
             <div className="grid gap-6 md:grid-cols-7">
                 {/* Main Action Area */}

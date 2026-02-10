@@ -14,8 +14,21 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "美活クラブAURA | Beauty & Medical Column",
-  description: "最新の美容・医療トレンドをお届けする公式ブログ",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://aura-beauty.jp"),
+  title: {
+    default: "美活クラブAURA | Beauty & Medical Column",
+    template: "%s | 美活クラブAURA"
+  },
+  description: "最新の美容・医療トレンド、クリニック選びのポイントを専門家監修でお届けする公式ブログメディア。",
+  openGraph: {
+    type: "website",
+    locale: "ja_JP",
+    url: "/",
+    siteName: "美活クラブAURA",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({

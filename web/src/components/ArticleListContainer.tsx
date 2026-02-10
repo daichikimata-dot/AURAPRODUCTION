@@ -5,26 +5,51 @@ import { useState, useEffect } from "react";
 import ArticleCard from "./ArticleCard";
 import { supabase } from "@/lib/supabase";
 
-const CATEGORIES = ["All", "Korean Beauty", "Medical Skincare", "Anti-Aging", "Lifestyle"];
+interface ArticleListContainerProps {
+    limit?: number;
+}
 
-export default function ArticleListContainer() {
-    const [activeCategory, setActiveCategory] = useState("All");
+export default function ArticleListContainer({ limit }: ArticleListContainerProps) {
+    const [activeCategoryId, setActiveCategoryId] = useState("All");
+    const [categories, setCategories] = useState<any[]>([]);
     const [articles, setArticles] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetchArticles();
+        fetchCategories();
     }, []);
+
+    useEffect(() => {
+        fetchArticles();
+    }, [activeCategoryId, limit]);
+
+    const fetchCategories = async () => {
+        const { data, error } = await supabase
+            .from('categories')
+            .select('*')
+            .order('name');
+
+        if (data) {
+            setCategories(data);
+        }
+    };
 
     const fetchArticles = async () => {
         setLoading(true);
         try {
-            // Only fetch published articles
             let query = supabase
                 .from('articles')
-                .select('*')
+                .select('*, category:categories(name)')
                 .eq('status', 'published')
-                .order('published_at', { ascending: false });
+                .order('created_at', { ascending: false }); // User requested latest first (usually published_at or created_at)
+
+            if (activeCategoryId !== "All") {
+                query = query.eq('category_id', activeCategoryId);
+            }
+
+            if (limit) {
+                query = query.limit(limit);
+            }
 
             const { data, error } = await query;
 
@@ -40,23 +65,6 @@ export default function ArticleListContainer() {
         }
     };
 
-    const filteredArticles = activeCategory === "All"
-        ? articles
-        : articles.filter(a => {
-            // If category is a relation, need to adjust. For now assuming simple filtering or matching logic
-            // The schema has category_id, so we might need to fetch categories or just filter by implicit knowledge
-            // For this quick fix, let's just show all if filtering is complex, or rely on client side filter if possible.
-            // Actually, let's just fetch all published and filter client side for now.
-            // MOCK implementation used string constants. Real DB uses UUIDs.
-            // We need to fetch category name to filter by "Korean Beauty" etc.
-            // Let's update the fetch to include categories.
-            return true; // Placeholder until we fix category logic
-        });
-
-    // Re-fetch with category logic
-    // Actually, let's improve the fetch to include categories(name)
-    // and filter based on that.
-
     return (
         <div className="w-full max-w-6xl px-6 pb-24 mx-auto">
             <div className="flex flex-col md:flex-row items-center justify-between mb-10 gap-6">
@@ -65,18 +73,26 @@ export default function ArticleListContainer() {
                     <span className="absolute -bottom-2 left-0 w-12 h-1 bg-primary rounded-full" />
                 </h2>
 
-                {/* Filter Pills - (Temporary disabled valid filtering until categories are aligned) */}
                 <div className="flex flex-wrap gap-2 justify-center">
-                    {CATEGORIES.map((cat) => (
+                    <button
+                        onClick={() => setActiveCategoryId("All")}
+                        className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeCategoryId === "All"
+                            ? "bg-primary text-white shadow-md transform scale-105"
+                            : "bg-white text-stone-500 border border-stone-200 hover:border-primary/50 hover:text-primary"
+                            }`}
+                    >
+                        All
+                    </button>
+                    {categories.map((cat) => (
                         <button
-                            key={cat}
-                            onClick={() => setActiveCategory(cat)}
-                            className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeCategory === cat
+                            key={cat.id}
+                            onClick={() => setActiveCategoryId(cat.id)}
+                            className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeCategoryId === cat.id
                                 ? "bg-primary text-white shadow-md transform scale-105"
                                 : "bg-white text-stone-500 border border-stone-200 hover:border-primary/50 hover:text-primary"
                                 }`}
                         >
-                            {cat}
+                            {cat.name}
                         </button>
                     ))}
                 </div>
@@ -99,10 +115,11 @@ export default function ArticleListContainer() {
             <div className="mt-12 text-center">
                 <Link href="/blog" className="inline-flex items-center gap-2 text-stone-500 hover:text-primary transition-colors border-b border-transparent hover:border-primary pb-1">
                     <span>View All Articles</span>
-                    <span>&rarr;</span>
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
                 </Link>
             </div>
         </div>
     );
 }
-

@@ -1,25 +1,25 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { supabase } from '@/lib/supabase';
+import { useState, useEffect } from "react";
+import { supabase } from "@/lib/supabase";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Link as LinkIcon, ExternalLink, Edit, Save, Plus, X, Copy, Trash2 } from "lucide-react";
-import { format } from 'date-fns';
+import { Label } from "@/components/ui/label";
+import { Edit, Trash2, ExternalLink } from "lucide-react";
 
 export default function LinksPage() {
     const [links, setLinks] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
     const [isEditing, setIsEditing] = useState(false);
-    const [editId, setEditId] = useState<string | null>(null);
+    const [currentLink, setCurrentLink] = useState<any>(null);
 
     // Form State
     const [formData, setFormData] = useState({
-        name: '',
-        url: '',
-        key: ''
+        name: "",
+        url: "",
+        type: "affiliate", // 'affiliate', 'line', 'clinic'
+        key: "",
     });
 
     useEffect(() => {
@@ -34,7 +34,7 @@ export default function LinksPage() {
             .order('created_at', { ascending: false });
 
         if (error) {
-            console.error('Error fetching links:', error);
+            console.error("Error fetching links:", error);
         } else {
             setLinks(data || []);
         }
@@ -42,193 +42,183 @@ export default function LinksPage() {
     };
 
     const handleSave = async () => {
-        if (!formData.name || !formData.url) return alert('名称とURLは必須です');
+        if (!formData.name || !formData.url) {
+            alert("Name and URL are required");
+            return;
+        }
+
+        // Fix: Convert empty string key to null to avoid unique constraint violation
+        // Postgres unique allows multiple NULLs but only one empty string
+        const payload = {
+            ...formData,
+            key: formData.key && formData.key.trim() !== "" ? formData.key.trim() : null
+        };
 
         try {
-            if (isEditing && editId) {
-                // Update
+            if (isEditing && currentLink) {
                 const { error } = await supabase
                     .from('links')
-                    .update({
-                        name: formData.name,
-                        url: formData.url,
-                        key: formData.key || null,
-                        updated_at: new Date().toISOString()
-                    })
-                    .eq('id', editId);
+                    .update(payload)
+                    .eq('id', currentLink.id);
                 if (error) throw error;
+                alert("Updated successfully");
             } else {
-                // Create
                 const { error } = await supabase
                     .from('links')
-                    .insert([{
-                        name: formData.name,
-                        url: formData.url,
-                        key: formData.key || null,
-                    }]);
+                    .insert(payload);
                 if (error) throw error;
+                alert("Created successfully");
             }
-
-            // Reset
             fetchLinks();
             resetForm();
         } catch (e: any) {
-            alert(`エラーが発生しました: ${e.message}`);
+            console.error(e);
+            alert(`Error: ${e.message}`);
         }
     };
 
     const handleDelete = async (id: string) => {
-        if (!window.confirm('本当に削除しますか？')) return;
-        try {
-            const { error } = await supabase.from('links').delete().eq('id', id);
-            if (error) throw error;
-            setLinks(links.filter(l => l.id !== id));
-        } catch (e: any) {
-            alert(`削除エラー: ${e.message}`);
+        if (!confirm("Are you sure?")) return;
+        const { error } = await supabase.from('links').delete().eq('id', id);
+        if (error) {
+            alert("Failed to delete");
+        } else {
+            fetchLinks();
         }
     };
 
     const startEdit = (link: any) => {
+        setIsEditing(true);
+        setCurrentLink(link);
         setFormData({
             name: link.name,
             url: link.url,
-            key: link.key || ''
+            type: link.type || "affiliate",
+            key: link.key || "",
         });
-        setEditId(link.id);
-        setIsEditing(true);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     const resetForm = () => {
-        setFormData({ name: '', url: '', key: '' });
         setIsEditing(false);
-        setEditId(null);
+        setCurrentLink(null);
+        setFormData({ name: "", url: "", type: "affiliate", key: "" });
     };
 
-    const copyToClipboard = (text: string) => {
-        navigator.clipboard.writeText(text);
-        alert('コピーしました');
+    const getTypeLabel = (type: string) => {
+        switch (type) {
+            case 'line': return 'LINE公式';
+            case 'clinic': return 'クリニック';
+            case 'affiliate': return 'アフィリエイト';
+            default: return type;
+        }
     };
 
     return (
-        <div className="space-y-6 max-w-5xl mx-auto">
-            <header className="flex justify-between items-center">
-                <div>
-                    <h2 className="text-2xl font-bold tracking-tight text-slate-900 flex items-center gap-2">
-                        <LinkIcon className="h-6 w-6 text-indigo-500" />
-                        リンク管理
-                    </h2>
-                    <p className="text-sm text-slate-500">アフィリエイトリンクや内部リンクの一元管理</p>
-                </div>
-            </header>
+        <div className="space-y-6">
+            <div className="flex items-center justify-between">
+                <h2 className="text-3xl font-bold tracking-tight">Link Manager</h2>
+            </div>
 
-            {/* Input Form */}
-            <Card className={`border-slate-200 shadow-sm ${isEditing ? 'border-indigo-300 ring-1 ring-indigo-100' : ''}`}>
-                <CardHeader className="pb-3">
-                    <CardTitle className="text-sm font-bold text-slate-700 flex items-center justify-between">
-                        {isEditing ? 'リンクを編集' : '新規リンク登録'}
-                        {isEditing && (
-                            <Button variant="ghost" size="sm" onClick={resetForm} className="h-6 text-slate-400">
-                                <X className="h-4 w-4" /> キャンセル
-                            </Button>
-                        )}
-                    </CardTitle>
-                </CardHeader>
-                <CardContent>
-                    <div className="grid gap-4 md:grid-cols-3 items-end">
-                        <div className="space-y-1.5">
-                            <label className="text-xs font-medium text-slate-600">リンク名称 (必須)</label>
+            <div className="grid gap-6 md:grid-cols-2">
+                {/* Form Card */}
+                <Card>
+                    <CardHeader>
+                        <CardTitle>{isEditing ? "Edit Link" : "Add New Link"}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                        <div className="space-y-2">
+                            <Label>Type</Label>
+                            <select
+                                className="w-full p-2 border rounded-md"
+                                value={formData.type}
+                                onChange={(e) => setFormData({ ...formData, type: e.target.value })}
+                            >
+                                <option value="affiliate">アフィリエイト (Article Ad)</option>
+                                <option value="line">LINE公式 (Footer/CTA)</option>
+                                <option value="clinic">おすすめクリニック (Sidebar/Banner)</option>
+                            </select>
+                        </div>
+                        <div className="space-y-2">
+                            <Label>Name (Display Text)</Label>
                             <Input
-                                placeholder="例: 湘南美容外科 脱毛LP"
+                                placeholder="Example Campaign"
                                 value={formData.name}
-                                onChange={e => setFormData({ ...formData, name: e.target.value })}
+                                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                             />
                         </div>
-                        <div className="space-y-1.5 flex-1">
-                            <label className="text-xs font-medium text-slate-600">SEO用キー (任意/英数字)</label>
-                            <Input
-                                placeholder="例: sbc-datsumo"
-                                value={formData.key}
-                                onChange={e => setFormData({ ...formData, key: e.target.value })}
-                            />
-                        </div>
-                        <div className="space-y-1.5 md:col-span-1">
-                            <label className="text-xs font-medium text-slate-600">遷移先URL (必須)</label>
+                        <div className="space-y-2">
+                            <Label>URL</Label>
                             <Input
                                 placeholder="https://..."
                                 value={formData.url}
-                                onChange={e => setFormData({ ...formData, url: e.target.value })}
+                                onChange={(e) => setFormData({ ...formData, url: e.target.value })}
                             />
                         </div>
-                    </div>
-                    <div className="mt-4 flex justify-end">
-                        <Button onClick={handleSave} className="gap-2 bg-indigo-600 hover:bg-indigo-700">
-                            {isEditing ? <Save className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
-                            {isEditing ? '更新する' : '登録する'}
-                        </Button>
-                    </div>
-                </CardContent>
-            </Card>
+                        <div className="space-y-2">
+                            <Label>Key / ID (Optional - for code reference)</Label>
+                            <Input
+                                placeholder="campaign-spring-2026"
+                                value={formData.key}
+                                onChange={(e) => setFormData({ ...formData, key: e.target.value })}
+                            />
+                        </div>
+                        <div className="flex gap-2 pt-4">
+                            <Button onClick={handleSave} className="flex-1">
+                                {isEditing ? "Update Link" : "Create Link"}
+                            </Button>
+                            {isEditing && (
+                                <Button variant="outline" onClick={resetForm}>Cancel</Button>
+                            )}
+                        </div>
+                    </CardContent>
+                </Card>
 
-            {/* Links List */}
-            <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
-                <div className="px-6 py-4 border-b border-slate-100 bg-slate-50/50 flex justify-between items-center">
-                    <h3 className="font-semibold text-slate-700">登録済みリンク</h3>
-                    <span className="text-xs text-slate-400">{links.length} items</span>
-                </div>
-
-                {loading ? (
-                    <div className="p-12 text-center text-slate-400">読み込み中...</div>
-                ) : links.length === 0 ? (
-                    <div className="p-12 text-center text-slate-400">・リンクはまだ登録されていません</div>
-                ) : (
-                    <div className="divide-y divide-slate-100">
-                        {links.map((link) => (
-                            <div key={link.id} className="group flex items-center gap-4 p-4 hover:bg-slate-50 transition-colors">
-                                <div className="p-2 bg-indigo-50 rounded text-indigo-500">
-                                    <LinkIcon className="h-5 w-5" />
-                                </div>
-                                <div className="flex-1 min-w-0">
-                                    <div className="flex items-center gap-2 mb-1">
-                                        <h4 className="font-bold text-slate-800">{link.name}</h4>
-                                        {link.key && (
-                                            <Badge variant="outline" className="text-[10px] font-mono bg-slate-100 text-slate-500 border-slate-200">
-                                                {link.key}
-                                            </Badge>
-                                        )}
-                                        <span className="text-xs text-slate-400 ml-auto mr-4">
-                                            {format(new Date(link.updated_at), 'yyyy.MM.dd')} 更新
-                                        </span>
+                {/* List Card */}
+                <Card className="md:col-span-1">
+                    <CardHeader>
+                        <CardTitle>Existing Links</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        {loading ? (
+                            <div>Loading...</div>
+                        ) : links.length === 0 ? (
+                            <div className="text-stone-400">No links found.</div>
+                        ) : (
+                            <div className="space-y-4">
+                                {links.map(link => (
+                                    <div key={link.id} className="flex items-center justify-between p-3 border rounded-lg bg-stone-50">
+                                        <div className="min-w-0 flex-1 mr-4">
+                                            <div className="flex items-center gap-2 mb-1">
+                                                <span className={`text-[10px] uppercase px-2 py-0.5 rounded-full font-bold ${link.type === 'line' ? 'bg-green-100 text-green-700' :
+                                                    link.type === 'clinic' ? 'bg-blue-100 text-blue-700' :
+                                                        'bg-orange-100 text-orange-700'
+                                                    }`}>
+                                                    {getTypeLabel(link.type)}
+                                                </span>
+                                                <span className="font-medium truncate">{link.name}</span>
+                                            </div>
+                                            <div className="text-xs text-stone-500 truncate flex items-center gap-1">
+                                                <ExternalLink className="w-3 h-3" />
+                                                <a href={link.url} target="_blank" rel="noopener noreferrer" className="hover:underline text-blue-500">
+                                                    {link.url}
+                                                </a>
+                                            </div>
+                                            {link.key && <div className="text-xs text-stone-400 mt-1 font-mono">{link.key}</div>}
+                                        </div>
+                                        <div className="flex gap-2">
+                                            <Button size="icon" variant="ghost" className="h-8 w-8" onClick={() => startEdit(link)}>
+                                                <Edit className="h-4 w-4" />
+                                            </Button>
+                                            <Button size="icon" variant="ghost" className="h-8 w-8 text-red-500 hover:text-red-600 hover:bg-red-50" onClick={() => handleDelete(link.id)}>
+                                                <Trash2 className="h-4 w-4" />
+                                            </Button>
+                                        </div>
                                     </div>
-                                    <div className="flex items-center gap-2 text-xs text-slate-500 font-mono">
-                                        <span className="truncate max-w-md">{link.url}</span>
-                                        <button onClick={() => copyToClipboard(link.url)} title="URLをコピー" className="hover:text-indigo-600">
-                                            <Copy className="h-3 w-3" />
-                                        </button>
-                                        <a href={link.url} target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600">
-                                            <ExternalLink className="h-3 w-3" />
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-center gap-2 pl-4 border-l border-slate-100">
-                                    <div className="text-center px-2">
-                                        <div className="text-lg font-bold text-slate-700">{link.clicks || 0}</div>
-                                        <div className="text-[10px] text-slate-400">CLICKS</div>
-                                    </div>
-                                    <div className="flex flex-col gap-1">
-                                        <Button variant="ghost" size="sm" onClick={() => startEdit(link)} className="h-7 w-7 p-0 text-slate-400 hover:text-blue-600">
-                                            <Edit className="h-3.5 w-3.5" />
-                                        </Button>
-                                        <Button variant="ghost" size="sm" onClick={() => handleDelete(link.id)} className="h-7 w-7 p-0 text-slate-400 hover:text-rose-600">
-                                            <Trash2 className="h-3.5 w-3.5" />
-                                        </Button>
-                                    </div>
-                                </div>
+                                ))}
                             </div>
-                        ))}
-                    </div>
-                )}
+                        )}
+                    </CardContent>
+                </Card>
             </div>
         </div>
     );

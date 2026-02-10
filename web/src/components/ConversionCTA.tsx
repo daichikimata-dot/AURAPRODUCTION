@@ -2,11 +2,28 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { supabase } from "@/lib/supabase";
 
 export default function StickyCTA() {
     const [isVisible, setIsVisible] = useState(false);
+    const [lineUrl, setLineUrl] = useState("https://line.me/"); // Fallback
 
     useEffect(() => {
+        const fetchLineLink = async () => {
+            const { data } = await supabase
+                .from('links')
+                .select('url')
+                .eq('type', 'line')
+                .order('created_at', { ascending: false })
+                .limit(1)
+                .maybeSingle();
+
+            if (data?.url) {
+                setLineUrl(data.url);
+            }
+        };
+        fetchLineLink();
+
         const handleScroll = () => {
             // Show after scrolling 100px
             if (window.scrollY > 100) {
@@ -27,7 +44,7 @@ export default function StickyCTA() {
         >
             {/* LINE Button */}
             <Link
-                href="https://line.me/R/ti/p/@example" // TODO: Replace with actual LINE ID
+                href={lineUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-[#06c755] text-white px-5 py-3 rounded-full shadow-lg hover:bg-[#05b34c] transition-all hover:scale-105 animate-bounce-subtle"

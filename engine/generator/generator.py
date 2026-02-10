@@ -113,7 +113,7 @@ class AIGenerator:
         except Exception as e:
             print(f"Error generating content: {e}")
             return None
-    async def generate_article_with_grounding(self, keyword, category="美容", target_audience="美容に関心のある女性", learning_context=None):
+    async def generate_article_with_grounding(self, keyword, category="美容", target_audience="美容に関心のある女性", learning_context=None, existing_categories=None):
         """
         Generates a blog post using Gemini 2.0 Flash + Google Search Grounding (REST API).
         This replaces the need for manual crawling.
@@ -141,6 +141,8 @@ class AIGenerator:
 """
         
         # Construct specific prompt for Grounding
+        categories_str = ", ".join(existing_categories) if existing_categories else "美容, コスメ, スキンケア, ダイエット"
+
         prompt_text = f"""
         あなたは美容メディア「AURA」の編集長「美咲（みさき）」です。
         以下のキーワードについて、最新のGoogle検索結果に基づいて、専門的かつ実践的なコラムを執筆してください。
@@ -149,7 +151,24 @@ class AIGenerator:
         
         {MISAKI_PROMPT.format(keyword=keyword, category=category, target_audience=target_audience, reference_section=reference_info)}
         
-        【重要】: 冒頭の挨拶は不要です。記事のタイトルから書き始め、本文を最後まで完結させてください。
+        【重要：出力形式の変更】
+        今回は、Markdownだけでなく、記事のメタデータ（タイトル、カテゴリー）も構造化して取得したいため、
+        **必ず以下のJSON形式のみ**で出力してください。Markdownのコードブロック(```json ... ```)で囲ってください。
+
+        既存のカテゴリー: {categories_str}
+        
+        カテゴリー選定ルール:
+        1. 既存のカテゴリーの中から最も適切なものがあれば、それを選んでください。
+        2. もし既存のカテゴリーに当てはまらない、あるいは「新しいトレンド」として独立させるべきトピックであれば、新しいカテゴリー名を提案してください。
+
+        Output Format:
+        ```json
+        {{
+            "title": "記事のタイトル",
+            "category": "選定または新規作成したカテゴリー名",
+            "content": "記事の本文（Markdown形式、見出し含む、800文字以上）"
+        }}
+        ```
         """
         
         headers = {"Content-Type": "application/json"}
@@ -196,10 +215,11 @@ class AIGenerator:
         Keyword: {keyword}
         
         Requirements for the prompt:
-        - Aesthetics: 'Water Glow' (Mizukagami), Porcelain skin, Soft pastel medical colors (White, light blue, soft pink).
-        - Style: Photorealistic, 8k, Cinematic lighting, Macro photography or Clean wide shot.
-        - Atmosphere: Expensive, Trusted, Scientific yet Gentle.
-        - Exclusions: No text, no charts, no gore.
+        - Aesthetics: High-end Japanese Beauty Magazine style (like MAQUIA, VOCE, bi-teki), Glossy 'Water Glow' skin, Vibrant and Eye-catching colors (Rich Pink, Gold, Beige, Emerald), Crystal clean.
+        - Style: High-end Commercial Beauty Photography, Studio Lighting, High Contrast, 8k, Photorealistic, Masterpiece.
+        - Atmosphere: Aspirational, Trendy, Confident, Professional, "Must-Click" quality.
+        - Composition: Dynamic, Focus on beauty details (face or product), Clean background, Magazine Cover Quality.
+        - Exclusions: No text, no charts, no gore, no distorted faces.
         
         Output ONLY the prompt text in English.
         """

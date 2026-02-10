@@ -642,3 +642,1393 @@
  GET /api/dashboard/articles 200 in 147ms (compile: 2ms, render: 145ms)
  GET /api/dashboard/articles 200 in 184ms (compile: 3ms, render: 181ms)
  GET /api/dashboard/articles 200 in 155ms (compile: 3ms, render: 152ms)
+ GET /api/dashboard/articles 200 in 130ms (compile: 1088µs, render: 128ms)
+ GET /api/dashboard/articles 200 in 140ms (compile: 3ms, render: 137ms)
+ GET /api/dashboard/articles 200 in 152ms (compile: 5ms, render: 147ms)
+ GET /api/dashboard/articles 200 in 207ms (compile: 4ms, render: 203ms)
+ GET /api/dashboard/articles 200 in 156ms (compile: 4ms, render: 152ms)
+ GET /api/dashboard/articles 200 in 150ms (compile: 4ms, render: 147ms)
+ GET /api/dashboard/articles 200 in 151ms (compile: 1476µs, render: 150ms)
+ GET /api/dashboard/articles 200 in 154ms (compile: 2ms, render: 152ms)
+ GET /api/dashboard/articles 200 in 137ms (compile: 3ms, render: 134ms)
+ GET /api/dashboard/articles 200 in 151ms (compile: 4ms, render: 147ms)
+ GET /api/dashboard/articles 200 in 166ms (compile: 3ms, render: 163ms)
+ GET /api/dashboard/articles 200 in 163ms (compile: 3ms, render: 159ms)
+ GET /api/dashboard/articles 200 in 129ms (compile: 1058µs, render: 128ms)
+ GET /api/dashboard/articles 200 in 136ms (compile: 1996µs, render: 134ms)
+ GET /api/dashboard/articles 200 in 151ms (compile: 4ms, render: 147ms)
+ GET /api/dashboard/articles 200 in 131ms (compile: 1250µs, render: 130ms)
+ GET /admin/dashboard/media 200 in 33ms (compile: 12ms, render: 21ms)
+ GET /admin/dashboard 200 in 17ms (compile: 5ms, render: 12ms)
+ GET /api/dashboard/articles 200 in 564ms (compile: 11ms, render: 553ms)
+ GET /api/dashboard/articles 200 in 72ms (compile: 1154µs, render: 71ms)
+ GET /api/engine/trends 200 in 2.6s (compile: 3ms, render: 2.6s)
+ GET /api/engine/trends 200 in 2.1s (compile: 1073µs, render: 2.1s)
+ GET /api/dashboard/articles 200 in 137ms (compile: 3ms, render: 135ms)
+ POST /api/engine/generate 200 in 9ms (compile: 3ms, render: 5ms)
+ GET /api/dashboard/articles 200 in 98ms (compile: 3ms, render: 95ms)
+ GET /api/dashboard/articles 200 in 90ms (compile: 3ms, render: 87ms)
+ GET /api/dashboard/articles 200 in 190ms (compile: 3ms, render: 187ms)
+ GET /api/dashboard/articles 200 in 226ms (compile: 2ms, render: 224ms)
+ GET /admin/dashboard/articles 200 in 21ms (compile: 10ms, render: 10ms)
+ GET /admin/dashboard/links 200 in 38ms (compile: 25ms, render: 13ms)
+ GET /admin/dashboard/ai-settings 200 in 25ms (compile: 13ms, render: 12ms)
+ GET /admin/dashboard/links 200 in 12ms (compile: 1419µs, render: 11ms)
+ GET /admin/dashboard/settings 200 in 18ms (compile: 6ms, render: 12ms)
+ GET /admin/dashboard/media 200 in 15ms (compile: 4ms, render: 12ms)
+ GET /admin/dashboard 200 in 11ms (compile: 3ms, render: 8ms)
+ GET /api/dashboard/articles 200 in 118ms (compile: 1007µs, render: 117ms)
+ GET /api/dashboard/articles 200 in 59ms (compile: 1154µs, render: 58ms)
+ GET /api/engine/trends 200 in 2.2s (compile: 1311µs, render: 2.2s)
+ GET /api/engine/trends 200 in 2.3s (compile: 1249µs, render: 2.3s)
+ GET /api/dashboard/articles 200 in 115ms (compile: 3ms, render: 113ms)
+ GET /api/dashboard/articles 200 in 132ms (compile: 3ms, render: 129ms)
+ GET /api/dashboard/articles 200 in 125ms (compile: 3ms, render: 123ms)
+ GET /api/dashboard/articles 200 in 122ms (compile: 3ms, render: 120ms)
+ GET /api/dashboard/articles 200 in 137ms (compile: 3ms, render: 134ms)
+ GET /api/dashboard/articles 200 in 317ms (compile: 2ms, render: 314ms)
+ GET /api/dashboard/articles 200 in 306ms (compile: 3ms, render: 304ms)
+ GET /api/dashboard/articles 200 in 183ms (compile: 1389µs, render: 182ms)
+ GET /api/dashboard/articles 200 in 166ms (compile: 1902µs, render: 164ms)
+ GET /api/dashboard/articles 200 in 173ms (compile: 3ms, render: 170ms)
+ GET /api/dashboard/articles 200 in 171ms (compile: 2ms, render: 169ms)
+ GET /api/dashboard/articles 200 in 158ms (compile: 2ms, render: 155ms)
+ GET /api/dashboard/articles 200 in 188ms (compile: 1115µs, render: 187ms)
+ GET /api/dashboard/articles 200 in 173ms (compile: 3ms, render: 170ms)
+ GET /api/dashboard/articles 200 in 169ms (compile: 1171µs, render: 168ms)
+ GET /api/dashboard/articles 200 in 166ms (compile: 3ms, render: 162ms)
+✓ Compiled in 28ms
+ GET /api/dashboard/articles 200 in 159ms (compile: 3ms, render: 155ms)
+ GET /api/dashboard/articles 200 in 179ms (compile: 2ms, render: 177ms)
+ GET /api/dashboard/articles 200 in 148ms (compile: 3ms, render: 146ms)
+ GET /api/dashboard/articles 200 in 174ms (compile: 3ms, render: 171ms)
+ GET /api/dashboard/articles 200 in 153ms (compile: 1185µs, render: 152ms)
+ GET /api/dashboard/articles 200 in 157ms (compile: 3ms, render: 154ms)
+ GET /api/dashboard/articles 200 in 160ms (compile: 3ms, render: 157ms)
+ GET /api/dashboard/articles 200 in 156ms (compile: 3ms, render: 153ms)
+ GET /api/dashboard/articles 200 in 167ms (compile: 3ms, render: 165ms)
+ GET /api/dashboard/articles 200 in 202ms (compile: 3ms, render: 199ms)
+ GET /api/dashboard/articles 200 in 152ms (compile: 3ms, render: 149ms)
+ GET /api/dashboard/articles 200 in 147ms (compile: 2ms, render: 145ms)
+ GET /api/dashboard/articles 200 in 179ms (compile: 2ms, render: 177ms)
+ GET /api/dashboard/articles 200 in 138ms (compile: 1457µs, render: 137ms)
+ GET /api/dashboard/articles 200 in 141ms (compile: 2ms, render: 139ms)
+ GET /api/dashboard/articles 200 in 144ms (compile: 3ms, render: 141ms)
+ GET /api/dashboard/articles 200 in 139ms (compile: 2ms, render: 137ms)
+ GET /api/dashboard/articles 200 in 155ms (compile: 2ms, render: 153ms)
+ GET /api/dashboard/articles 200 in 149ms (compile: 2ms, render: 146ms)
+ GET /api/dashboard/articles 200 in 146ms (compile: 2ms, render: 143ms)
+ GET /api/dashboard/articles 200 in 151ms (compile: 3ms, render: 148ms)
+ GET /api/dashboard/articles 200 in 124ms (compile: 2ms, render: 122ms)
+ GET /api/dashboard/articles 200 in 127ms (compile: 3ms, render: 124ms)
+ GET /api/dashboard/articles 200 in 127ms (compile: 2ms, render: 124ms)
+ GET /api/dashboard/articles 200 in 134ms (compile: 3ms, render: 131ms)
+ GET /api/dashboard/articles 200 in 120ms (compile: 4ms, render: 116ms)
+ GET /api/dashboard/articles 200 in 160ms (compile: 3ms, render: 157ms)
+ GET /api/dashboard/articles 200 in 134ms (compile: 3ms, render: 132ms)
+ GET /api/dashboard/articles 200 in 176ms (compile: 2ms, render: 173ms)
+ GET /api/dashboard/articles 200 in 152ms (compile: 3ms, render: 149ms)
+ GET /api/dashboard/articles 200 in 143ms (compile: 2ms, render: 140ms)
+ GET /api/dashboard/articles 200 in 126ms (compile: 2ms, render: 123ms)
+ GET /api/dashboard/articles 200 in 121ms (compile: 3ms, render: 118ms)
+ GET /api/dashboard/articles 200 in 156ms (compile: 2ms, render: 154ms)
+ GET /api/dashboard/articles 200 in 129ms (compile: 3ms, render: 126ms)
+ GET /api/dashboard/articles 200 in 126ms (compile: 1501µs, render: 124ms)
+ GET /api/dashboard/articles 200 in 152ms (compile: 2ms, render: 150ms)
+ GET /api/dashboard/articles 200 in 142ms (compile: 2ms, render: 140ms)
+ GET /api/dashboard/articles 200 in 124ms (compile: 1186µs, render: 123ms)
+ GET /api/dashboard/articles 200 in 121ms (compile: 3ms, render: 118ms)
+ GET /api/dashboard/articles 200 in 131ms (compile: 2ms, render: 128ms)
+ GET /api/dashboard/articles 200 in 131ms (compile: 1451µs, render: 130ms)
+ GET /api/dashboard/articles 200 in 119ms (compile: 3ms, render: 116ms)
+ GET /api/dashboard/articles 200 in 138ms (compile: 3ms, render: 135ms)
+ GET /api/dashboard/articles 200 in 144ms (compile: 3ms, render: 141ms)
+ GET /api/dashboard/articles 200 in 138ms (compile: 3ms, render: 136ms)
+ GET /api/dashboard/articles 200 in 121ms (compile: 2ms, render: 119ms)
+ GET /api/dashboard/articles 200 in 120ms (compile: 1782µs, render: 118ms)
+ GET /api/dashboard/articles 200 in 123ms (compile: 3ms, render: 120ms)
+ GET /api/dashboard/articles 200 in 135ms (compile: 3ms, render: 133ms)
+ GET /api/dashboard/articles 200 in 121ms (compile: 3ms, render: 119ms)
+ GET /api/dashboard/articles 200 in 119ms (compile: 1320µs, render: 118ms)
+ GET /api/dashboard/articles 200 in 108ms (compile: 1076µs, render: 107ms)
+ GET /api/dashboard/articles 200 in 135ms (compile: 3ms, render: 132ms)
+ GET /api/dashboard/articles 200 in 117ms (compile: 2ms, render: 114ms)
+ GET /api/dashboard/articles 200 in 127ms (compile: 3ms, render: 124ms)
+ GET /api/dashboard/articles 200 in 129ms (compile: 1750µs, render: 127ms)
+ GET /api/dashboard/articles 200 in 127ms (compile: 2ms, render: 124ms)
+ GET /api/dashboard/articles 200 in 107ms (compile: 3ms, render: 105ms)
+ GET /api/dashboard/articles 200 in 132ms (compile: 3ms, render: 130ms)
+ GET /api/dashboard/articles 200 in 148ms (compile: 1195µs, render: 147ms)
+ GET /api/dashboard/articles 200 in 139ms (compile: 1413µs, render: 138ms)
+ GET /api/dashboard/articles 200 in 126ms (compile: 2ms, render: 124ms)
+ GET /api/dashboard/articles 200 in 121ms (compile: 3ms, render: 118ms)
+ GET /api/dashboard/articles 200 in 136ms (compile: 2ms, render: 134ms)
+ GET /api/dashboard/articles 200 in 130ms (compile: 2ms, render: 128ms)
+ GET /api/dashboard/articles 200 in 317ms (compile: 1433µs, render: 315ms)
+ GET /api/dashboard/articles 200 in 137ms (compile: 1878µs, render: 135ms)
+ GET /api/dashboard/articles 200 in 128ms (compile: 2ms, render: 125ms)
+ GET /admin/dashboard/articles 200 in 15ms (compile: 5ms, render: 10ms)
+ GET /admin/dashboard 200 in 57ms (compile: 41ms, render: 16ms)
+ GET /api/dashboard/articles 200 in 720ms (compile: 1407µs, render: 718ms)
+ GET /api/dashboard/articles 200 in 85ms (compile: 1099µs, render: 84ms)
+ GET /admin/dashboard/articles 200 in 12ms (compile: 4ms, render: 9ms)
+ GET /admin/dashboard/articles 200 in 73ms (compile: 3ms, render: 69ms)
+ GET /api/engine/trends 200 in 1980ms (compile: 1265µs, render: 1979ms)
+ GET /admin/dashboard/articles/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 23ms (compile: 8ms, render: 15ms)
+ GET /admin/dashboard/articles 200 in 11ms (compile: 2ms, render: 9ms)
+ GET /admin/dashboard 200 in 12ms (compile: 3ms, render: 9ms)
+ GET /api/dashboard/articles 200 in 207ms (compile: 1348µs, render: 206ms)
+ GET /api/dashboard/articles 200 in 96ms (compile: 1205µs, render: 95ms)
+ GET /admin/dashboard/articles 200 in 16ms (compile: 3ms, render: 14ms)
+ GET /api/engine/trends 200 in 2.7s (compile: 2ms, render: 2.7s)
+ GET /api/engine/trends 200 in 1940ms (compile: 1459µs, render: 1938ms)
+ GET /admin/dashboard/articles 200 in 37ms (compile: 3ms, render: 34ms)
+ GET /admin/dashboard 200 in 19ms (compile: 4ms, render: 15ms)
+ GET /api/dashboard/articles 200 in 265ms (compile: 3ms, render: 262ms)
+ GET /api/dashboard/articles 200 in 92ms (compile: 1365µs, render: 91ms)
+ GET /api/engine/trends 200 in 2.3s (compile: 1047µs, render: 2.3s)
+ GET /api/dashboard/articles 200 in 150ms (compile: 3ms, render: 147ms)
+ GET /api/engine/trends 200 in 3.1s (compile: 1022µs, render: 3.1s)
+ GET /api/dashboard/articles 200 in 161ms (compile: 2ms, render: 158ms)
+ GET /api/dashboard/articles 200 in 161ms (compile: 1965µs, render: 159ms)
+ POST /api/engine/generate 200 in 8ms (compile: 2ms, render: 6ms)
+ GET /api/dashboard/articles 200 in 96ms (compile: 3ms, render: 93ms)
+ GET /api/dashboard/articles 200 in 93ms (compile: 2ms, render: 91ms)
+ GET /api/dashboard/articles 200 in 148ms (compile: 3ms, render: 145ms)
+ GET /api/dashboard/articles 200 in 132ms (compile: 1214µs, render: 130ms)
+ GET /api/dashboard/articles 200 in 135ms (compile: 3ms, render: 133ms)
+ GET /api/dashboard/articles 200 in 134ms (compile: 3ms, render: 131ms)
+ GET /admin/dashboard/articles/7e2d9628-9c57-4974-85a0-32c34e94c599 200 in 16ms (compile: 4ms, render: 12ms)
+ GET /admin/dashboard/articles 200 in 15ms (compile: 5ms, render: 10ms)
+ GET /admin/dashboard/articles/7e2d9628-9c57-4974-85a0-32c34e94c599 200 in 15ms (compile: 3ms, render: 11ms)
+✓ Compiled in 31ms
+✓ Compiled in 25ms
+✓ Compiled in 22ms
+ GET /admin/dashboard 200 in 13ms (compile: 3ms, render: 9ms)
+ GET /api/dashboard/articles 200 in 665ms (compile: 979µs, render: 664ms)
+ GET /api/dashboard/articles 200 in 70ms (compile: 1058µs, render: 69ms)
+ GET /admin/dashboard/articles/7e2d9628-9c57-4974-85a0-32c34e94c599 200 in 60ms (compile: 42ms, render: 18ms)
+ GET /api/engine/trends 200 in 2.8s (compile: 1576µs, render: 2.8s)
+ GET /api/engine/trends 200 in 2.6s (compile: 1133µs, render: 2.6s)
+ GET /admin/dashboard/articles 200 in 13ms (compile: 2ms, render: 11ms)
+ GET /admin/dashboard/articles/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 15ms (compile: 3ms, render: 11ms)
+ GET /admin/dashboard/articles 200 in 13ms (compile: 4ms, render: 9ms)
+ GET /admin/dashboard 200 in 11ms (compile: 3ms, render: 8ms)
+ GET /api/dashboard/articles 200 in 197ms (compile: 1298µs, render: 195ms)
+ GET /api/dashboard/articles 200 in 140ms (compile: 1189µs, render: 139ms)
+ GET /api/engine/trends 200 in 3.5s (compile: 1404µs, render: 3.5s)
+ GET /api/dashboard/articles 200 in 158ms (compile: 2ms, render: 155ms)
+ GET /api/engine/trends 200 in 2.5s (compile: 1273µs, render: 2.5s)
+ GET /api/dashboard/articles 200 in 198ms (compile: 2ms, render: 195ms)
+ GET /api/dashboard/articles 200 in 220ms (compile: 3ms, render: 217ms)
+ POST /api/engine/generate 200 in 9ms (compile: 3ms, render: 6ms)
+ GET /api/dashboard/articles 200 in 215ms (compile: 3ms, render: 212ms)
+ GET /api/dashboard/articles 200 in 101ms (compile: 998µs, render: 100ms)
+ GET /api/dashboard/articles 200 in 140ms (compile: 3ms, render: 137ms)
+ GET /api/dashboard/articles 200 in 148ms (compile: 3ms, render: 145ms)
+ GET /api/dashboard/articles 200 in 139ms (compile: 3ms, render: 136ms)
+ GET /api/dashboard/articles 200 in 164ms (compile: 3ms, render: 161ms)
+ GET /api/dashboard/articles 200 in 154ms (compile: 3ms, render: 151ms)
+ GET /admin/dashboard/articles/07b2fc75-8030-42cd-a66a-97ed465a79ab 200 in 14ms (compile: 3ms, render: 10ms)
+ GET / 200 in 37ms (compile: 6ms, render: 31ms)
+✓ Compiled in 28ms
+ GET /admin/dashboard/articles/07b2fc75-8030-42cd-a66a-97ed465a79ab 200 in 19ms (compile: 3ms, render: 16ms)
+ GET / 200 in 145ms (compile: 37ms, render: 107ms)
+ GET / 200 in 30ms (compile: 2ms, render: 27ms)
+ GET / 200 in 32ms (compile: 4ms, render: 28ms)
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+✓ Compiled in 22ms
+ GET / 200 in 116ms (compile: 36ms, render: 80ms)
+ GET /admin/dashboard/media 200 in 19ms (compile: 4ms, render: 14ms)
+ GET /blog/7195300e-738b-47cd-9eab-0ce1f1f9d320 200 in 1282ms (compile: 340ms, render: 942ms)
+ GET / 200 in 10ms (compile: 1607µs, render: 9ms)
+ GET /admin/dashboard/articles 200 in 14ms (compile: 3ms, render: 11ms)
+ GET /admin/dashboard 200 in 13ms (compile: 1836µs, render: 12ms)
+ GET /api/dashboard/articles 200 in 164ms (compile: 1358µs, render: 163ms)
+ GET /api/dashboard/articles 200 in 67ms (compile: 1038µs, render: 66ms)
+ GET /admin/dashboard/articles 200 in 13ms (compile: 3ms, render: 10ms)
+ GET /admin/dashboard/media 200 in 13ms (compile: 3ms, render: 9ms)
+ GET /api/engine/trends 200 in 2.2s (compile: 1026µs, render: 2.2s)
+ GET /api/engine/trends 200 in 1893ms (compile: 1027µs, render: 1892ms)
+ GET /admin/dashboard 200 in 15ms (compile: 6ms, render: 9ms)
+ GET /api/dashboard/articles 200 in 125ms (compile: 924µs, render: 125ms)
+ GET /api/dashboard/articles 200 in 61ms (compile: 1150µs, render: 60ms)
+ GET /api/engine/trends 200 in 2.3s (compile: 912µs, render: 2.3s)
+ GET /api/engine/trends 200 in 2.2s (compile: 1029µs, render: 2.2s)
+ GET /api/dashboard/articles 200 in 126ms (compile: 2ms, render: 124ms)
+ GET /api/dashboard/articles 200 in 149ms (compile: 3ms, render: 146ms)
+ GET /api/dashboard/articles 200 in 121ms (compile: 3ms, render: 118ms)
+ GET /admin/dashboard/ai-settings 200 in 15ms (compile: 3ms, render: 12ms)
+ GET /admin/dashboard/links 200 in 14ms (compile: 4ms, render: 10ms)
+ GET /admin/dashboard/settings 200 in 11ms (compile: 3ms, render: 8ms)
+ GET /admin/dashboard/ai-settings 200 in 12ms (compile: 4ms, render: 8ms)
+ GET /admin/dashboard/links 200 in 15ms (compile: 3ms, render: 12ms)
+ GET /blog 404 in 62ms (compile: 50ms, render: 12ms)
+ GET /blog 404 in 32ms (compile: 2ms, render: 30ms)
+ GET / 200 in 27ms (compile: 4ms, render: 23ms)
+ GET /about 404 in 13ms (compile: 4ms, render: 8ms)
+ GET /about 404 in 24ms (compile: 2ms, render: 22ms)
+ GET / 200 in 30ms (compile: 4ms, render: 26ms)
+ GET /admin/dashboard/links 200 in 65ms (compile: 55ms, render: 10ms)
+ GET / 200 in 67ms (compile: 36ms, render: 31ms)
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:1
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m"react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { createClientComponentClient } [36mfrom[39m [32m"@supabase/auth-helpers-nextjs"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m"@/components/ui/card"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"@/components/ui/button"[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:1
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m"react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { createClientComponentClient } [36mfrom[39m [32m"@supabase/auth-helpers-nextjs"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m"@/components/ui/card"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"@/components/ui/button"[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:1
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m"react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { createClientComponentClient } [36mfrom[39m [32m"@supabase/auth-helpers-nextjs"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m"@/components/ui/card"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"@/components/ui/button"[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:1
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m"react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { createClientComponentClient } [36mfrom[39m [32m"@supabase/auth-helpers-nextjs"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m"@/components/ui/card"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"@/components/ui/button"[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:1
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m"react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { createClientComponentClient } [36mfrom[39m [32m"@supabase/auth-helpers-nextjs"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m"@/components/ui/card"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"@/components/ui/button"[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:1
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m"react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { createClientComponentClient } [36mfrom[39m [32m"@supabase/auth-helpers-nextjs"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m"@/components/ui/card"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"@/components/ui/button"[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:1
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m"react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { createClientComponentClient } [36mfrom[39m [32m"@supabase/auth-helpers-nextjs"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m"@/components/ui/card"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"@/components/ui/button"[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:1
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m"react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { createClientComponentClient } [36mfrom[39m [32m"@supabase/auth-helpers-nextjs"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m"@/components/ui/card"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"@/components/ui/button"[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:1
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m"react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { createClientComponentClient } [36mfrom[39m [32m"@supabase/auth-helpers-nextjs"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m"@/components/ui/card"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"@/components/ui/button"[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:1
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m"react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { createClientComponentClient } [36mfrom[39m [32m"@supabase/auth-helpers-nextjs"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m"@/components/ui/card"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"@/components/ui/button"[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:1
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m"react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { createClientComponentClient } [36mfrom[39m [32m"@supabase/auth-helpers-nextjs"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m"@/components/ui/card"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"@/components/ui/button"[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:1
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m"react"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { createClientComponentClient } [36mfrom[39m [32m"@supabase/auth-helpers-nextjs"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m"@/components/ui/card"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"@/components/ui/button"[39m[33m;[39m
+ [90m 7 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m"@/components/ui/input"[39m[33m;[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+✓ Compiled in 57ms
+✓ Compiled in 42ms
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:32
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m [32m"use client";[39m
+ [90m 3 |[39m [32m[39m
+[31m[1m>[22m[39m[90m 4 |[39m [32mimport { useState, useEffect } from "react";[39m
+ [90m   |[39m                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 5 |[39m [32mimport { supabase } from "@/lib/supabase";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 6 |[39m [32mimport { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [32mimport { Button } from "@/components/ui/button";[39m
+ [90m 8 |[39m [32mimport { Input } from "@/components/ui/input";[39m
+ [90m 9 |[39m [32mimport { Label } from "@/components/ui/label";[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:32
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m [32m"use client";[39m
+ [90m 3 |[39m [32m[39m
+[31m[1m>[22m[39m[90m 4 |[39m [32mimport { useState, useEffect } from "react";[39m
+ [90m   |[39m                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 5 |[39m [32mimport { supabase } from "@/lib/supabase";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 6 |[39m [32mimport { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [32mimport { Button } from "@/components/ui/button";[39m
+ [90m 8 |[39m [32mimport { Input } from "@/components/ui/input";[39m
+ [90m 9 |[39m [32mimport { Label } from "@/components/ui/label";[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:32
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m [32m"use client";[39m
+ [90m 3 |[39m [32m[39m
+[31m[1m>[22m[39m[90m 4 |[39m [32mimport { useState, useEffect } from "react";[39m
+ [90m   |[39m                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 5 |[39m [32mimport { supabase } from "@/lib/supabase";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 6 |[39m [32mimport { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [32mimport { Button } from "@/components/ui/button";[39m
+ [90m 8 |[39m [32mimport { Input } from "@/components/ui/input";[39m
+ [90m 9 |[39m [32mimport { Label } from "@/components/ui/label";[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:32
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m [32m"use client";[39m
+ [90m 3 |[39m [32m[39m
+[31m[1m>[22m[39m[90m 4 |[39m [32mimport { useState, useEffect } from "react";[39m
+ [90m   |[39m                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 5 |[39m [32mimport { supabase } from "@/lib/supabase";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 6 |[39m [32mimport { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [32mimport { Button } from "@/components/ui/button";[39m
+ [90m 8 |[39m [32mimport { Input } from "@/components/ui/input";[39m
+ [90m 9 |[39m [32mimport { Label } from "@/components/ui/label";[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:32
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m [32m"use client";[39m
+ [90m 3 |[39m [32m[39m
+[31m[1m>[22m[39m[90m 4 |[39m [32mimport { useState, useEffect } from "react";[39m
+ [90m   |[39m                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 5 |[39m [32mimport { supabase } from "@/lib/supabase";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 6 |[39m [32mimport { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [32mimport { Button } from "@/components/ui/button";[39m
+ [90m 8 |[39m [32mimport { Input } from "@/components/ui/input";[39m
+ [90m 9 |[39m [32mimport { Label } from "@/components/ui/label";[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:32
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m [32m"use client";[39m
+ [90m 3 |[39m [32m[39m
+[31m[1m>[22m[39m[90m 4 |[39m [32mimport { useState, useEffect } from "react";[39m
+ [90m   |[39m                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 5 |[39m [32mimport { supabase } from "@/lib/supabase";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 6 |[39m [32mimport { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [32mimport { Button } from "@/components/ui/button";[39m
+ [90m 8 |[39m [32mimport { Input } from "@/components/ui/input";[39m
+ [90m 9 |[39m [32mimport { Label } from "@/components/ui/label";[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:32
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m [32m"use client";[39m
+ [90m 3 |[39m [32m[39m
+[31m[1m>[22m[39m[90m 4 |[39m [32mimport { useState, useEffect } from "react";[39m
+ [90m   |[39m                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 5 |[39m [32mimport { supabase } from "@/lib/supabase";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 6 |[39m [32mimport { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [32mimport { Button } from "@/components/ui/button";[39m
+ [90m 8 |[39m [32mimport { Input } from "@/components/ui/input";[39m
+ [90m 9 |[39m [32mimport { Label } from "@/components/ui/label";[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:32
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m [32m"use client";[39m
+ [90m 3 |[39m [32m[39m
+[31m[1m>[22m[39m[90m 4 |[39m [32mimport { useState, useEffect } from "react";[39m
+ [90m   |[39m                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 5 |[39m [32mimport { supabase } from "@/lib/supabase";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 6 |[39m [32mimport { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [32mimport { Button } from "@/components/ui/button";[39m
+ [90m 8 |[39m [32mimport { Input } from "@/components/ui/input";[39m
+ [90m 9 |[39m [32mimport { Label } from "@/components/ui/label";[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:32
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m [32m"use client";[39m
+ [90m 3 |[39m [32m[39m
+[31m[1m>[22m[39m[90m 4 |[39m [32mimport { useState, useEffect } from "react";[39m
+ [90m   |[39m                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 5 |[39m [32mimport { supabase } from "@/lib/supabase";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 6 |[39m [32mimport { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [32mimport { Button } from "@/components/ui/button";[39m
+ [90m 8 |[39m [32mimport { Input } from "@/components/ui/input";[39m
+ [90m 9 |[39m [32mimport { Label } from "@/components/ui/label";[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:32
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m [32m"use client";[39m
+ [90m 3 |[39m [32m[39m
+[31m[1m>[22m[39m[90m 4 |[39m [32mimport { useState, useEffect } from "react";[39m
+ [90m   |[39m                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 5 |[39m [32mimport { supabase } from "@/lib/supabase";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 6 |[39m [32mimport { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [32mimport { Button } from "@/components/ui/button";[39m
+ [90m 8 |[39m [32mimport { Input } from "@/components/ui/input";[39m
+ [90m 9 |[39m [32mimport { Label } from "@/components/ui/label";[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:32
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m [32m"use client";[39m
+ [90m 3 |[39m [32m[39m
+[31m[1m>[22m[39m[90m 4 |[39m [32mimport { useState, useEffect } from "react";[39m
+ [90m   |[39m                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 5 |[39m [32mimport { supabase } from "@/lib/supabase";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 6 |[39m [32mimport { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [32mimport { Button } from "@/components/ui/button";[39m
+ [90m 8 |[39m [32mimport { Input } from "@/components/ui/input";[39m
+ [90m 9 |[39m [32mimport { Label } from "@/components/ui/label";[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/admin/dashboard/links/page.tsx:4:32
+Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+[0m [90m 2 |[39m [32m"use client";[39m
+ [90m 3 |[39m [32m[39m
+[31m[1m>[22m[39m[90m 4 |[39m [32mimport { useState, useEffect } from "react";[39m
+ [90m   |[39m                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 5 |[39m [32mimport { supabase } from "@/lib/supabase";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 6 |[39m [32mimport { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m [32mimport { Button } from "@/components/ui/button";[39m
+ [90m 8 |[39m [32mimport { Input } from "@/components/ui/input";[39m
+ [90m 9 |[39m [32mimport { Label } from "@/components/ui/label";[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component Browser]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/dashboard/links/page.tsx [Client Component SSR]
+    ./src/app/admin/dashboard/links/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+✓ Compiled in 27ms
+✓ Compiled in 30ms
+ GET /admin/dashboard/links 200 in 159ms (compile: 39ms, render: 120ms)
+ GET /admin/dashboard/links 200 in 27ms (compile: 1717µs, render: 25ms)
+ GET / 200 in 644ms (compile: 108ms, render: 536ms)
+ GET / 200 in 544ms (compile: 12ms, render: 532ms)
+ GET / 200 in 434ms (compile: 3ms, render: 431ms)
+ GET /admin/dashboard/links 200 in 12ms (compile: 4ms, render: 9ms)
+ GET /admin/dashboard/links 200 in 70ms (compile: 4ms, render: 66ms)
+ GET /blog/07b2fc75-8030-42cd-a66a-97ed465a79ab 200 in 612ms (compile: 12ms, render: 600ms)
+ GET / 200 in 281ms (compile: 3ms, render: 277ms)
+ GET /admin/dashboard/links 200 in 35ms (compile: 1299µs, render: 34ms)
+ GET / 200 in 111ms (compile: 49ms, render: 62ms)
+ GET /admin/dashboard/links 200 in 12ms (compile: 1169µs, render: 11ms)
+ GET / 200 in 37ms (compile: 11ms, render: 25ms)
+ GET /admin/dashboard/links 200 in 14ms (compile: 4ms, render: 10ms)
+ GET /admin/dashboard/links 200 in 11ms (compile: 3ms, render: 9ms)
+ GET /admin/dashboard 200 in 18ms (compile: 5ms, render: 14ms)
+ GET /api/dashboard/articles 200 in 185ms (compile: 1594µs, render: 183ms)
+ GET /api/dashboard/articles 200 in 71ms (compile: 1071µs, render: 70ms)
+ GET /api/engine/trends 200 in 2.1s (compile: 2ms, render: 2.1s)
+ GET / 200 in 106ms (compile: 1367µs, render: 105ms)
+ GET /api/engine/trends 200 in 1792ms (compile: 1568µs, render: 1790ms)
+ GET /blog 404 in 17ms (compile: 7ms, render: 10ms)
+ GET /blog 404 in 25ms (compile: 2ms, render: 23ms)
+ GET /api/dashboard/articles 200 in 89ms (compile: 3ms, render: 86ms)
+ GET / 200 in 84ms (compile: 4ms, render: 80ms)
+ GET /clinics 404 in 14ms (compile: 5ms, render: 9ms)
+ GET /clinics 404 in 25ms (compile: 1876µs, render: 23ms)
+ GET / 200 in 89ms (compile: 3ms, render: 86ms)
+ GET /api/dashboard/articles 200 in 75ms (compile: 3ms, render: 72ms)
+ GET /blog/07b2fc75-8030-42cd-a66a-97ed465a79ab 200 in 180ms (compile: 66ms, render: 114ms)
+ GET /api/dashboard/articles 200 in 75ms (compile: 4ms, render: 72ms)
+ GET /blog/07b2fc75-8030-42cd-a66a-97ed465a79ab 200 in 160ms (compile: 4ms, render: 156ms)
+ GET /api/dashboard/articles 200 in 78ms (compile: 1050µs, render: 77ms)
+ GET /api/dashboard/articles 200 in 147ms (compile: 4ms, render: 143ms)
+ GET /api/dashboard/articles 200 in 134ms (compile: 2ms, render: 132ms)
+ GET /admin/dashboard/links 200 in 12ms (compile: 1682µs, render: 10ms)
+✓ Compiled in 27ms
+ GET / 200 in 195ms (compile: 2ms, render: 193ms)
+ GET /clinics 404 in 12ms (compile: 3ms, render: 9ms)
+ GET /clinics 404 in 23ms (compile: 3ms, render: 20ms)
+ GET / 200 in 101ms (compile: 3ms, render: 98ms)
+ GET /blog/07b2fc75-8030-42cd-a66a-97ed465a79ab 200 in 153ms (compile: 4ms, render: 149ms)
+ GET / 200 in 157ms (compile: 2ms, render: 155ms)
+ GET /blog 404 in 17ms (compile: 5ms, render: 13ms)
+ GET /blog 404 in 19ms (compile: 1531µs, render: 17ms)
+ GET / 200 in 85ms (compile: 4ms, render: 81ms)
+ GET /admin/dashboard 200 in 16ms (compile: 3ms, render: 13ms)
+ GET /api/dashboard/articles 200 in 120ms (compile: 1358µs, render: 119ms)
+ GET /api/dashboard/articles 200 in 71ms (compile: 1119µs, render: 70ms)
+ GET /api/engine/trends 200 in 2.4s (compile: 1031µs, render: 2.4s)
+ GET /api/engine/trends 200 in 1985ms (compile: 1061µs, render: 1984ms)
+ GET /api/dashboard/articles 200 in 126ms (compile: 1178µs, render: 125ms)
+ GET /admin/dashboard/articles/7e2d9628-9c57-4974-85a0-32c34e94c599 200 in 19ms (compile: 5ms, render: 14ms)
+ GET /admin/dashboard/articles 200 in 12ms (compile: 2ms, render: 9ms)
+ GET /admin/dashboard/articles/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 11ms (compile: 3ms, render: 8ms)
+ GET /admin/dashboard/articles/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 60ms (compile: 4ms, render: 56ms)
+ GET / 200 in 133ms (compile: 46ms, render: 86ms)
+ GET /admin/dashboard/articles/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 28ms (compile: 2ms, render: 26ms)
+ GET / 200 in 62ms (compile: 17ms, render: 45ms)
+ GET /admin/dashboard/articles 200 in 10ms (compile: 1848µs, render: 8ms)
+ GET /admin/dashboard/articles/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 17ms (compile: 4ms, render: 13ms)
+ GET / 200 in 192ms (compile: 3ms, render: 189ms)
+ GET / 200 in 310ms (compile: 3ms, render: 307ms)
+ GET / 200 in 172ms (compile: 4ms, render: 168ms)
+ GET /blog/07b2fc75-8030-42cd-a66a-97ed465a79ab 200 in 288ms (compile: 98ms, render: 190ms)
+ GET / 200 in 444ms (compile: 4ms, render: 439ms)
+ GET /admin/dashboard/articles/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 15ms (compile: 3ms, render: 12ms)
+ GET / 200 in 107ms (compile: 65ms, render: 42ms)
+✓ Compiled in 236ms
+✓ Compiled in 8ms
+ GET /admin/dashboard/articles/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 196ms (compile: 68ms, render: 127ms)
+ GET /admin/dashboard/articles/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 37ms (compile: 1533µs, render: 36ms)
+ GET / 200 in 600ms (compile: 79ms, render: 521ms)
+ GET / 200 in 131ms (compile: 3ms, render: 128ms)
+ GET / 200 in 78ms (compile: 1933µs, render: 76ms)
+ GET / 200 in 84ms (compile: 4ms, render: 80ms)
+ GET / 200 in 141ms (compile: 3ms, render: 137ms)
+ GET / 200 in 83ms (compile: 4ms, render: 79ms)
+ GET / 200 in 138ms (compile: 4ms, render: 134ms)
+ GET / 200 in 140ms (compile: 3ms, render: 137ms)
+ GET /blog/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 308ms (compile: 101ms, render: 206ms)
+ GET /admin/dashboard/articles/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 27ms (compile: 3ms, render: 24ms)
+ GET / 200 in 141ms (compile: 1558µs, render: 140ms)
+ GET /blog/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 297ms (compile: 101ms, render: 196ms)
+ GET / 200 in 164ms (compile: 3ms, render: 161ms)
+ GET / 200 in 160ms (compile: 3ms, render: 157ms)
+ GET / 200 in 122ms (compile: 5ms, render: 118ms)
+ GET /admin/dashboard 200 in 72ms (compile: 58ms, render: 14ms)
+ GET /admin/dashboard 200 in 11ms (compile: 1565µs, render: 9ms)
+ GET /api/dashboard/articles 200 in 460ms (compile: 6ms, render: 454ms)
+ GET /api/dashboard/articles 200 in 80ms (compile: 1343µs, render: 79ms)
+ GET /api/engine/trends 200 in 2.4s (compile: 1312µs, render: 2.4s)
+ GET /api/engine/trends 200 in 1922ms (compile: 1453µs, render: 1921ms)
+ GET /api/dashboard/articles 200 in 139ms (compile: 2ms, render: 137ms)
+ GET /admin/dashboard/ai-settings 200 in 80ms (compile: 65ms, render: 15ms)
+✓ Compiled in 53ms
+ GET /admin/dashboard/ai-settings 200 in 110ms (compile: 3ms, render: 108ms)
+ GET / 200 in 111ms (compile: 82ms, render: 29ms)
+ GET /admin/dashboard/settings 200 in 82ms (compile: 62ms, render: 20ms)
+ GET /admin/dashboard/settings 200 in 10ms (compile: 1473µs, render: 8ms)
+ GET /admin/dashboard/settings 200 in 30ms (compile: 1405µs, render: 28ms)
+ GET / 200 in 31ms (compile: 14ms, render: 18ms)
+✓ Compiled in 25ms
+ GET / 200 in 241ms (compile: 3ms, render: 238ms)
+[ArticlePage] Fetched Links for 57e6e146-426b-4785-9da5-42dd61aac34d: {
+  clinic: {
+    url: 'https://liff.line.me/1657922560-1J7Njyb8/landing?follow=%40079icouq&lp=DPFOqe&liff_id=1657922560-1J7Njyb8'
+  },
+  line: { url: 'https://lin.ee/KXp58As' }
+}
+ GET /blog/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 398ms (compile: 108ms, render: 290ms)
+ GET / 200 in 135ms (compile: 4ms, render: 131ms)
+[ArticlePage] Fetched Links for 57e6e146-426b-4785-9da5-42dd61aac34d: {
+  clinic: {
+    url: 'https://liff.line.me/1657922560-1J7Njyb8/landing?follow=%40079icouq&lp=DPFOqe&liff_id=1657922560-1J7Njyb8'
+  },
+  line: { url: 'https://lin.ee/KXp58As' }
+}
+ GET /blog/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 220ms (compile: 3ms, render: 217ms)
+ GET / 200 in 82ms (compile: 3ms, render: 79ms)
+[ArticlePage] Fetched Links for 57e6e146-426b-4785-9da5-42dd61aac34d: {
+  clinic: {
+    url: 'https://liff.line.me/1657922560-1J7Njyb8/landing?follow=%40079icouq&lp=DPFOqe&liff_id=1657922560-1J7Njyb8'
+  },
+  line: { url: 'https://lin.ee/KXp58As' }
+}
+ GET /blog/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 235ms (compile: 4ms, render: 231ms)
+ GET /blog 404 in 76ms (compile: 61ms, render: 15ms)
+ GET /blog 404 in 78ms (compile: 2ms, render: 75ms)
+[ArticlePage] Fetched Links for 57e6e146-426b-4785-9da5-42dd61aac34d: {
+  clinic: {
+    url: 'https://liff.line.me/1657922560-1J7Njyb8/landing?follow=%40079icouq&lp=DPFOqe&liff_id=1657922560-1J7Njyb8'
+  },
+  line: { url: 'https://lin.ee/KXp58As' }
+}
+ GET /blog/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 463ms (compile: 4ms, render: 459ms)
+ GET / 200 in 97ms (compile: 3ms, render: 94ms)
+[ArticlePage] Fetched Links for 7195300e-738b-47cd-9eab-0ce1f1f9d320: {
+  clinic: {
+    url: 'https://liff.line.me/1657922560-1J7Njyb8/landing?follow=%40079icouq&lp=DPFOqe&liff_id=1657922560-1J7Njyb8'
+  },
+  line: { url: 'https://lin.ee/KXp58As' }
+}
+ GET /blog/7195300e-738b-47cd-9eab-0ce1f1f9d320 200 in 255ms (compile: 4ms, render: 251ms)
+[ArticlePage] Fetched Links for 7195300e-738b-47cd-9eab-0ce1f1f9d320: {
+  clinic: {
+    url: 'https://liff.line.me/1657922560-1J7Njyb8/landing?follow=%40079icouq&lp=DPFOqe&liff_id=1657922560-1J7Njyb8'
+  },
+  line: { url: 'https://lin.ee/KXp58As' }
+}
+ GET /blog/7195300e-738b-47cd-9eab-0ce1f1f9d320 200 in 326ms (compile: 4ms, render: 322ms)
+ GET / 200 in 124ms (compile: 4ms, render: 120ms)
+[ArticlePage] Fetched Links for 07b2fc75-8030-42cd-a66a-97ed465a79ab: {
+  clinic: {
+    url: 'https://liff.line.me/1657922560-1J7Njyb8/landing?follow=%40079icouq&lp=DPFOqe&liff_id=1657922560-1J7Njyb8'
+  },
+  line: { url: 'https://lin.ee/KXp58As' }
+}
+ GET /blog/07b2fc75-8030-42cd-a66a-97ed465a79ab 200 in 238ms (compile: 4ms, render: 234ms)
+[ArticlePage] Fetched Links for 07b2fc75-8030-42cd-a66a-97ed465a79ab: {
+  clinic: {
+    url: 'https://liff.line.me/1657922560-1J7Njyb8/landing?follow=%40079icouq&lp=DPFOqe&liff_id=1657922560-1J7Njyb8'
+  },
+  line: { url: 'https://lin.ee/KXp58As' }
+}
+ GET /blog/07b2fc75-8030-42cd-a66a-97ed465a79ab 200 in 886ms (compile: 4ms, render: 883ms)
+ GET / 200 in 135ms (compile: 3ms, render: 132ms)
+ GET /admin/dashboard/settings 200 in 25ms (compile: 14ms, render: 11ms)
+ GET / 200 in 27ms (compile: 1553µs, render: 25ms)
+✓ Compiled in 23ms
+ GET /admin/dashboard/settings 200 in 26ms (compile: 1234µs, render: 25ms)
+ GET / 200 in 27ms (compile: 13ms, render: 14ms)
+✓ Compiled in 26ms
+[ArticlePage] Fetched Links for 57e6e146-426b-4785-9da5-42dd61aac34d: {
+  clinic: {
+    url: 'https://liff.line.me/1657922560-1J7Njyb8/landing?follow=%40079icouq&lp=DPFOqe&liff_id=1657922560-1J7Njyb8'
+  },
+  line: { url: 'https://lin.ee/KXp58As' }
+}
+ GET /blog/57e6e146-426b-4785-9da5-42dd61aac34d 200 in 584ms (compile: 98ms, render: 486ms)
+ GET / 200 in 137ms (compile: 4ms, render: 133ms)
+[ArticlePage] Fetched Links for 07b2fc75-8030-42cd-a66a-97ed465a79ab: {
+  clinic: {
+    url: 'https://liff.line.me/1657922560-1J7Njyb8/landing?follow=%40079icouq&lp=DPFOqe&liff_id=1657922560-1J7Njyb8'
+  },
+  line: { url: 'https://lin.ee/KXp58As' }
+}
+ GET /blog/07b2fc75-8030-42cd-a66a-97ed465a79ab 200 in 322ms (compile: 3ms, render: 319ms)
+ GET / 200 in 130ms (compile: 4ms, render: 126ms)
+ GET /admin/dashboard 200 in 22ms (compile: 5ms, render: 17ms)
+ GET /admin/dashboard 200 in 13ms (compile: 3ms, render: 10ms)
+ GET /api/dashboard/articles 200 in 448ms (compile: 4ms, render: 444ms)
+ GET /api/dashboard/articles 200 in 203ms (compile: 981µs, render: 202ms)
+ GET /api/engine/trends 200 in 2.3s (compile: 1229µs, render: 2.3s)
+ GET /api/engine/trends 200 in 2.3s (compile: 1065µs, render: 2.3s)
+ GET /api/dashboard/articles 200 in 170ms (compile: 2ms, render: 167ms)
+ GET /admin/dashboard/articles 200 in 85ms (compile: 68ms, render: 17ms)
+ GET /admin/dashboard/articles/c9ef6788-1819-4515-864e-83c02d67bd03 200 in 18ms (compile: 4ms, render: 14ms)
+ GET /admin/dashboard/articles/c9ef6788-1819-4515-864e-83c02d67bd03 200 in 21ms (compile: 3ms, render: 19ms)
+ GET / 200 in 36ms (compile: 1528µs, render: 35ms)
+✓ Compiled in 103ms
+[ArticlePage] Fetched Links for 07b2fc75-8030-42cd-a66a-97ed465a79ab: {
+  clinic: {
+    url: 'https://liff.line.me/1657922560-1J7Njyb8/landing?follow=%40079icouq&lp=DPFOqe&liff_id=1657922560-1J7Njyb8'
+  },
+  line: { url: 'https://lin.ee/KXp58As' }
+}
+ GET /blog/07b2fc75-8030-42cd-a66a-97ed465a79ab 200 in 588ms (compile: 97ms, render: 491ms)
+ GET / 200 in 132ms (compile: 2ms, render: 129ms)
+ GET /admin/dashboard 200 in 13ms (compile: 4ms, render: 10ms)
+ GET /api/dashboard/articles 200 in 547ms (compile: 2ms, render: 544ms)
+ GET /api/dashboard/articles 200 in 92ms (compile: 1026µs, render: 91ms)
+ GET /api/engine/trends 200 in 2.3s (compile: 1651µs, render: 2.3s)
+ GET /api/engine/trends 200 in 2.0s (compile: 1155µs, render: 2.0s)
+ POST /api/engine/generate 200 in 8ms (compile: 3ms, render: 5ms)
+ GET /api/dashboard/articles 200 in 133ms (compile: 2ms, render: 130ms)
+ GET /api/dashboard/articles 200 in 76ms (compile: 3ms, render: 73ms)
+ GET /api/dashboard/articles 200 in 78ms (compile: 2ms, render: 76ms)
+ GET /api/dashboard/articles 200 in 128ms (compile: 4ms, render: 124ms)
+ GET /api/dashboard/articles 200 in 129ms (compile: 3ms, render: 126ms)
+ GET /api/dashboard/articles 200 in 114ms (compile: 2ms, render: 112ms)
+ GET /api/dashboard/articles 200 in 150ms (compile: 4ms, render: 146ms)
+ GET /admin/dashboard/articles/0357f31b-06bb-4e31-ac81-14863721e4ae 200 in 15ms (compile: 5ms, render: 10ms)
+ GET /admin/dashboard/media 200 in 79ms (compile: 61ms, render: 18ms)
+ GET /admin/dashboard/settings 200 in 11ms (compile: 3ms, render: 8ms)
+ GET / 200 in 179ms (compile: 2ms, render: 177ms)
+ GET /blog 404 in 15ms (compile: 4ms, render: 11ms)
+ GET /blog 404 in 22ms (compile: 1872µs, render: 20ms)
+ GET / 200 in 136ms (compile: 5ms, render: 131ms)
+ GET /blog 404 in 10ms (compile: 1891µs, render: 8ms)
+ GET /blog 404 in 21ms (compile: 1766µs, render: 19ms)
+ GET / 200 in 146ms (compile: 3ms, render: 144ms)
+ GET /admin/dashboard/settings 200 in 241ms (compile: 151ms, render: 91ms)
+ GET /admin/dashboard/settings 200 in 88ms (compile: 26ms, render: 62ms)
+ GET / 200 in 276ms (compile: 74ms, render: 202ms)
+ GET /admin/dashboard/settings 200 in 62ms (compile: 15ms, render: 47ms)
+ GET / 200 in 161ms (compile: 1372µs, render: 160ms)
+ GET / 200 in 170ms (compile: 1983µs, render: 168ms)
+ GET /admin/dashboard/settings 200 in 128ms (compile: 1748µs, render: 126ms)
+ GET /admin/dashboard/settings 200 in 179ms (compile: 28ms, render: 151ms)
+ GET / 200 in 215ms (compile: 1385µs, render: 213ms)
+ GET / 200 in 206ms (compile: 1596µs, render: 204ms)
+ GET /admin/dashboard/settings 200 in 91ms (compile: 3ms, render: 88ms)
+ GET / 200 in 166ms (compile: 4ms, render: 162ms)
+ GET /admin/dashboard/settings 200 in 48ms (compile: 1350µs, render: 46ms)
+ GET / 200 in 88ms (compile: 2ms, render: 85ms)
+ GET /admin/dashboard/settings 200 in 48ms (compile: 1379µs, render: 46ms)
+ GET / 200 in 86ms (compile: 12ms, render: 73ms)
+ GET /admin/dashboard/settings 200 in 38ms (compile: 2ms, render: 36ms)
+ GET / 200 in 62ms (compile: 10ms, render: 51ms)
+ GET /admin/dashboard/settings 200 in 15ms (compile: 1581µs, render: 14ms)
+ GET / 200 in 39ms (compile: 12ms, render: 27ms)
+ GET /admin/dashboard/settings 200 in 211ms (compile: 46ms, render: 164ms)
+ GET /admin/dashboard/settings 404 in 194ms (compile: 54ms, render: 140ms)
+ GET / 200 in 314ms (compile: 91ms, render: 223ms)
+ GET /admin/dashboard/settings 200 in 115ms (compile: 1267µs, render: 114ms)
+ GET / 200 in 210ms (compile: 1736µs, render: 209ms)
+ GET / 200 in 142ms (compile: 1224µs, render: 141ms)
+ GET /admin/dashboard/settings 200 in 133ms (compile: 1731µs, render: 131ms)
+ GET / 200 in 65ms (compile: 1824µs, render: 64ms)
+ GET / 200 in 62ms (compile: 1348µs, render: 61ms)
+ GET / 200 in 61ms (compile: 1412µs, render: 59ms)
+ GET / 200 in 52ms (compile: 1527µs, render: 50ms)
+ GET / 200 in 55ms (compile: 1121µs, render: 54ms)
+ GET / 200 in 56ms (compile: 1238µs, render: 55ms)
+ GET / 200 in 58ms (compile: 1332µs, render: 57ms)
+ GET / 200 in 59ms (compile: 1683µs, render: 57ms)
+ GET / 200 in 56ms (compile: 1709µs, render: 55ms)
+ GET / 200 in 60ms (compile: 1535µs, render: 59ms)
+ GET / 200 in 61ms (compile: 1234µs, render: 60ms)
+ GET / 200 in 63ms (compile: 1692µs, render: 61ms)
+ GET / 200 in 64ms (compile: 1175µs, render: 63ms)
+ GET / 200 in 61ms (compile: 1593µs, render: 60ms)
+ GET / 200 in 62ms (compile: 1816µs, render: 60ms)
+ GET / 200 in 81ms (compile: 1475µs, render: 79ms)
+ GET / 200 in 78ms (compile: 1311µs, render: 77ms)
+ GET / 200 in 76ms (compile: 1954µs, render: 75ms)
+ GET / 200 in 74ms (compile: 1601µs, render: 72ms)
+ GET / 200 in 52ms (compile: 1411µs, render: 51ms)
+ GET / 200 in 52ms (compile: 1347µs, render: 51ms)
+ GET / 200 in 52ms (compile: 1026µs, render: 51ms)
+ GET / 200 in 51ms (compile: 1159µs, render: 50ms)
+ GET / 200 in 51ms (compile: 1116µs, render: 49ms)
+ GET / 200 in 50ms (compile: 1144µs, render: 49ms)
+ GET / 200 in 39ms (compile: 1478µs, render: 37ms)
+ GET / 200 in 39ms (compile: 1192µs, render: 38ms)
+ GET / 200 in 39ms (compile: 1019µs, render: 38ms)
+ GET / 200 in 40ms (compile: 1305µs, render: 39ms)
+ GET / 200 in 29ms (compile: 1472µs, render: 28ms)
+ GET / 200 in 17ms (compile: 1305µs, render: 16ms)
+ GET /admin/dashboard/settings 200 in 217ms (compile: 118ms, render: 98ms)
+ GET / 200 in 320ms (compile: 90ms, render: 229ms)
+ GET /admin/dashboard/settings 404 in 177ms (compile: 45ms, render: 131ms)
+ GET /admin/dashboard/settings 200 in 121ms (compile: 12ms, render: 109ms)
+ GET / 200 in 206ms (compile: 1555µs, render: 205ms)
+ GET / 200 in 167ms (compile: 3ms, render: 165ms)
+ GET /admin/dashboard/settings 200 in 144ms (compile: 1176µs, render: 142ms)
+ GET / 200 in 73ms (compile: 1675µs, render: 71ms)
+ GET / 200 in 56ms (compile: 1715µs, render: 55ms)
+ GET / 200 in 53ms (compile: 1417µs, render: 51ms)
+ GET / 200 in 42ms (compile: 1473µs, render: 41ms)
+ GET / 200 in 43ms (compile: 1355µs, render: 42ms)
+ GET / 200 in 44ms (compile: 2ms, render: 41ms)
+ GET / 200 in 40ms (compile: 1642µs, render: 38ms)
+ GET / 200 in 37ms (compile: 1465µs, render: 36ms)
+ GET / 200 in 37ms (compile: 1015µs, render: 36ms)
+ GET / 200 in 39ms (compile: 1333µs, render: 38ms)
+ GET / 200 in 41ms (compile: 1219µs, render: 40ms)
+ GET / 200 in 42ms (compile: 1357µs, render: 40ms)
+ GET / 200 in 55ms (compile: 1394µs, render: 53ms)
+ GET / 200 in 64ms (compile: 1395µs, render: 62ms)
+ GET / 200 in 63ms (compile: 1452µs, render: 62ms)
+ GET / 200 in 63ms (compile: 1180µs, render: 62ms)
+ GET / 200 in 63ms (compile: 1312µs, render: 62ms)
+ GET / 200 in 53ms (compile: 1632µs, render: 52ms)
+ GET / 200 in 54ms (compile: 1548µs, render: 52ms)
+ GET / 200 in 54ms (compile: 1660µs, render: 53ms)
+ GET / 200 in 53ms (compile: 1208µs, render: 52ms)
+ GET / 200 in 54ms (compile: 1551µs, render: 53ms)
+ GET / 200 in 54ms (compile: 1825µs, render: 52ms)
+ GET / 200 in 54ms (compile: 1455µs, render: 52ms)
+ GET / 200 in 55ms (compile: 1439µs, render: 54ms)
+ GET / 200 in 53ms (compile: 1520µs, render: 51ms)
+ GET / 200 in 65ms (compile: 1254µs, render: 63ms)
+ GET / 200 in 82ms (compile: 1058µs, render: 81ms)
+ GET / 200 in 71ms (compile: 1231µs, render: 69ms)
+ GET / 200 in 61ms (compile: 1229µs, render: 59ms)
+ GET / 200 in 48ms (compile: 1571µs, render: 46ms)
+ GET / 200 in 35ms (compile: 1186µs, render: 34ms)
+ GET / 200 in 15ms (compile: 1231µs, render: 14ms)
+[ArticlePage] Fetched Links for 0357f31b-06bb-4e31-ac81-14863721e4ae: {
+  clinic: {
+    url: 'https://liff.line.me/1657922560-1J7Njyb8/landing?follow=%40079icouq&lp=DPFOqe&liff_id=1657922560-1J7Njyb8'
+  },
+  line: { url: 'https://lin.ee/KXp58As' }
+}
+ GET /blog/0357f31b-06bb-4e31-ac81-14863721e4ae 200 in 541ms (compile: 99ms, render: 442ms)
+ GET / 200 in 127ms (compile: 2ms, render: 125ms)
+✓ Compiled in 29ms
+ GET /admin/dashboard/settings 200 in 27ms (compile: 15ms, render: 12ms)
+ GET / 200 in 29ms (compile: 1470µs, render: 27ms)
+ GET /sitemap.xml 200 in 335ms (compile: 164ms, render: 171ms)
+ GET / 200 in 473ms (compile: 3ms, render: 470ms)
+ GET /admin/dashboard/ai-settings 200 in 74ms (compile: 57ms, render: 17ms)
+ GET /admin/dashboard/settings 200 in 15ms (compile: 3ms, render: 12ms)
+ GET /admin/dashboard/media 200 in 74ms (compile: 58ms, render: 16ms)
+ GET /admin/dashboard/media 200 in 12ms (compile: 3ms, render: 9ms)
+ GET /blog 404 in 22ms (compile: 4ms, render: 18ms)
+ GET /blog 404 in 47ms (compile: 1882µs, render: 45ms)
+ GET / 200 in 279ms (compile: 3ms, render: 276ms)
+ GET /privacy 404 in 25ms (compile: 6ms, render: 19ms)
+ GET /privacy 404 in 25ms (compile: 1960µs, render: 23ms)
+ GET / 200 in 454ms (compile: 5ms, render: 450ms)
+ GET /contact 404 in 28ms (compile: 8ms, render: 20ms)
+ GET /contact 404 in 29ms (compile: 3ms, render: 26ms)
+ GET / 200 in 176ms (compile: 4ms, render: 172ms)
+ GET /admin/dashboard/media 200 in 74ms (compile: 11ms, render: 63ms)
+ GET /admin/dashboard/media 404 in 73ms (compile: 16ms, render: 58ms)
+ GET / 200 in 331ms (compile: 29ms, render: 302ms)
+ GET /admin/dashboard/media 200 in 267ms (compile: 106ms, render: 161ms)
+ GET / 200 in 315ms (compile: 1705µs, render: 313ms)
+ GET /admin/dashboard/media 200 in 300ms (compile: 82ms, render: 218ms)
+ GET / 200 in 310ms (compile: 147ms, render: 163ms)
+ GET / 200 in 56ms (compile: 3ms, render: 53ms)
+✓ Compiled in 0ms
+ GET / 200 in 80ms (compile: 3ms, render: 76ms)
+ GET / 200 in 88ms (compile: 1731µs, render: 86ms)
+ GET / 200 in 85ms (compile: 1486µs, render: 83ms)
+ GET / 200 in 51ms (compile: 2ms, render: 49ms)
+ GET / 200 in 50ms (compile: 1193µs, render: 48ms)
+ GET / 200 in 50ms (compile: 1296µs, render: 49ms)
+ GET / 200 in 50ms (compile: 1291µs, render: 49ms)
+ GET / 200 in 54ms (compile: 1074µs, render: 53ms)
+ GET / 200 in 43ms (compile: 1016µs, render: 42ms)
+ GET / 200 in 55ms (compile: 1226µs, render: 54ms)
+ GET / 200 in 53ms (compile: 1292µs, render: 52ms)
+ GET / 200 in 50ms (compile: 1166µs, render: 49ms)
+ GET / 200 in 38ms (compile: 1165µs, render: 37ms)
+ GET / 200 in 52ms (compile: 1166µs, render: 51ms)
+ GET / 200 in 61ms (compile: 1317µs, render: 59ms)
+ GET / 200 in 61ms (compile: 1391µs, render: 60ms)
+ GET / 200 in 59ms (compile: 1484µs, render: 58ms)
+ GET / 200 in 58ms (compile: 1440µs, render: 57ms)
+ GET / 200 in 51ms (compile: 1287µs, render: 49ms)
+ GET / 200 in 63ms (compile: 1297µs, render: 62ms)
+ GET / 200 in 64ms (compile: 1380µs, render: 62ms)
+ GET / 200 in 63ms (compile: 1183µs, render: 62ms)
+ GET / 200 in 63ms (compile: 1319µs, render: 61ms)
+ GET / 200 in 51ms (compile: 1358µs, render: 50ms)
+ GET / 200 in 53ms (compile: 1537µs, render: 51ms)
+ GET / 200 in 52ms (compile: 1138µs, render: 51ms)
+ GET / 200 in 53ms (compile: 1307µs, render: 52ms)
+ GET / 200 in 54ms (compile: 1337µs, render: 53ms)
+ GET / 200 in 56ms (compile: 1526µs, render: 54ms)
+ GET / 200 in 65ms (compile: 1221µs, render: 63ms)
+ GET / 200 in 64ms (compile: 1481µs, render: 63ms)
+ GET / 200 in 53ms (compile: 1343µs, render: 52ms)
+ GET / 200 in 38ms (compile: 2ms, render: 36ms)
+ GET / 200 in 16ms (compile: 1189µs, render: 15ms)
+ GET /admin/dashboard/media 200 in 187ms (compile: 123ms, render: 65ms)
+ GET /admin/dashboard/media 200 in 40ms (compile: 1865µs, render: 38ms)
+ GET / 200 in 219ms (compile: 92ms, render: 127ms)
+ GET /admin/dashboard/media 200 in 44ms (compile: 1848µs, render: 42ms)
+ GET / 200 in 84ms (compile: 1278µs, render: 83ms)
+ GET / 200 in 80ms (compile: 1327µs, render: 79ms)
+ GET /admin/dashboard/media 200 in 62ms (compile: 1292µs, render: 61ms)
+ GET /admin/dashboard/media 200 in 54ms (compile: 12ms, render: 42ms)
+ GET / 200 in 86ms (compile: 1525µs, render: 85ms)
+ GET /admin/dashboard/media 200 in 43ms (compile: 951µs, render: 42ms)
+ GET / 200 in 77ms (compile: 2ms, render: 75ms)
+ GET / 200 in 75ms (compile: 1203µs, render: 74ms)
+ GET /admin/dashboard/media 200 in 42ms (compile: 1638µs, render: 41ms)
+ GET / 200 in 75ms (compile: 898µs, render: 74ms)
+ GET /admin/dashboard/media 200 in 42ms (compile: 1102µs, render: 41ms)
+ GET / 200 in 64ms (compile: 11ms, render: 53ms)
+ GET /admin/dashboard/media 200 in 22ms (compile: 1215µs, render: 21ms)
+ GET / 200 in 35ms (compile: 1100µs, render: 34ms)
+ GET / 200 in 42ms (compile: 1096µs, render: 41ms)
+ GET /admin/dashboard/media 200 in 72ms (compile: 1120µs, render: 71ms)
+ GET /admin/dashboard/media 200 in 46ms (compile: 1967µs, render: 44ms)
+ GET /admin/dashboard/media 200 in 34ms (compile: 1270µs, render: 32ms)
+ GET / 200 in 94ms (compile: 10ms, render: 84ms)
+ GET / 200 in 78ms (compile: 12ms, render: 65ms)
+ GET / 200 in 67ms (compile: 11ms, render: 56ms)
+ GET /admin/dashboard/media 200 in 45ms (compile: 1551µs, render: 43ms)
+ GET /admin/dashboard/media 200 in 58ms (compile: 1160µs, render: 57ms)
+ GET /admin/dashboard/media 200 in 48ms (compile: 2ms, render: 46ms)
+ GET / 200 in 83ms (compile: 1256µs, render: 81ms)
+ GET /admin/dashboard/media 200 in 37ms (compile: 12ms, render: 24ms)
+ GET / 200 in 91ms (compile: 1675µs, render: 89ms)
+ GET / 200 in 91ms (compile: 1441µs, render: 89ms)
+ GET /admin/dashboard/media 200 in 56ms (compile: 1078µs, render: 54ms)
+ GET /admin/dashboard/media 200 in 48ms (compile: 1651µs, render: 47ms)
+ GET / 200 in 92ms (compile: 1251µs, render: 90ms)
+ GET / 200 in 91ms (compile: 1462µs, render: 89ms)
+ GET /admin/dashboard/media 200 in 46ms (compile: 1770µs, render: 44ms)
+ GET / 200 in 82ms (compile: 1330µs, render: 81ms)
+ GET /admin/dashboard/media 200 in 55ms (compile: 1164µs, render: 54ms)
+ GET / 200 in 80ms (compile: 1080µs, render: 79ms)
+ GET /admin/dashboard/media 200 in 44ms (compile: 1139µs, render: 43ms)
+ GET / 200 in 86ms (compile: 11ms, render: 75ms)
+ GET /admin/dashboard/media 200 in 43ms (compile: 1181µs, render: 42ms)
+ GET / 200 in 85ms (compile: 10ms, render: 75ms)
+ GET /admin/dashboard/media 200 in 42ms (compile: 1122µs, render: 41ms)
+ GET /admin/dashboard/media 200 in 52ms (compile: 1222µs, render: 50ms)
+ GET / 200 in 84ms (compile: 1164µs, render: 83ms)
+ GET /admin/dashboard/media 200 in 54ms (compile: 1414µs, render: 53ms)
+ GET / 200 in 96ms (compile: 10ms, render: 86ms)
+ GET / 200 in 99ms (compile: 10ms, render: 89ms)
+ GET /admin/dashboard/media 200 in 57ms (compile: 1222µs, render: 55ms)
+ GET / 200 in 89ms (compile: 1172µs, render: 88ms)
+ GET /admin/dashboard/media 200 in 45ms (compile: 1103µs, render: 44ms)
+ GET / 200 in 90ms (compile: 11ms, render: 79ms)
+ GET /admin/dashboard/media 200 in 44ms (compile: 1102µs, render: 43ms)
+ GET / 200 in 90ms (compile: 11ms, render: 79ms)
+ GET /admin/dashboard/media 200 in 45ms (compile: 1092µs, render: 44ms)
+ GET / 200 in 58ms (compile: 843µs, render: 57ms)
+ GET /admin/dashboard/media 200 in 55ms (compile: 1188µs, render: 54ms)
+ GET / 200 in 70ms (compile: 1604µs, render: 68ms)
+ GET /admin/dashboard/media 200 in 34ms (compile: 1380µs, render: 32ms)
+ GET / 200 in 56ms (compile: 11ms, render: 46ms)
+ GET /admin/dashboard/media 200 in 22ms (compile: 12ms, render: 11ms)
+ GET / 200 in 75ms (compile: 1239µs, render: 74ms)
+ GET /admin/dashboard/media 200 in 72ms (compile: 12ms, render: 60ms)
+ GET /admin/dashboard/media 200 in 44ms (compile: 1984µs, render: 42ms)
+ GET / 200 in 85ms (compile: 1207µs, render: 84ms)
+ GET /admin/dashboard/media 200 in 33ms (compile: 1170µs, render: 31ms)
+ GET / 200 in 74ms (compile: 1396µs, render: 73ms)
+ GET / 200 in 79ms (compile: 1523µs, render: 77ms)
+ GET /admin/dashboard/media 200 in 46ms (compile: 1159µs, render: 44ms)
+ GET / 200 in 69ms (compile: 1032µs, render: 68ms)
+ GET /admin/dashboard/media 200 in 45ms (compile: 1308µs, render: 44ms)
+ GET / 200 in 80ms (compile: 1224µs, render: 78ms)
+ GET /admin/dashboard/media 200 in 45ms (compile: 1297µs, render: 44ms)
+ GET / 200 in 69ms (compile: 11ms, render: 58ms)
+ GET /admin/dashboard/media 200 in 34ms (compile: 1352µs, render: 33ms)
+ GET /admin/dashboard/media 200 in 13ms (compile: 1159µs, render: 12ms)
+ GET / 200 in 47ms (compile: 1568µs, render: 46ms)
+ GET / 200 in 36ms (compile: 11ms, render: 25ms)
+ GET /admin/dashboard/media 200 in 104ms (compile: 92ms, render: 12ms)
+ GET / 200 in 106ms (compile: 63ms, render: 43ms)
+ GET /admin/dashboard/media 200 in 48ms (compile: 13ms, render: 35ms)
+ GET / 200 in 67ms (compile: 28ms, render: 39ms)
+✓ Compiled in 0ms
+ GET /admin/dashboard/media 404 in 311ms (compile: 155ms, render: 155ms)
+ GET /admin/dashboard/media 200 in 142ms (compile: 20ms, render: 122ms)
+ GET / 200 in 331ms (compile: 96ms, render: 235ms)
+ GET / 200 in 173ms (compile: 1656µs, render: 171ms)
+ GET /admin/dashboard/media 200 in 140ms (compile: 1558µs, render: 139ms)
+ GET / 200 in 56ms (compile: 1828µs, render: 55ms)
+ GET / 200 in 51ms (compile: 1424µs, render: 50ms)
+ GET / 200 in 51ms (compile: 1157µs, render: 50ms)
+ GET / 200 in 55ms (compile: 1324µs, render: 54ms)
+ GET / 200 in 58ms (compile: 1099µs, render: 57ms)
+ GET / 200 in 60ms (compile: 1142µs, render: 59ms)
+ GET / 200 in 64ms (compile: 1303µs, render: 63ms)
+ GET / 200 in 65ms (compile: 1427µs, render: 64ms)
+ GET / 200 in 89ms (compile: 1732µs, render: 87ms)
+ GET / 200 in 89ms (compile: 1554µs, render: 87ms)
+ GET / 200 in 84ms (compile: 1481µs, render: 82ms)
+ GET / 200 in 79ms (compile: 1485µs, render: 78ms)
+ GET / 200 in 52ms (compile: 1407µs, render: 51ms)
+ GET / 200 in 49ms (compile: 1265µs, render: 47ms)
+ GET / 200 in 51ms (compile: 998µs, render: 50ms)
+ GET / 200 in 51ms (compile: 1095µs, render: 50ms)
+ GET / 200 in 52ms (compile: 1222µs, render: 50ms)
+ GET / 200 in 56ms (compile: 1892µs, render: 54ms)
+ GET / 200 in 43ms (compile: 1104µs, render: 42ms)
+ GET / 200 in 54ms (compile: 1438µs, render: 53ms)
+ GET / 200 in 55ms (compile: 1329µs, render: 54ms)
+ GET / 200 in 51ms (compile: 1263µs, render: 49ms)
+ GET / 200 in 49ms (compile: 1116µs, render: 48ms)
+ GET / 200 in 48ms (compile: 1093µs, render: 47ms)
+ GET / 200 in 56ms (compile: 1340µs, render: 54ms)
+ GET / 200 in 55ms (compile: 1121µs, render: 54ms)
+ GET / 200 in 54ms (compile: 1201µs, render: 53ms)
+ GET / 200 in 43ms (compile: 1021µs, render: 42ms)
+ GET / 200 in 37ms (compile: 1210µs, render: 36ms)
+ GET / 200 in 39ms (compile: 1804µs, render: 37ms)
+ GET / 200 in 39ms (compile: 1113µs, render: 38ms)
+ GET / 200 in 40ms (compile: 1276µs, render: 39ms)
+ GET / 200 in 57ms (compile: 1362µs, render: 56ms)
+ GET / 200 in 67ms (compile: 975µs, render: 66ms)
+ GET / 200 in 65ms (compile: 1064µs, render: 64ms)
+ GET / 200 in 55ms (compile: 1139µs, render: 54ms)
+ GET / 200 in 36ms (compile: 1175µs, render: 35ms)
+ GET / 200 in 24ms (compile: 1160µs, render: 23ms)
+ GET / 200 in 14ms (compile: 996µs, render: 13ms)
+ GET /contact 200 in 345ms (compile: 334ms, render: 10ms)
+ GET /privacy 200 in 187ms (compile: 176ms, render: 11ms)
+ GET /blog 200 in 221ms (compile: 210ms, render: 11ms)
+ GET /blog 200 in 9ms (compile: 1505µs, render: 8ms)
+ GET / 200 in 170ms (compile: 4ms, render: 165ms)

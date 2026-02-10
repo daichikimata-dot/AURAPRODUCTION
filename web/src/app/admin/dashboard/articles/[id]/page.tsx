@@ -25,17 +25,31 @@ export default function ArticleDetailPage() {
     const [prompt, setPrompt] = useState('');
     const [isRevising, setIsRevising] = useState(false);
 
+    // Category State
+    const [categories, setCategories] = useState<any[]>([]);
+    const [newCategoryName, setNewCategoryName] = useState("");
+    const [isCreatingCategory, setIsCreatingCategory] = useState(false);
+
     useEffect(() => {
         if (id) {
             fetchArticle();
+            fetchCategories();
         }
     }, [id]);
+
+    const fetchCategories = async () => {
+        const { data, error } = await supabase
+            .from('categories')
+            .select('*')
+            .order('name');
+        if (data) setCategories(data);
+    };
 
     const fetchArticle = async () => {
         setLoading(true);
         const { data, error } = await supabase
             .from('articles')
-            .select('*')
+            .select('*, category:categories(id, name)')
             .eq('id', id)
             .single();
 
@@ -86,6 +100,59 @@ export default function ArticleDetailPage() {
             fetchArticle();
         }
         setIsRevising(false);
+    };
+
+    const handleCategoryChange = async (categoryId: string) => {
+        if (!article) return;
+
+        // Update local state first
+        const selectedCat = categories.find(c => c.id === categoryId);
+        setArticle({ ...article, category_id: categoryId, category: selectedCat });
+
+        const { error } = await supabase
+            .from('articles')
+            .update({ category_id: categoryId })
+            .eq('id', id);
+
+        if (error) {
+            console.error("Failed to update category:", error);
+            alert("カテゴリー更新に失敗しました");
+        }
+    };
+
+    const handleCreateCategory = async () => {
+        if (!newCategoryName.trim()) return;
+        setIsCreatingCategory(true);
+
+        try {
+            // Check if exists
+            const existing = categories.find(c => c.name.toLowerCase() === newCategoryName.toLowerCase());
+            if (existing) {
+                await handleCategoryChange(existing.id);
+                setNewCategoryName("");
+                return;
+            }
+
+            // Create new
+            const slug = newCategoryName.toLowerCase().replace(/\s+/g, '-');
+            const { data, error } = await supabase
+                .from('categories')
+                .insert({ name: newCategoryName, slug })
+                .select()
+                .single();
+
+            if (error) throw error;
+            if (data) {
+                setCategories([...categories, data]);
+                await handleCategoryChange(data.id);
+                setNewCategoryName("");
+            }
+        } catch (e) {
+            console.error(e);
+            alert("カテゴリー作成に失敗しました");
+        } finally {
+            setIsCreatingCategory(false);
+        }
     };
 
     if (loading) return <div className="p-10 text-center">記事を読み込み中...</div>;
@@ -188,6 +255,46 @@ export default function ArticleDetailPage() {
                             >
                                 {isRevising ? "送信中..." : "AIへ修正を依頼"}
                             </Button>
+                        </CardContent>
+                    </Card>
+
+                    <Card>
+                        <CardContent className="p-4 space-y-4">
+                            <h3 className="font-semibold text-lg">カテゴリー</h3>
+                            <div className="space-y-3">
+                                <label className="text-sm font-medium text-stone-600 block">カテゴリー選択</label>
+                                <select
+                                    className="w-full p-2 border border-stone-200 rounded-md text-sm bg-white"
+                                    value={article.category_id || ""}
+                                    onChange={(e) => handleCategoryChange(e.target.value)}
+                                >
+                                    <option value="">未設定</option>
+                                    {categories.map(c => (
+                                        <option key={c.id} value={c.id}>{c.name}</option>
+                                    ))}
+                                </select>
+
+                                <div className="pt-2 border-t border-stone-100">
+                                    <label className="text-xs text-stone-400 block mb-1">新規作成</label>
+                                    <div className="flex gap-2">
+                                        <input
+                                            type="text"
+                                            placeholder="新しいカテゴリー名"
+                                            className="flex-1 p-2 border border-stone-200 rounded-md text-sm"
+                                            value={newCategoryName}
+                                            onChange={(e) => setNewCategoryName(e.target.value)}
+                                        />
+                                        <Button
+                                            size="sm"
+                                            variant="outline"
+                                            onClick={handleCreateCategory}
+                                            disabled={!newCategoryName || isCreatingCategory}
+                                        >
+                                            作成
+                                        </Button>
+                                    </div>
+                                </div>
+                            </div>
                         </CardContent>
                     </Card>
 

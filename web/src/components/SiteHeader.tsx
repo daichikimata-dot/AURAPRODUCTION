@@ -26,7 +26,7 @@ export default function SiteHeader() {
                 {/* Simple Nav */}
                 <nav className="flex gap-8 text-sm font-medium text-stone-500">
                     <Link href="/" className="hover:text-primary transition-colors hidden md:block">Top</Link>
-                    <Link href="/blog" className="hover:text-primary transition-colors text-primary font-bold">Column</Link>
+                    <Link href="/#latest-topics-section" className="hover:text-primary transition-colors text-primary font-bold">Column</Link>
                 </nav>
             </div>
         </header>

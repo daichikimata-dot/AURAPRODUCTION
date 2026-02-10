@@ -6,11 +6,15 @@ interface Article {
     title: string;
     excerpt?: string;
     thumbnail_url?: string;
-    category?: string;
+    category?: string | { name: string } | null;
     created_at: string;
 }
 
 export default function ArticleCard({ article }: { article: Article }) {
+    const categoryName = typeof article.category === 'object' && article.category !== null
+        ? article.category.name
+        : article.category;
+
     return (
         <Link href={`/blog/${article.id}`} className="group block h-full">
             <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col border border-stone-100">
@@ -23,9 +27,9 @@ export default function ArticleCard({ article }: { article: Article }) {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                     {/* Category Badge */}
-                    {article.category && (
+                    {categoryName && (
                         <span className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-primary text-xs font-serif font-bold px-3 py-1 rounded-full shadow-sm">
-                            {article.category}
+                            {categoryName}
                         </span>
                     )}
                 </div>

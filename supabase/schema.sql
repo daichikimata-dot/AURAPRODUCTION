@@ -65,6 +65,7 @@ create table links (
   id uuid default gen_random_uuid() primary key,
   name text not null,
   url text not null,
+  type text not null default 'affiliate', -- 'affiliate', 'line', 'clinic'
   key text unique, -- Shortcode key e.g. 'sbc-lp'
   clicks integer default 0,
   created_at timestamp with time zone default timezone('utc'::text, now()) not null,

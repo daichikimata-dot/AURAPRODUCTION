@@ -343,29 +343,99 @@ async def process_keyword_generation(keyword: str):
         logger.error(f"RAG Search failed: {e}")
         # Proceed without context
 
-    # 2. Generate Article with Google Search Grounding (Simpler, latest approach)
-    # This effectively replaces "Search -> Crawl -> Generate" with "Generate(tools=[google_search])"
+    # 2. Generate Article with Google Search Grounding
     logger.info("Generating article using Gemini Grounding...")
     
-    article_content = await generator.generate_article_with_grounding(
+    # Fetch existing categories for AI context
+    existing_categories = []
+    if db:
+        try:
+            cat_res = db.get_categories()
+            if cat_res.data:
+                existing_categories = [c['name'] for c in cat_res.data]
+        except Exception as e:
+            logger.error(f"Failed to fetch categories: {e}")
+
+    # Generate content (expecting JSON)
+    generated_json = await generator.generate_article_with_grounding(
         keyword=keyword,
-        learning_context=learning_context
+        learning_context=learning_context,
+        existing_categories=existing_categories
     )
     
-    if article_content:
-        # Clean up markdown
-        article_content = re.sub(r'^```[a-zA-Z]*\n', '', article_content.strip())
-        article_content = re.sub(r'\n```$', '', article_content.strip())
-        article_content = article_content.strip()
-
-        # Extract title
-        title = f"【徹底解説】{keyword}の最新事情"
-        if article_content.startswith("#"):
-             lines = article_content.split('\n')
-             first_line = lines[0]
-             title = first_line.replace("#", "").strip()
-             article_content = "\n".join(lines[1:]).strip()
+    if generated_json:
+        # Parse JSON
+        title = f"【徹底解説】{keyword}の最新事情" # Default fallback
+        article_content = ""
+        category_name = None
         
+        # 1. Clean wrappers
+        cleaned_json = generated_json.replace("```json", "").replace("```", "").strip()
+        if "{" in cleaned_json:
+            start_idx = cleaned_json.find("{")
+            end_idx = cleaned_json.rfind("}") + 1
+            cleaned_json = cleaned_json[start_idx:end_idx]
+
+        try:
+            # 2. Try strict JSON parse
+            data = json.loads(cleaned_json)
+            title = data.get("title", title)
+            article_content = data.get("content", "")
+            category_name = data.get("category")
+            
+        except json.JSONDecodeError as e:
+            logger.warning(f"JSON Parse Failed: {e}. Attempting regex extraction.")
+            # 3. Regex Fallback
+            # Extract Title
+            t_match = re.search(r'"title":\s*"([^"]+)"', cleaned_json)
+            if t_match: title = t_match.group(1)
+            
+            # Extract Category
+            c_match = re.search(r'"category":\s*"([^"]+)"', cleaned_json)
+            if c_match: category_name = c_match.group(1)
+            
+            # Extract Content (Tricky because of quotes and newlines)
+            # We assume content comes last or is distinct.
+            # Look for "content": " ... "
+            # Using dotall to match newlines
+            con_match = re.search(r'"content":\s*"(.*)"\s*(\}|,)', cleaned_json, re.DOTALL)
+            if con_match: 
+                article_content = con_match.group(1)
+                # Unescape standard JSON escapes that might be in there
+                article_content = article_content.replace('\\n', '\n').replace('\\"', '"')
+            else:
+                # 4. If all else fails, checking if it's just raw markdown without JSON wrappers
+                # If the string starts with { "title":, it's definitely broken JSON. 
+                # If we fail to extract content, we should NOT return the JSON string.
+                # Instead, search for the first H1 or H2
+                logger.error("Could not extract content from broken JSON.")
+                # Last resort: Try to find start of markdown
+                m_start = cleaned_json.find("# ")
+                if m_start != -1:
+                    article_content = cleaned_json[m_start:]
+                else:
+                     article_content = "（記事生成に失敗しました。JSON形式のエラーです。）\n\nOriginal Output:\n" + cleaned_json[:200]
+        
+        # Validate content not empty
+        if not article_content:
+             article_content = "Article generation failed (Empty Content)."
+
+        # Handle Category Logic
+        category_id = None
+        if db and category_name:
+            try:
+                category_id = db.get_or_create_category(category_name)
+                logger.info(f"Assigned category: {category_name} (ID: {category_id})")
+            except Exception as e:
+                logger.error(f"Failed to process category {category_name}: {e}")
+        category_id = None
+        if db and category_name:
+            try:
+                category_id = db.get_or_create_category(category_name)
+                logger.info(f"Assigned category: {category_name} (ID: {category_id})")
+            except Exception as e:
+                logger.error(f"Failed to process category {category_name}: {e}")
+
         # Generate Thumbnail (AI)
         logger.info("Generating thumbnail with AI...")
         thumb = await generator.generate_image(keyword, title=title)
@@ -379,12 +449,13 @@ async def process_keyword_generation(keyword: str):
             "status": "draft",
             "source_url": "google_search_grounding",
             "thumbnail_url": thumb, 
-            "generated_by": "gemini-2.0-flash-grounding"
+            "generated_by": "gemini-2.0-flash-grounding",
+            "category_id": category_id
         }
         
         if db:
             db.insert_article(article_data)
-            logger.info(f"Saved grounded draft for {keyword}")
+            logger.info(f"Saved grounded draft for {keyword} in category {category_name}")
         return
 
     # Fallback to old logic if grounding returns empty (rare)
