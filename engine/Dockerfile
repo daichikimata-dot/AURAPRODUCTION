@@ -20,4 +20,4 @@ COPY . .
 # Expose port (Render sets PORT env var, default 8000 in our code?)
 # Our code uses 8000. Render usually expects 10000 or sets PORT.
 # We should update main.py to use os.getenv("PORT", 8000)
-CMD ["python", "main.py"]
+CMD ["sh", "-c", "uvicorn api:app --host 0.0.0.0 --port ${PORT:-8000}"]
