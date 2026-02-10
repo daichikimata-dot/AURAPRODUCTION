@@ -20,6 +20,7 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(title="AURA Engine API", description="API for AURA Beauty Content Engine")
 
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
 app.add_middleware(
