@@ -9,4 +9,5 @@ schedule
 fastapi
 uvicorn
 googlesearch-python
+line-bot-sdk
 
