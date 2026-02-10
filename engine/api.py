@@ -53,6 +53,24 @@ class KeywordRequest(BaseModel):
 class TrendResponse(BaseModel):
     keywords: List[str]
 
+class RevisionRequest(BaseModel):
+    content: str
+    feedback: str
+
+@app.post("/revise")
+async def revise_article_endpoint(request: RevisionRequest):
+    """
+    Revises an article based on feedback.
+    """
+    try:
+        revised_content = await generator.revise_article(request.content, request.feedback)
+        if not revised_content:
+            raise HTTPException(status_code=500, detail="Failed to revise content")
+        return {"revised_content": revised_content}
+    except Exception as e:
+        logger.error(f"Revision failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
 @app.get("/trends", response_model=TrendResponse)
 async def get_trends():
     """

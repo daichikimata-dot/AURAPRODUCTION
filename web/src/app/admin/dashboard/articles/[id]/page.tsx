@@ -81,25 +81,44 @@ export default function ArticleDetailPage() {
         if (!prompt.trim()) return alert("修正指示を入力してください。");
 
         setIsRevising(true);
-        // In a real implementation, this would trigger a backend job or API call to Python Engine.
-        // For now, we simulate saving the feedback and changing status to 'pending_review' or a new 'revision_requested' status.
+        try {
+            // 1. Call Engine via Proxy
+            const res = await fetch('/api/engine/revise', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    content: article.content,
+                    feedback: prompt
+                })
+            });
 
-        const { error } = await supabase
-            .from('articles')
-            .update({
-                admin_feedback: prompt,
-                status: 'draft', // Reset to draft or keep current? Let's say we keep it draft but mark feedback.
-                updated_at: new Date().toISOString()
-            })
-            .eq('id', article.id);
+            if (!res.ok) throw new Error("AI修正リクエストに失敗しました");
+            const data = await res.json();
+            const revisedContent = data.revised_content;
 
-        if (error) alert("フィードバックの送信に失敗しました");
-        else {
-            alert("フィードバックを送信しました！AIが修正を行います（シミュレーション）。");
+            if (!revisedContent) throw new Error("修正されたコンテンツが空でした");
+
+            // 2. Update Supabase with new content AND feedback record
+            const { error } = await supabase
+                .from('articles')
+                .update({
+                    content: revisedContent,
+                    admin_feedback: prompt,
+                    updated_at: new Date().toISOString()
+                })
+                .eq('id', article.id);
+
+            if (error) throw error;
+
+            alert("AIによる修正が完了しました！");
             setPrompt('');
-            fetchArticle();
+            fetchArticle(); // Refresh to show new content
+        } catch (e) {
+            console.error(e);
+            alert("修正に失敗しました: " + (e as Error).message);
+        } finally {
+            setIsRevising(false);
         }
-        setIsRevising(false);
     };
 
     const handleCategoryChange = async (categoryId: string) => {
