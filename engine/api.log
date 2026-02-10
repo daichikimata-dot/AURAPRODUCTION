@@ -337,3 +337,9 @@ INFO:     Generated Image Prompt: A close-up, photorealistic 8k image capturing 
 INFO:     Image generated successfully: /generated/generated_4f4f1b93.png
 2026-02-10 11:06:39,351 - INFO - HTTP Request: POST https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/articles "HTTP/2 201 Created"
 INFO:     Saved grounded draft for レチノール in category 美容
+2026-02-10 12:31:00,612 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 12:31:00,614 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:57843 - "GET /trends HTTP/1.1" 200 OK
+2026-02-10 12:31:02,421 - INFO - HTTP Request: GET https://tzsbtlnamhxyakgyvtye.supabase.co/rest/v1/crawled_articles?select=title%2Ccontent&order=crawled_at.desc&limit=10 "HTTP/2 200 OK"
+2026-02-10 12:31:02,424 - INFO - Trends: Using 10 articles for context.
+INFO:     127.0.0.1:57843 - "GET /trends HTTP/1.1" 200 OK

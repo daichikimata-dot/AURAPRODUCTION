@@ -2,7 +2,8 @@ import { NextResponse } from 'next/server';
 
 export async function GET() {
     try {
-        const res = await fetch('http://127.0.0.1:8000/trends', {
+        const engineUrl = process.env.ENGINE_API_URL || 'http://127.0.0.1:8000';
+        const res = await fetch(`${engineUrl}/trends`, {
             cache: 'no-store' // Always fetch fresh data
         });
 

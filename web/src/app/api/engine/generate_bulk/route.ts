@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
     try {
-        const engineUrl = process.env.ENGINE_URL || 'http://localhost:8000';
+        const engineUrl = process.env.ENGINE_API_URL || 'http://127.0.0.1:8000';
         console.log(`Proxying bulk generation request to: ${engineUrl}/generate_bulk`);
 
         const res = await fetch(`${engineUrl}/generate_bulk`, {
