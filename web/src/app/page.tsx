@@ -83,7 +83,7 @@ export default async function Home() {
                 <div className="mt-4 flex justify-center gap-4 text-xs font-medium text-stone-500">
                     <Link href="/privacy">Privacy Policy</Link>
                     <Link href="/contact">Contact</Link>
-                    <Link href="/auraadmin/login" className="opacity-50 hover:opacity-100">Admin</Link>
+                    <Link href="/admin/login" className="opacity-50 hover:opacity-100">Admin</Link>
                 </div>
             </footer>
         </main>
