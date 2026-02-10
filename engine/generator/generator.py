@@ -266,16 +266,23 @@ class AIGenerator:
                     image_bytes = base64.b64decode(b64_data)
                     
                     filename = f"generated_{os.urandom(4).hex()}.png"
-                    # Path: engine/generator/../../web/public/generated
-                    save_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../web/public/generated"))
+                    # Save to local 'generated' folder (served by api.py)
+                    save_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../generated"))
                     os.makedirs(save_dir, exist_ok=True)
                     
                     file_path = os.path.join(save_dir, filename)
                     with open(file_path, "wb") as f:
                         f.write(image_bytes)
                     
-                    logger.info(f"Image generated successfully: /generated/{filename}")
-                    return f"/generated/{filename}"
+                    # Construct full URL for external access
+                    base_url = os.getenv("RENDER_EXTERNAL_URL") or os.getenv("ENGINE_API_URL") or "http://localhost:8000"
+                    if base_url.endswith("/"):
+                        base_url = base_url[:-1]
+                        
+                    full_url = f"{base_url}/generated/{filename}"
+                    
+                    logger.info(f"Image generated successfully: {full_url}")
+                    return full_url
                 else:
                     logger.error(f"Image generation response empty: {data}")
             else:

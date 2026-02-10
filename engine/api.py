@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(title="AURA Engine API", description="API for AURA Beauty Content Engine")
 
-from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 app.add_middleware(
     CORSMiddleware,
@@ -29,6 +29,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Mount generated images for external access (e.g. from Vercel)
+os.makedirs("generated", exist_ok=True)
+app.mount("/generated", StaticFiles(directory="generated"), name="generated")
 
 # Initialize components (Lazy loading or global init)
 # We initialize them here for simplicity, but in prod might want lifespan events
