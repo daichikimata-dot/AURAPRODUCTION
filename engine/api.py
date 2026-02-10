@@ -164,6 +164,30 @@ async def get_trends():
         # Fallback
         return TrendResponse(keywords=["韓国肌管理", "ポテンツァ", "水光注射", "レチノール", "医療ダイエット", "アートメイク"])
 
+@app.post("/generate")
+async def generate_single_article(request: KeywordRequest, background_tasks: BackgroundTasks):
+    """
+    Triggers generation for a single keyword.
+    """
+    try:
+        keyword = request.keyword
+        target_count = request.target_count
+        
+        if not keyword:
+            raise HTTPException(status_code=400, detail="Keyword is required")
+            
+        logger.info(f"Manual Gen - Triggering task for: {keyword}")
+        
+        # Add to background tasks
+        for _ in range(target_count):
+             background_tasks.add_task(process_keyword_generation, keyword)
+             
+        return {"status": "accepted", "message": f"Generation started for: {keyword}"}
+        
+    except Exception as e:
+        logger.error(f"Manual generation failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
 @app.post("/generate_bulk")
 async def generate_bulk_articles(background_tasks: BackgroundTasks):
     """
