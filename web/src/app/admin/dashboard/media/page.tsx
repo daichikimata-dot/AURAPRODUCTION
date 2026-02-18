@@ -94,10 +94,9 @@ export default function MediaPage() {
 
         setCrawling(true);
         try {
-            const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-            console.log(`Crawling request to: ${apiUrl}/media/crawl`);
-
-            const res = await fetch(`${apiUrl}/media/crawl`, {
+            // Use internal API proxy
+            console.log("Requesting crawl via /api/engine/media/crawl");
+            const res = await fetch('/api/engine/media/crawl', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -110,11 +109,11 @@ export default function MediaPage() {
                 alert(`開始しました: ${data.message}`);
             } else {
                 console.error("API Error Response:", data);
-                throw new Error(data.detail || res.statusText || 'API Error');
+                throw new Error(data.detail || data.error || res.statusText || 'API Error');
             }
         } catch (e: any) {
             console.error("Crawl Error:", e);
-            alert(`クローリング開始エラー: ${e.message}\n(Check console for details. Ensure backend is running at ${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'})`);
+            alert(`クローリング開始エラー: ${e.message}\n(詳細なログはコンソールを確認してください)`);
         } finally {
             setCrawling(false);
             // Optionally fetch sources again specifically to check timestamps later, but for now just clear loading state
@@ -145,13 +144,20 @@ export default function MediaPage() {
     const fetchRecommendations = async () => {
         setLoadingRecs(true);
         try {
-            const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-            const res = await fetch(`${apiUrl}/media/recommendations`);
+            // Use internal API proxy which handles the API Key
+            console.log("Fetching recommendations via /api/engine/media/recommendations");
+            const res = await fetch('/api/engine/media/recommendations');
+
+            if (!res.ok) {
+                const err = await res.json().catch(() => ({}));
+                throw new Error(err.detail || err.error || res.statusText || "Fetch failed");
+            }
+
             const data = await res.json();
             if (data.recommendations) {
                 setRecommendations(data.recommendations);
             } else {
-                alert("おすすめの取得に失敗しました");
+                alert("おすすめの取得に失敗しました (空のデータ)");
             }
         } catch (e: any) {
             console.error(e);
