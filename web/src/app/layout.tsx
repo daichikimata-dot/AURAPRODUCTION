@@ -14,7 +14,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://aura-beauty.jp"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://www.kireiaura.com"),
   title: {
     default: "美活クラブAURA | Beauty & Medical Column",
     template: "%s | 美活クラブAURA"
