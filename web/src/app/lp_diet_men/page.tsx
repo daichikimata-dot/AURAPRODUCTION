@@ -1,3 +1,7 @@
+'use client';
+
+import { useEffect } from 'react'; // 追加
+
 const menLpLineUrl =
   "https://liff.line.me/1657922560-1J7Njyb8/landing?follow=%40079icouq&lp=DPFOqe&liff_id=1657922560-1J7Njyb8";
 
@@ -77,8 +81,32 @@ const flowItems = [
 ];
 
 export default function LpDietMenPage() {
+  // --- ここから共通バナー削除コード ---
+  useEffect(() => {
+    // 前回の検証画像に基づき、共通バナーのクラスを指定して非表示にします
+    const commonBanner = document.querySelector('div.fixed.bottom-4.right-4');
+    if (commonBanner) {
+      (commonBanner as HTMLElement).style.display = 'none';
+    }
+    
+    // 他のページに戻った時に再表示されるよう、クリーンアップ（任意）
+    return () => {
+      if (commonBanner) {
+        (commonBanner as HTMLElement).style.display = '';
+      }
+    };
+  }, []);
+  // --- ここまで ---
+
   return (
     <main className="men-lp-page men-lp-fade-shell relative min-h-screen overflow-hidden bg-gradient-to-b from-[#050505] via-[#0b0d0f] to-[#050505] text-[#f8f1e2]">
+      {/* 念のためCSSでも強制非表示にするスタイルを追加 */}
+      <style jsx global>{`
+        div.fixed.bottom-4.right-4.z-50 {
+          display: none !important;
+        }
+      `}</style>
+
       <div
         aria-hidden
         className="pointer-events-none absolute -top-20 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-[#d8b56d]/20 blur-3xl"
