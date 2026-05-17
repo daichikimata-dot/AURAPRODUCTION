@@ -1,3 +1,7 @@
+'use client';
+
+import { useEffect } from 'react';
+
 const womenLpLineUrl =
   "https://liff.line.me/1657922560-1J7Njyb8/landing?follow=%40079icouq&lp=DPFOqe&liff_id=1657922560-1J7Njyb8";
 
@@ -77,8 +81,28 @@ const flowItems = [
 ];
 
 export default function LpDietWomenPage() {
+  // 共通バナーをこのページだけ非表示にする処理
+  useEffect(() => {
+    const commonBanner = document.querySelector('div.fixed.bottom-4.right-4');
+    if (commonBanner) {
+      (commonBanner as HTMLElement).style.display = 'none';
+    }
+    return () => {
+      if (commonBanner) {
+        (commonBanner as HTMLElement).style.display = '';
+      }
+    };
+  }, []);
+
   return (
     <main className="women-lp-page women-lp-fade-shell relative min-h-screen overflow-hidden bg-gradient-to-b from-[#fff7fa] via-[#fffaf8] to-[#fff4f5] text-[#35292d]">
+      {/* CSSでも強制非表示 */}
+      <style jsx global>{`
+        div.fixed.bottom-4.right-4.z-50 {
+          display: none !important;
+        }
+      `}</style>
+
       <div
         aria-hidden
         className="pointer-events-none absolute -top-16 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-[#ffdbe8]/50 blur-3xl"
@@ -154,7 +178,6 @@ export default function LpDietWomenPage() {
           </div>
         </section>
 
-                {/* こんな方におすすめ */}
         <section className="women-lp-fade women-lp-delay-2 mb-24">
           <div className="mb-8 text-center">
             <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#e05283]">
@@ -185,7 +208,6 @@ export default function LpDietWomenPage() {
           </div>
         </section>
 
-        {/* お取り扱い薬剤 */}
         <section className="women-lp-fade women-lp-delay-3 mb-24">
           <div className="mb-8 text-center">
             <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#e05283]">
@@ -235,7 +257,6 @@ export default function LpDietWomenPage() {
           </div>
         </section>
 
-        {/* 5%OFF CTA */}
         <section className="women-lp-fade women-lp-delay-4 relative mb-24 overflow-hidden rounded-[28px] border border-[#e9c17d] bg-gradient-to-br from-[#fffdf6] to-[#fff1d9] px-5 py-8 text-center shadow-[0_16px_34px_rgba(180,120,60,0.12)]">
           <div
             aria-hidden
@@ -253,7 +274,6 @@ export default function LpDietWomenPage() {
           </p>
         </section>
 
-        {/* よくある質問 */}
         <section className="women-lp-fade women-lp-delay-5 mb-24">
           <div className="mb-8 text-center">
             <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#e05283]">
@@ -288,7 +308,6 @@ export default function LpDietWomenPage() {
           </div>
         </section>
 
-        {/* 購入までのフロー */}
         <section className="women-lp-fade women-lp-delay-6 mb-24">
           <div className="mb-8 text-center">
             <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#e05283]">
@@ -320,7 +339,6 @@ export default function LpDietWomenPage() {
           </div>
         </section>
 
-        {/* 注意事項 */}
         <section className="women-lp-fade women-lp-delay-7 rounded-[28px] border border-pink-100 bg-white/90 p-6 shadow-[0_12px_28px_rgba(180,80,120,0.10)]">
           <div className="mb-5 text-center">
             <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#e05283]">
