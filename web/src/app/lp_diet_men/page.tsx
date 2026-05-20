@@ -95,7 +95,7 @@ export default function LpDietMenPage() {
   }, []);
 
   return (
-    <main className="men-lp-page men-lp-fade-shell relative min-h-screen overflow-hidden bg-gradient-to-b from-[#3f3f3d] via-[#111111] to-[#050505] text-[#f7f7f4]">
+    <main className="men-lp-page men-lp-fade-shell relative min-h-screen overflow-hidden bg-gradient-to-b from-[#050505] via-[#111111] to-[#3f3f3d] text-[#f7f7f4]">
       <style jsx global>{`
         div.fixed.bottom-4.right-4.z-50 {
           display: none !important;
