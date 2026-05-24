@@ -203,19 +203,19 @@ export default function LpDietMenPage() {
             {medicineItems.map((item) => (
               <article
                 key={item.name}
-                className="rounded-[24px] border border-white/10 bg-[#151515] p-5 shadow-[0_12px_28px_rgba(0,0,0,0.35)]"
+                className="rounded-[24px] border border-[#2f5f8f]/70 bg-[#111722] p-5 shadow-[0_12px_28px_rgba(0,0,0,0.35)]"
               >
                 <div className="mb-3 flex items-start justify-between gap-3">
                   <div>
                     <h3 className="text-[25px] font-black leading-tight text-white">
                       {item.name}
                     </h3>
-                    <p className="mt-3 inline-flex rounded-full border border-[#cdd8ff]/60 px-3 py-1 text-[13px] font-bold text-[#dce5ff]">
+                    <p className="mt-3 inline-flex rounded-full border border-[#6fa8dc]/70 bg-[#102235] px-3 py-1 text-[13px] font-bold text-[#b9dcff]">
                       {item.type}
                     </p>
                   </div>
 
-                  <span className="shrink-0 rounded-full bg-white/10 px-3 py-2 text-[13px] font-bold text-white">
+                  <span className="shrink-0 rounded-full bg-[#18304a] px-3 py-2 text-[13px] font-bold text-[#b9dcff]">
                     {item.badge}
                   </span>
                 </div>
@@ -224,14 +224,14 @@ export default function LpDietMenPage() {
                   {item.description}
                 </p>
 
-                <p className="text-[28px] font-black leading-tight text-[#dce5ff]">
+                <p className="text-[28px] font-black leading-tight text-[#b9dcff]">
                   {item.price}
                 </p>
               </article>
             ))}
           </div>
 
-          <div className="mt-6 rounded-[22px] border border-[#5a4524] bg-[#111315]/90 p-5 text-center shadow-[0_10px_24px_rgba(0,0,0,0.28)]">
+          <div className="mt-6 rounded-[22px] border border-[#2f5f8f]/60 bg-[#111722]/90 p-5 text-center shadow-[0_10px_24px_rgba(0,0,0,0.28)]">
             <p className="text-[16px] leading-[1.9] text-[#d8d1c5]">
               上記以外にも複数のダイエット薬を取り扱っています。
               <br />
