@@ -11,30 +11,40 @@ const medicineItems = [
     type: "週1回の自己注射タイプ",
     price: "19,800円〜 / 1ヶ月",
     note: "自己注射",
+    description:
+      "週1回の自己注射タイプのGLP-1薬剤。スピード重視で体重管理を進めたい方に。",
   },
   {
     name: "リベルサス",
     type: "毎日1回の服用タイプ",
     price: "8,800円〜 / 1ヶ月",
     note: "内服薬",
-  },
-  {
-    name: "オゼンピック",
-    type: "週1回の自己注射タイプ",
-    price: "23,000円〜 / 1ヶ月",
-    note: "自己注射",
+    description:
+      "1日1回飲むタイプのGLP-1薬剤。注射に抵抗がある方や、手間を抑えてスムーズに始めたい方に。",
   },
   {
     name: "ビクトーザ",
     type: "1日1回の自己注射タイプ",
     price: "15,000円〜 / 1ヶ月",
     note: "自己注射",
+    description:
+      "1日1回の自己注射タイプのGLP-1薬剤。予定や食欲に合わせて調節出来る事が特徴です。",
+  },
+  {
+    name: "オゼンピック",
+    type: "週1回の自己注射タイプ",
+    price: "23,000円〜 / 1ヶ月",
+    note: "自己注射",
+    description:
+      "週1回の自己注射タイプのGLP-1薬剤。ビクトーザよりもオゼンピックの方が減量効果に優れていると言われています。",
   },
   {
     name: "スーグラ錠",
     type: "1日1回の服用タイプ",
     price: "9,800円〜 / 1ヶ月",
     note: "内服薬",
+    description:
+      "1日1回の内服タイプ。食事で摂取したカロリーを尿によって体外に排出し、糖分の吸収を抑えてくれる薬です。",
   },
 ];
 
@@ -178,6 +188,7 @@ export default function LpDietWomenPage() {
           </div>
         </section>
 
+        {/* こんな方におすすめ */}
         <section className="women-lp-fade women-lp-delay-2 mb-24">
           <div className="mb-8 text-center">
             <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#e05283]">
@@ -208,6 +219,7 @@ export default function LpDietWomenPage() {
           </div>
         </section>
 
+        {/* お取り扱い薬剤 */}
         <section className="women-lp-fade women-lp-delay-3 mb-24">
           <div className="mb-8 text-center">
             <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#e05283]">
@@ -243,6 +255,11 @@ export default function LpDietWomenPage() {
                   </span>
                 </div>
 
+                {/* 説明文の追加（既存の文字色・ライン高のスタイルを維持） */}
+                <p className="mb-4 text-[15px] leading-[1.8] text-[#5d4a50]">
+                  {item.description}
+                </p>
+
                 <p className="text-[24px] font-bold leading-tight text-[#e05283]">
                   {item.price}
                 </p>
@@ -257,6 +274,7 @@ export default function LpDietWomenPage() {
           </div>
         </section>
 
+        {/* 5%OFF CTA */}
         <section className="women-lp-fade women-lp-delay-4 relative mb-24 overflow-hidden rounded-[28px] border border-[#e9c17d] bg-gradient-to-br from-[#fffdf6] to-[#fff1d9] px-5 py-8 text-center shadow-[0_16px_34px_rgba(180,120,60,0.12)]">
           <div
             aria-hidden
@@ -274,6 +292,7 @@ export default function LpDietWomenPage() {
           </p>
         </section>
 
+        {/* よくある質問 */}
         <section className="women-lp-fade women-lp-delay-5 mb-24">
           <div className="mb-8 text-center">
             <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#e05283]">
@@ -308,6 +327,7 @@ export default function LpDietWomenPage() {
           </div>
         </section>
 
+        {/* 購入までの流れ */}
         <section className="women-lp-fade women-lp-delay-6 mb-24">
           <div className="mb-8 text-center">
             <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#e05283]">
@@ -339,6 +359,7 @@ export default function LpDietWomenPage() {
           </div>
         </section>
 
+        {/* 注意事項 */}
         <section className="women-lp-fade women-lp-delay-7 rounded-[28px] border border-pink-100 bg-white/90 p-6 shadow-[0_12px_28px_rgba(180,80,120,0.10)]">
           <div className="mb-5 text-center">
             <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#e05283]">
