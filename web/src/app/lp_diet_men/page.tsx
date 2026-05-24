@@ -1,5 +1,9 @@
+'use client';
+
+import { useEffect } from 'react';
+
 const menLpLineUrl =
-  "https://liff.line.me/1657922560-1J7Njyb8/landing?follow=%40079icouq&lp=DPFOqe&liff_id=1657922560-1J7Njyb8";
+  "https://liff.me/1657922560-1J7Njyb8/landing?follow=%40079icouq&lp=DPFOqe&liff_id=1657922560-1J7Njyb8";
 
 const medicineItems = [
   {
@@ -96,19 +100,27 @@ const flowItems = [
 ];
 
 export default function LpDietMenPage() {
+  // 共通バナーをこのページだけ非表示にする処理
+  useEffect(() => {
+    const commonBanner = document.querySelector('div.fixed.bottom-4.right-4');
+    if (commonBanner) {
+      (commonBanner as HTMLElement).style.display = 'none';
+    }
+    return () => {
+      if (commonBanner) {
+        (commonBanner as HTMLElement).style.display = '';
+      }
+    };
+  }, []);
+
   return (
     <main className="men-lp-page min-h-screen bg-gradient-to-b from-[#03070d] via-[#07111d] to-[#03070d] text-[#f3f8ff]">
-      <style>
-        {`
-          body:has(main.men-lp-page) div.fixed.bottom-4.right-4.z-50:has(a[href="https://lin.ee/KXp58AS"]) {
-            display: none !important;
-          }
-
-          body:has(main.men-lp-page) a[href="https://lin.ee/KXp58AS"] {
-            display: none !important;
-          }
-        `}
-      </style>
+      {/* CSSでも強制非表示 */}
+      <style dangerouslySetInnerHTML={{ __html: `
+        div.fixed.bottom-4.right-4.z-50 {
+          display: none !important;
+        }
+      `}} />
 
       <div className="mx-auto w-full max-w-[430px] px-4 pb-44 pt-5">
         {/* LP画像 */}
