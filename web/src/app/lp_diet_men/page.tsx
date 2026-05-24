@@ -97,11 +97,23 @@ const flowItems = [
 
 export default function LpDietMenPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#050505] via-[#0b0d0f] to-[#050505] text-[#f8f1e2]">
+    <main className="men-lp-page min-h-screen bg-gradient-to-b from-[#03070d] via-[#07111d] to-[#03070d] text-[#f3f8ff]">
+      <style>
+        {`
+          body:has(main.men-lp-page) div.fixed.bottom-4.right-4.z-50:has(a[href="https://lin.ee/KXp58AS"]) {
+            display: none !important;
+          }
+
+          body:has(main.men-lp-page) a[href="https://lin.ee/KXp58AS"] {
+            display: none !important;
+          }
+        `}
+      </style>
+
       <div className="mx-auto w-full max-w-[430px] px-4 pb-44 pt-5">
         {/* LP画像 */}
         <div className="mb-10">
-          <div className="mx-auto overflow-hidden rounded-[24px] border border-[#4b3a1f] bg-[#080808] shadow-[0_18px_45px_rgba(0,0,0,0.55)]">
+          <div className="mx-auto overflow-hidden rounded-[24px] border border-[#2f5f8f]/70 bg-[#07111d] shadow-[0_18px_45px_rgba(0,0,0,0.55)]">
             <img
               src="/images/lp-diet-men-hero.png"
               alt="男性向け医療ダイエットLP"
@@ -113,47 +125,47 @@ export default function LpDietMenPage() {
         {/* 選ばれる理由 */}
         <section className="mb-20">
           <div className="mb-6 text-center">
-            <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#d8b56d]">
+            <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#7fbfff]">
               AURA MEN&apos;S MEDICAL DIET
             </p>
-            <h2 className="font-serif text-[26px] font-bold leading-tight text-[#f8f1e2]">
+            <h2 className="font-serif text-[26px] font-bold leading-tight text-[#f3f8ff]">
               忙しい男性に選ばれる理由
             </h2>
           </div>
 
           <div className="space-y-5">
-            <article className="rounded-[22px] border border-[#5a4524] bg-[#111315]/95 p-6 shadow-[0_12px_28px_rgba(0,0,0,0.35)]">
-              <p className="mb-3 text-[19px] font-bold leading-relaxed text-[#d8b56d]">
+            <article className="rounded-[22px] border border-[#2f5f8f]/70 bg-[#0d1724]/95 p-6 shadow-[0_12px_28px_rgba(0,0,0,0.35)]">
+              <p className="mb-3 text-[19px] font-bold leading-relaxed text-[#8ec9ff]">
                 スマホだけで完結
               </p>
-              <p className="text-[16px] leading-[1.9] text-[#d8d1c5]">
+              <p className="text-[16px] leading-[1.9] text-[#d6e6f7]">
                 LINEで予約し、予約時間内に電話カウンセリング。通院時間をつくりにくい方でも始めやすい流れです。
               </p>
             </article>
 
-            <article className="rounded-[22px] border border-[#5a4524] bg-[#111315]/95 p-6 shadow-[0_12px_28px_rgba(0,0,0,0.35)]">
-              <p className="mb-3 text-[19px] font-bold leading-relaxed text-[#d8b56d]">
+            <article className="rounded-[22px] border border-[#2f5f8f]/70 bg-[#0d1724]/95 p-6 shadow-[0_12px_28px_rgba(0,0,0,0.35)]">
+              <p className="mb-3 text-[19px] font-bold leading-relaxed text-[#8ec9ff]">
                 人に知られにくい導線
               </p>
-              <p className="text-[16px] leading-[1.9] text-[#d8d1c5]">
+              <p className="text-[16px] leading-[1.9] text-[#d6e6f7]">
                 来院せずに相談しやすいので、仕事関係や周囲の目が気になる方にも向いています。
               </p>
             </article>
 
-            <article className="rounded-[22px] border border-[#5a4524] bg-[#111315]/95 p-6 shadow-[0_12px_28px_rgba(0,0,0,0.35)]">
-              <p className="mb-3 text-[19px] font-bold leading-relaxed text-[#d8b56d]">
+            <article className="rounded-[22px] border border-[#2f5f8f]/70 bg-[#0d1724]/95 p-6 shadow-[0_12px_28px_rgba(0,0,0,0.35)]">
+              <p className="mb-3 text-[19px] font-bold leading-relaxed text-[#8ec9ff]">
                 医師と相談して選択
               </p>
-              <p className="text-[16px] leading-[1.9] text-[#d8d1c5]">
+              <p className="text-[16px] leading-[1.9] text-[#d6e6f7]">
                 体質や目的に合わせて、医師が適切なお薬をご提案します。
               </p>
             </article>
 
-            <article className="rounded-[22px] border border-[#5a4524] bg-[#111315]/95 p-6 shadow-[0_12px_28px_rgba(0,0,0,0.35)]">
-              <p className="mb-3 text-[19px] font-bold leading-relaxed text-[#d8b56d]">
+            <article className="rounded-[22px] border border-[#2f5f8f]/70 bg-[#0d1724]/95 p-6 shadow-[0_12px_28px_rgba(0,0,0,0.35)]">
+              <p className="mb-3 text-[19px] font-bold leading-relaxed text-[#8ec9ff]">
                 価格面も比較しやすい
               </p>
-              <p className="text-[16px] leading-[1.9] text-[#d8d1c5]">
+              <p className="text-[16px] leading-[1.9] text-[#d6e6f7]">
                 LINE登録＆予約で5%OFF。さらに最安値保証で、始めやすさをサポートします。
               </p>
             </article>
@@ -163,10 +175,10 @@ export default function LpDietMenPage() {
         {/* こんな方におすすめ */}
         <section className="mb-20">
           <div className="mb-6 text-center">
-            <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#d8b56d]">
+            <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#7fbfff]">
               FOR BUSY MEN
             </p>
-            <h2 className="font-serif text-[26px] font-bold leading-tight text-[#f8f1e2]">
+            <h2 className="font-serif text-[26px] font-bold leading-tight text-[#f3f8ff]">
               こんな方におすすめ
             </h2>
           </div>
@@ -175,9 +187,9 @@ export default function LpDietMenPage() {
             {recommendItems.map((item) => (
               <div
                 key={item}
-                className="rounded-[18px] border border-[#5a4524] bg-[#101214] px-5 py-4 shadow-[0_8px_22px_rgba(0,0,0,0.28)]"
+                className="rounded-[18px] border border-[#2f5f8f]/70 bg-[#0d1724] px-5 py-4 shadow-[0_8px_22px_rgba(0,0,0,0.28)]"
               >
-                <p className="text-[15px] font-bold leading-[1.8] text-[#f4ead8]">
+                <p className="text-[15px] font-bold leading-[1.8] text-[#e7f3ff]">
                   ✓ {item}
                 </p>
               </div>
@@ -188,13 +200,13 @@ export default function LpDietMenPage() {
         {/* お取り扱い薬剤 */}
         <section className="mb-24">
           <div className="mb-8 text-center">
-            <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#d8b56d]">
+            <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#7fbfff]">
               LINEUP
             </p>
-            <h2 className="font-serif text-[30px] font-bold leading-tight text-[#f8f1e2]">
+            <h2 className="font-serif text-[30px] font-bold leading-tight text-[#f3f8ff]">
               お取り扱い薬剤
             </h2>
-            <p className="mt-4 text-[14px] leading-[1.8] text-[#c8beb0]">
+            <p className="mt-4 text-[14px] leading-[1.8] text-[#c9d8e8]">
               ※薬剤は医師の診察のうえ、用法用量を守って正しくお使いください。
             </p>
           </div>
@@ -220,7 +232,7 @@ export default function LpDietMenPage() {
                   </span>
                 </div>
 
-                <p className="mb-4 text-[15px] leading-[1.8] text-[#d8d1c5]">
+                <p className="mb-4 text-[15px] leading-[1.8] text-[#d6e6f7]">
                   {item.description}
                 </p>
 
@@ -232,7 +244,7 @@ export default function LpDietMenPage() {
           </div>
 
           <div className="mt-6 rounded-[22px] border border-[#2f5f8f]/60 bg-[#111722]/90 p-5 text-center shadow-[0_10px_24px_rgba(0,0,0,0.28)]">
-            <p className="text-[16px] leading-[1.9] text-[#d8d1c5]">
+            <p className="text-[16px] leading-[1.9] text-[#d6e6f7]">
               上記以外にも複数のダイエット薬を取り扱っています。
               <br />
               医師とご相談のうえ、お悩みに応じてご案内します。
@@ -241,11 +253,11 @@ export default function LpDietMenPage() {
         </section>
 
         {/* 5%OFF CTA */}
-        <section className="mb-24 rounded-[24px] border border-[#d8b56d] bg-gradient-to-br from-[#111315] to-[#050505] px-5 py-8 text-center shadow-[0_16px_34px_rgba(0,0,0,0.45)]">
-          <p className="mb-3 text-[16px] font-bold leading-relaxed text-[#f8f1e2]">
+        <section className="mb-24 rounded-[24px] border border-[#6fa8dc]/70 bg-gradient-to-br from-[#102235] to-[#07111d] px-5 py-8 text-center shadow-[0_16px_34px_rgba(0,0,0,0.45)]">
+          <p className="mb-3 text-[16px] font-bold leading-relaxed text-[#e7f3ff]">
             当サイトからのLINE登録＆LINE予約で
           </p>
-          <p className="font-serif text-[36px] font-bold leading-tight text-[#d8b56d]">
+          <p className="font-serif text-[36px] font-bold leading-tight text-[#b9dcff]">
             さらに5%OFF
           </p>
         </section>
@@ -253,10 +265,10 @@ export default function LpDietMenPage() {
         {/* よくある質問 */}
         <section className="mb-24">
           <div className="mb-8 text-center">
-            <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#d8b56d]">
+            <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#7fbfff]">
               FAQ
             </p>
-            <h2 className="font-serif text-[30px] font-bold leading-tight text-[#f8f1e2]">
+            <h2 className="font-serif text-[30px] font-bold leading-tight text-[#f3f8ff]">
               よくある質問
             </h2>
           </div>
@@ -265,16 +277,16 @@ export default function LpDietMenPage() {
             {faqItems.map((item, index) => (
               <article
                 key={item.q}
-                className="rounded-[22px] border border-[#5a4524] bg-[#111315]/95 p-6 shadow-[0_12px_28px_rgba(0,0,0,0.35)]"
+                className="rounded-[22px] border border-[#2f5f8f]/70 bg-[#0d1724]/95 p-6 shadow-[0_12px_28px_rgba(0,0,0,0.35)]"
               >
-                <p className="mb-4 flex gap-3 text-[18px] font-bold leading-[1.7] text-[#f8f1e2]">
-                  <span className="text-[24px] leading-none text-[#d8b56d]">
+                <p className="mb-4 flex gap-3 text-[18px] font-bold leading-[1.7] text-[#f3f8ff]">
+                  <span className="text-[24px] leading-none text-[#8ec9ff]">
                     Q{index + 1}.
                   </span>
                   <span>{item.q}</span>
                 </p>
-                <p className="flex gap-3 text-[16px] leading-[1.9] text-[#d8d1c5]">
-                  <span className="text-[22px] font-bold leading-none text-[#d8b56d]">
+                <p className="flex gap-3 text-[16px] leading-[1.9] text-[#d6e6f7]">
+                  <span className="text-[22px] font-bold leading-none text-[#8ec9ff]">
                     A.
                   </span>
                   <span>{item.a}</span>
@@ -287,10 +299,10 @@ export default function LpDietMenPage() {
         {/* 購入までのフロー */}
         <section className="mb-24">
           <div className="mb-8 text-center">
-            <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#d8b56d]">
+            <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#7fbfff]">
               FLOW
             </p>
-            <h2 className="font-serif text-[30px] font-bold leading-tight text-[#f8f1e2]">
+            <h2 className="font-serif text-[30px] font-bold leading-tight text-[#f3f8ff]">
               購入までの流れ
             </h2>
           </div>
@@ -299,15 +311,15 @@ export default function LpDietMenPage() {
             {flowItems.map((item) => (
               <article
                 key={item.step}
-                className="rounded-[22px] border border-[#5a4524] bg-[#111315]/95 p-6 shadow-[0_12px_28px_rgba(0,0,0,0.35)]"
+                className="rounded-[22px] border border-[#2f5f8f]/70 bg-[#0d1724]/95 p-6 shadow-[0_12px_28px_rgba(0,0,0,0.35)]"
               >
-                <p className="mb-2 text-[13px] font-bold tracking-[0.16em] text-[#d8b56d]">
+                <p className="mb-2 text-[13px] font-bold tracking-[0.16em] text-[#8ec9ff]">
                   {item.step}
                 </p>
-                <h3 className="mb-3 text-[20px] font-bold leading-tight text-[#f8f1e2]">
+                <h3 className="mb-3 text-[20px] font-bold leading-tight text-[#f3f8ff]">
                   {item.title}
                 </h3>
-                <p className="text-[16px] leading-[1.9] text-[#d8d1c5]">
+                <p className="text-[16px] leading-[1.9] text-[#d6e6f7]">
                   {item.text}
                 </p>
               </article>
@@ -316,22 +328,24 @@ export default function LpDietMenPage() {
         </section>
 
         {/* 注意事項 */}
-        <section className="rounded-[24px] border border-[#5a4524] bg-[#111315]/95 p-6 shadow-[0_12px_28px_rgba(0,0,0,0.35)]">
+        <section className="rounded-[24px] border border-[#2f5f8f]/70 bg-[#0d1724]/95 p-6 shadow-[0_12px_28px_rgba(0,0,0,0.35)]">
           <div className="mb-5 text-center">
-            <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#d8b56d]">
+            <p className="mb-2 text-[12px] font-bold tracking-[0.22em] text-[#7fbfff]">
               NOTICE
             </p>
-            <h2 className="font-serif text-[28px] font-bold leading-tight text-[#f8f1e2]">
+            <h2 className="font-serif text-[28px] font-bold leading-tight text-[#f3f8ff]">
               注意事項
             </h2>
           </div>
 
-          <ul className="space-y-3 text-[15px] leading-[1.8] text-[#d8d1c5]">
+          <ul className="space-y-3 text-[15px] leading-[1.8] text-[#d6e6f7]">
             <li>・医療ダイエットは自由診療です。</li>
             <li>・効果や感じ方には個人差があります。</li>
-            <li>・副作用や禁忌事項の詳細は、診察時に医師へご確認ください。</li>
             <li>
-              ・妊娠中・授乳中の方、既往歴のある方、服薬中の方は事前にご相談ください。
+              ・副作用や禁忌事項の詳細は、診察時に医師へご確認ください。
+            </li>
+            <li>
+              ・既往歴のある方、服薬中の方は事前にご相談ください。
             </li>
             <li>
               ・掲載の料金・取り扱い・診療内容は、診察内容・在庫状況により変更される場合があります。
@@ -340,14 +354,14 @@ export default function LpDietMenPage() {
         </section>
       </div>
 
-      {/* 追従CTA */}
+      {/* LP専用 追従CTA */}
       <div className="fixed inset-x-0 bottom-0 z-50 px-3 pb-[max(12px,env(safe-area-inset-bottom))]">
-        <div className="mx-auto w-full max-w-[430px] rounded-[18px] border border-[#d8b56d] bg-gradient-to-r from-[#0b0d0f] via-[#151719] to-[#050505] p-[2px] shadow-[0_12px_30px_rgba(0,0,0,0.55)]">
+        <div className="mx-auto w-full max-w-[430px] rounded-[18px] border border-[#6fa8dc]/70 bg-gradient-to-r from-[#07111d] via-[#102235] to-[#07111d] p-[2px] shadow-[0_12px_30px_rgba(0,0,0,0.55)]">
           <a
             href={menLpLineUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="block rounded-[16px] bg-gradient-to-b from-[#19b84a] to-[#0d9639] px-4 py-4 text-center text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]"
+            className="block rounded-[16px] bg-gradient-to-b from-[#21c75a] to-[#0d9639] px-4 py-4 text-center text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]"
           >
             <span className="block text-[12px] font-bold leading-tight tracking-[0.08em] text-white/90 sm:text-[13px]">
               当サイトからのLINE登録＆LINE予約で5%OFF
